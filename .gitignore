@@ -1,0 +1,4 @@
+dist-newstyle/
+_site/
+_cache/
+cabal.project.local
