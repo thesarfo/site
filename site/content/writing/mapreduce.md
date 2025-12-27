@@ -98,6 +98,7 @@ But here's another thing I discovered: *the characteristics of your test data al
 ```
 
 A few keys with massive value lists. This wasn't really realistic. Real text has way more vocabulary diversity. So I ditched my generated data and found a [real text](https://github.com/atomicmooseca/onemil) online, a million-line file with actual diverse English text. Now my output had **504,605 unique words**. Completely different workload:
+
 ```
 "the" -> appears 12,000 times
 "obsolete" -> appears 3 times
@@ -208,11 +209,12 @@ A tricky one I worked through was when map tasks complete, their output is on th
 My solution:
 - The master knows which worker completed each map task
 - When creating reduce tasks, the master generates URLs like:
-  ```
-  http://localhost:5000/files/job_123/map_task_0/partition_2.txt
-  http://localhost:5000/files/job_123/map_task_1/partition_2.txt
-  ...
-  ```
+
+```
+http://localhost:5000/files/job_123/map_task_0/partition_2.txt
+http://localhost:5000/files/job_123/map_task_1/partition_2.txt
+```
+
 - Each reduce task gets a list of URLs for its partition number
 - The master serves these files via HTTP (acting as a file server)
 
