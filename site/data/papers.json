@@ -1,0 +1,40 @@
+[
+  {
+    "slug": "raft-consensus",
+    "title": "In Search of an Understandable Consensus Algorithm",
+    "authors": "Diego Ongaro, John Ousterhout",
+    "year": 2014,
+    "summary": "Raft is a consensus algorithm designed to be more understandable than Paxos. It separates leader election, log replication, and safety into distinct subproblems, making the algorithm easier to reason about and implement correctly.",
+    "interesting": "The authors explicitly optimized for understandability over theoretical elegance. They ran user studies comparing Raft to Paxos and found students understood Raft significantly better. This is a rare example of a systems paper that treats 'ease of understanding' as a first-class design goal.",
+    "tags": [
+      "distributed-systems",
+      "consensus"
+    ]
+  },
+  {
+    "slug": "dynamo-paper",
+    "title": "Dynamo: Amazon's Highly Available Key-value Store",
+    "authors": "Giuseppe DeCandia et al.",
+    "year": 2007,
+    "summary": "Dynamo is a highly available, eventually consistent key-value store built by Amazon. It uses consistent hashing, vector clocks, and quorum-based replication to achieve high availability even during network partitions.",
+    "interesting": "The paper explicitly chooses availability over consistency (AP in CAP theorem terms). What struck me is how the design decisions flow directly from Amazon's business requirements: even a brief outage during peak shopping means lost revenue. The engineering follows the constraints.",
+    "tags": [
+      "distributed-systems",
+      "scalability",
+      "databases"
+    ]
+  },
+  {
+    "slug": "google-spanner",
+    "title": "Spanner: Google's Globally-Distributed Database",
+    "authors": "James C. Corbett et al.",
+    "year": 2012,
+    "summary": "Spanner is a globally distributed database that provides externally consistent reads and writes at global scale. It uses TrueTime, a globally synchronized clock, to implement lock-free read-only transactions.",
+    "interesting": "The TrueTime API is brilliant. Instead of pretending clocks are perfectly synchronized (they're not), Spanner explicitly models clock uncertainty as an interval. This honest modeling of reality enables a cleaner theoretical foundation for consistency guarantees.",
+    "tags": [
+      "distributed-systems",
+      "databases",
+      "scalability"
+    ]
+  }
+]

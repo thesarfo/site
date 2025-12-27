@@ -9,6 +9,10 @@ import Hakyll
 import Site.Markdown
 import Site.Types
 import Site.Pages.Home (home)
+import Site.Pages.Writing (postPage, writingIndex)
+import Site.Pages.Papers (paperPage, papersPage)
+import Site.Pages.Now (nowPage)
+import Site.Pages.Lens (lensPage)
 import Site.Pages.NotFound (notFoundPage)
 import System.Environment (lookupEnv)
 import System.FilePath (takeBaseName, takeDirectory, takeFileName)
@@ -52,6 +56,21 @@ rules showDrafts = do
   -- JSON data is loaded through the compiler so edits trigger rebuilds.
   match "data/*.json" $ compile getResourceLBS
 
+  -- Posts.
+  matchMetadata "content/writing/*.md" (publishable showDrafts) $ do
+    route (pageRoute "writing")
+    compile $ do
+      ident <- getUnderlying
+      posts <- allPosts showDrafts
+      serieses <- loadData "data/series.json"
+      post <- postFor ident
+      body <- renderMarkdown Prose =<< getResourceBody
+      makeItem (renderHtml (postPage serieses posts post (itemBody body)))
+
+  create ["writing/index.html"] $ do
+    route idRoute
+    compile $ allEntries showDrafts >>= html . writingIndex
+
   create ["index.html"] $ do
     route idRoute
     compile $ do
@@ -61,7 +80,34 @@ rules showDrafts = do
       quotes <- loadData "data/quotes.json"
       html (home entries projects papers quotes)
 
+  -- Papers: three to a page, and one page per paper.
+  papersRules
+
+  create ["now/index.html"] $ staticPage nowPage
+
+  create ["lens/index.html"] $ staticPage lensPage
+
   create ["404.html"] $ staticPage notFoundPage
+
+papersRules :: Rules ()
+papersRules = do
+  rawPapers <- preprocess (BL.readFile "site/data/papers.json")
+  case eitherDecode rawPapers :: Either String [Paper] of
+    Left err -> fail ("papers.json: " ++ err)
+    Right papers -> do
+      let chunks = chunk 3 papers
+      forM_ (zip [1 ..] chunks) $ \(n, ps) ->
+        create [fromFilePath (if n == (1 :: Int) then "papers/index.html" else "papers/page/" ++ show n ++ "/index.html")] $ do
+          route idRoute
+          compile $ do
+            _ <- load (fromFilePath "data/papers.json") :: Compiler (Item BL.ByteString)
+            html (papersPage n (length chunks) ps)
+      forM_ papers $ \p ->
+        create [fromFilePath ("papers/" ++ T.unpack (paperSlug p) ++ "/index.html")] $ do
+          route idRoute
+          compile $ do
+            _ <- load (fromFilePath "data/papers.json") :: Compiler (Item BL.ByteString)
+            html (paperPage p)
 
 -- ---------------------------------------------------------------------------
 
