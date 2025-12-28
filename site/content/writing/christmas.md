@@ -41,4 +41,4 @@ So no, I don’t “believe” in Christmas. At least not in the commercial, chu
 That's what Christmas means to me now
 
 
-![wok-ref](../../../public/wok-ref.jpg)
+![wok-ref](/wok-ref.jpg)
