@@ -13,6 +13,7 @@ import Site.Pages.Writing (postPage, writingIndex)
 import Site.Pages.Papers (paperPage, papersPage)
 import Site.Pages.Now (nowPage)
 import Site.Pages.Lens (lensPage)
+import Site.Pages.Other (otherPage)
 import Site.Pages.NotFound (notFoundPage)
 import System.Environment (lookupEnv)
 import System.FilePath (takeBaseName, takeDirectory, takeFileName)
@@ -87,6 +88,8 @@ rules showDrafts = do
 
   create ["lens/index.html"] $ staticPage lensPage
 
+  othersRules
+
   create ["404.html"] $ staticPage notFoundPage
 
 papersRules :: Rules ()
@@ -108,6 +111,20 @@ papersRules = do
           compile $ do
             _ <- load (fromFilePath "data/papers.json") :: Compiler (Item BL.ByteString)
             html (paperPage p)
+
+othersRules :: Rules ()
+othersRules = do
+  rawOther <- preprocess (BL.readFile "site/data/other.json")
+  case eitherDecode rawOther :: Either String [OtherCategory] of
+    Left err -> fail ("other.json: " ++ err)
+    Right cats -> do
+      let chunks = chunk 3 cats
+      forM_ (zip [1 ..] chunks) $ \(n, cs) ->
+        create [fromFilePath (if n == (1 :: Int) then "other/index.html" else "other/page/" ++ show n ++ "/index.html")] $ do
+          route idRoute
+          compile $ do
+            _ <- load (fromFilePath "data/other.json") :: Compiler (Item BL.ByteString)
+            html (otherPage n (length chunks) cs)
 
 -- ---------------------------------------------------------------------------
 
