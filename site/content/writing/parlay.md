@@ -42,7 +42,7 @@ where $p$ is your estimated probability (0–1) and the odds are decimal. If tha
 
 Parlay odds are just the product of the leg odds. So for three legs at 1.80, 2.00, and 2.20, the combined odds are 7.92. I use that for logging and sanity checks; the book’s slip shows the same. Stake is fixed for now (or a future “percent of balance”); I didn’t put in [Kelly](https://en.wikipedia.org/wiki/Kelly_criterion) in v1 because sizing a parlay with Kelly properly means modeling the joint distribution of the legs, and I wanted to ship something understandable first. Kelly can sit on top later as a step that takes EV and outputs a stake.
 
-When there’s no probability file or no positive-EV selections, the fallback is an auto parlay: group scraped selections by event, take the favorite (lowest odds) per event, sort those and take the first N.  just added this so that the bot always has something to do.
+When there’s no probability file or no positive-EV selections, the fallback is an auto parlay: group scraped selections by event, take the favorite (lowest odds) per event, sort those and take the first N. I just added this so that the bot always has something to do.
 
 
 ## Other Decisions
@@ -73,4 +73,4 @@ Things that can go wrong: the site changes and the “where to find things” ru
 
 I’m happy with the pipeline as it is: one clear data structure, explicit math, and a fallback that doesn’t require a model. If I extend it, the next pieces would be Kelly (or fractional Kelly) stake sizing once I’m willing to model parlay dependence; reading balance from the UI to support “percent of balance” stakes; and maybe tipster or odds-API adapters that write the same file so the pipeline stays unchanged. I could also add a minimal end-to-end run or a recorded session to catch rule breakage earlier. For now it does what I built it for, login, scrape, score, build one parlay, place bet, and the rest is optional.
 
-> The "SportsBook" mentioned above is Sportybet. And the use of this tool violates their Terms of Service, therefore, I will not make the code publicly available. 
+> The "SportsBook" mentioned above is Sportybet. And the use of this tool violates their Terms of Service, therefore, I will not make the code publicly available. This tool does not guarantee winnings, I built it for personal education, experimentation with value-betting concepts, and to automate a repetitive workflow when I already have a process; it is not a profit guarantee. 
