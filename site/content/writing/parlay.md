@@ -20,7 +20,7 @@ Here’s the pipeline as a diagram:
 
 ![architecture](/parlay-architecture.png)
 
-Data flows left to right: one list of selections gets enriched at each stage (scraper adds “where to click,” probabilities add probability, value adds EV and filters), and the probability file is a side input used only in the matching step.
+Data flows top to bottom: one list of selections gets enriched at each stage (scraper adds “where to click,” probabilities add probability, value adds EV and filters), and the probability file is a side input used only in the matching step.
 
 
 ## Technical Choices
