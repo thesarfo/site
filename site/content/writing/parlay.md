@@ -20,7 +20,7 @@ Here’s the pipeline as a diagram:
 
 ![architecture](/parlay-architecture.png)
 
-Data flows left to right: one list of selections gets enriched at each stage (scraper adds “where to click,” probabilities add probability, value adds EV and filters), and the probability file is a side input used only in the matching step.
+Data flows top to bottom: one list of selections gets enriched at each stage (scraper adds “where to click,” probabilities add probability, value adds EV and filters), and the probability file is a side input used only in the matching step.
 
 
 ## Technical Choices
@@ -73,4 +73,4 @@ Things that can go wrong: the site changes and the “where to find things” ru
 
 I’m happy with the pipeline as it is: one clear data structure, explicit math, and a fallback that doesn’t require a model. If I extend it, the next pieces would be Kelly (or fractional Kelly) stake sizing once I’m willing to model parlay dependence; reading balance from the UI to support “percent of balance” stakes; and maybe tipster or odds-API adapters that write the same file so the pipeline stays unchanged. I could also add a minimal end-to-end run or a recorded session to catch rule breakage earlier. For now it does what I built it for, login, scrape, score, build one parlay, place bet, and the rest is optional.
 
-> The "SportsBook" mentioned above is Sportybet. And the use of this tool violates their Terms of Service, therefore, I will not make the code publicly available. This tool does not guarantee winnings, I built it for personal education, experimentation with value-betting concepts, and to automate a repetitive workflow when I already have a process; it is not a profit guarantee. 
+> The "SportsBook" mentioned above is Sportybet. And the use of this tool violates their Terms of Service, therefore, I will not make the code publicly available. This tool also does not guarantee winnings, I built it for personal education, experimentation with value-betting concepts, and to automate a repetitive workflow when I already have a process; it is not a profit guarantee. 
