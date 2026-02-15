@@ -7,20 +7,20 @@ image: "/parlay-cover.png"
 ---
 I built a tool that logs into my sportsbook, scrapes the available matches, scores selections by expected value, and places a single parlay, either from value picks when I have probabilities, or from a simple “favorites” rule when I don’t.
 
-Placing a parlay by hand is repetitive. You log in, browse events, compare odds to whatever you think the true chances are, pick legs, open the slip, set the stake, place. Doing that in a disciplined way, only when your edge is positive, is even more tedious. I wanted the full loop automated: one run (or a scheduled job) that discovers events, scores them, builds one parlay, and places it. No manual steps after the first setup.
+Placing a parlay by hand is repetitive. I log in, browse events, compare odds to whatever I think the true chances are, pick legs, open the slip, set the stake, place. Doing that in a disciplined way, only when my edge is positive, is even more tedious. I wanted the full loop automated: one run that discovers events, scores them, builds one parlay, and places it. No manual work after the first setup.
 
-I also wanted it to work even when I don’t have a probability model; that is, my own estimates of the true chance of each outcome (e.g. 45% home win, 30% draw, 25% away), whether from stats, a tipster, or my own analysis. So the design had to support two modes: value betting when I feed in those probabilities from a file, and a fallback that still runs end-to-end by auto-picking legs, one “favorite” per event, so the pipeline never just dies with “no data.” That constraint shaped a lot of the architecture.
+I also wanted it to work even when I don’t have a probability model; that is, my own estimates of the true chance of each outcome (e.g. 45% home win, 30% draw, 25% away), whether from stats, a tipster, or my own analysis. So the design had to support two modes: value betting when I feed in those probabilities from a file, and a fallback that still runs end-to-end by auto-picking legs, one “favorite” per event, so the pipeline never just dies with no data. That constraint shaped a lot of the architecture.
 
 
-The system is a straight pipeline. Config and credentials load first, then we log in, then we scrape events and odds, then we match those to a probability file (if it exists), then we filter by expected value and build one parlay, and finally we place it via the live site. Each stage consumes the output of the previous one. The only thing that flows through the whole pipe is a list of *selections*: one kind of record that starts as “event + market + outcome + odds” and gets enriched as it goes, the scraper adds enough info to find the same odds on the page later, the probability layer attaches a probability, the value layer attaches an EV. One structure, no duplication. That made reasoning about the pipeline simple: at any stage you’re just transforming a list of selections.
+The system is a straight pipeline. Config and credentials load first, then we log in, then we scrape events and odds, then we match those to a probability file, then we filter by expected value and build one parlay, and finally we place it via the live site. Each stage consumes the output of the previous one. The only thing that flows through the whole pipe is a list of *selections*: one kind of record that starts as “event + market + outcome + odds” and gets enriched as it goes, the scraper adds enough info to find the same odds on the page later, the probability layer attaches a probability, the value layer attaches an EV. That made reasoning about the pipeline simple: at any stage you’re just transforming a list of selections.
 
-I kept all the browser and file I/O in three places, auth, scraper, bet slip, and left the probability matching, EV calculation, and parlay building as pure logic over that list. So the “brain” of the system doesn’t depend on a live site or a real file; you can test the math and the selection logic with sample data.
+I kept all the browser and file I/O in three places, auth, scraper, bet slip, and left the probability matching, EV calculation, and parlay building as pure logic over that list. So the brain of the system doesn’t depend on a live site or a real file; I can test the math and the selection logic with sample data.
 
 Here’s the pipeline as a diagram:
 
 ![architecture](/parlay-architecture.png)
 
-Data flows top to bottom: one list of selections gets enriched at each stage (scraper adds “where to click,” probabilities add probability, value adds EV and filters), and the probability file is a side input used only in the matching step.
+Data flows top to bottom: one list of selections gets enriched at each stage, and the probability file is a side input used only in the matching step.
 
 
 ## Technical Choices
