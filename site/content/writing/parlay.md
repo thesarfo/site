@@ -23,13 +23,6 @@ Here’s the pipeline as a diagram:
 Data flows top to bottom: one list of selections gets enriched at each stage, and the probability file is a side input used only in the matching step.
 
 
-<!-- ## Technical Choices
-
-I used a browser-automation library. The whole pipeline runs in one flow from start to finish so I didn’t have to worry about mixing sync and async or which thread the browser lived on.
-
-Config is split: one file for behavior (thresholds, paths, delays, max legs) and one for secrets (phone, password, base URL). No secrets in the repo; the app loads both and merges. Probabilities come from a file rather than an API. I did that on purpose: the file is easy to version, inspect, and generate from a spreadsheet or another script, and it keeps the core logic free of network calls. If I ever plug in a tipster feed or an odds API, it can write the same file (or a small adapter can), and the pipeline doesn’t need to change. -->
-
-
 ## Technical Choices
 
 Value betting here is just one formula. For a single selection, expected value (per unit staked) is:
