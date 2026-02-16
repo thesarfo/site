@@ -23,14 +23,14 @@ Here’s the pipeline as a diagram:
 Data flows top to bottom: one list of selections gets enriched at each stage, and the probability file is a side input used only in the matching step.
 
 
-## Technical Choices
+<!-- ## Technical Choices
 
 I used a browser-automation library. The whole pipeline runs in one flow from start to finish so I didn’t have to worry about mixing sync and async or which thread the browser lived on.
 
-Config is split: one file for behavior (thresholds, paths, delays, max legs) and one for secrets (phone, password, base URL). No secrets in the repo; the app loads both and merges. Probabilities come from a file rather than an API. I did that on purpose: the file is easy to version, inspect, and generate from a spreadsheet or another script, and it keeps the core logic free of network calls. If I ever plug in a tipster feed or an odds API, it can write the same file (or a small adapter can), and the pipeline doesn’t need to change.
+Config is split: one file for behavior (thresholds, paths, delays, max legs) and one for secrets (phone, password, base URL). No secrets in the repo; the app loads both and merges. Probabilities come from a file rather than an API. I did that on purpose: the file is easy to version, inspect, and generate from a spreadsheet or another script, and it keeps the core logic free of network calls. If I ever plug in a tipster feed or an odds API, it can write the same file (or a small adapter can), and the pipeline doesn’t need to change. -->
 
 
-## The Math
+## Technical Choices
 
 Value betting here is just one formula. For a single selection, expected value (per unit staked) is:
 
@@ -51,14 +51,12 @@ When there’s no probability file or no positive-EV selections, the fallback is
 
 **One parlay per run.** Each run produces at most one parlay and one “place bet.” That keeps the mental model simple: no tracking multiple slips or combinations, and exit codes map cleanly to “did we place or not.” The downside is that when there are many value legs we only use a subset (top by EV, one per event, capped). If I ever need multiple parlays or more single bets, I’d treat that as a separate design, different filters or multiple runs rather than overloading this pipeline.
 
-**Centralized page structure.** All the rules for “where to find things on the page” live in one place: login inputs, event rows, odds buttons, slip, stake field, place bet. When the site changes, I only touch that file; the rest of the code doesn’t care about the exact rules. The cost is that nothing automatically tells you when a rule breaks, you find out when you run it (or when you add a small end-to-end check). I’m okay with that for a personal tool; for something shared I’d add a minimal smoke run or a recorded session to catch breakage earlier.
+**Probability source as a file.** As described earlier, this is just easy to test, and any upstream (whether from stats or a tipster) can emit the same format. The only downside is staleness if the file isn’t refreshed before a run, which is fine for a scheduled job that generates the file first or for manual runs where you control when the file is updated.
 
-**Probability source as a file.** I already said why I like it: no network in the core, easy to test, and any upstream (spreadsheet, model, tipster) can emit the same format. The only downside is staleness if the file isn’t refreshed before a run, which is fine for a scheduled job that generates the file first or for manual runs where you control when the file is updated.
-
-**Scraper strategy.** I prefer scraping the events listing (e.g. football) where each row has multiple odds (1X2, etc.). For each row we parse teams, league, and odds and store a bit of “where to click” (row index, odds index) so the bet slip can click the same elements later. Only when the listing doesn’t give enough do we open event detail. That keeps runs fast when the listing is enough, but it ties us to the current layout; if the site restructures, we might need to lean more on detail-page scraping. So far the flexible rules and fallbacks have been enough.
+**Scraper strategy.** I prefer scraping the events listing (e.g. football) where each row has multiple odds (1X2, etc.). For each row I parse teams, league, and odds and store a bit of “where to click” (row index, odds index) so the bet slip can click the same elements later. Only when the listing doesn’t give enough do I open event detail. That keeps runs fast when the listing is enough, but it ties me to the current layout; if the site restructures, I might need to lean more on detail-page scraping. So far the flexible rules and fallbacks have been enough.
 
 
-**Matching probabilities to selections.** I normalize team names, league, market, and selection (lowercase, collapse spaces) and build a composite key. We try full key first, then without league, then a linear scan for same teams + market. That tolerates small spelling and formatting differences. The risk is ambiguous matches (e.g. same team name in two leagues); for a single book and consistent naming it’s been fine. If I ever aggregate multiple sources I’d tighten that (e.g. league or competition ID in the key).
+**Matching probabilities to selections.** I normalize team names, league, market, and selection (lowercase, collapse spaces) and build a composite key. We try full key first, then without league, then a linear scan for same teams and the market. That tolerates small spelling and formatting differences. The risk here is ambiguous matches (e.g. same team name in two leagues); for a single book and consistent naming it’s been fine. If I ever aggregate multiple sources I’d tighten that (e.g. I could add the league or competition ID in the key).
 
 
 The only first-class entity in the pipeline is a *selection*: event id, event name, home/away team, league, market, selection name, odds, and then optional fields that get filled in as it moves, probability (from the file), EV (from the value step), and “where to click” (from the scraper so the bet slip knows what to click). The scraper fills the base fields and “where to click”; the probability layer attaches probability by matching on teams and market; the value layer computes EV and filters; the parlay step takes the filtered list and picks up to N legs (one per event); the bet slip uses “where to click” and stake to drive the browser. No extra data shapes or mappers, just one structure getting richer at each stage.
