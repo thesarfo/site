@@ -8,7 +8,7 @@ I recently sat down with the paper [The Google File System](https://pdos.csail.m
 
 At first glance, reading old data sounds like a system failure. However, as the authors explain, GFS intentionally uses a *relaxed consistency model* to achieve massive aggregate performance. To understand how a client ends up with stale data, we have to look at the intersection of *metadata caching* and *chunk versioning*.
 
-To understand the "how," we first need to understand the "where." In GFS, the master server is the brain, but it is not the brawn. It handles metadata, mapping files to 64MB chunks, but it never touches the actual data. 
+In GFS, the master server is the brain, but it is not the brawn. It handles metadata, mapping files to 64MB chunks, but it never touches the actual data. 
 
 When a client wants to read a file, it asks the master for the locations of the chunk replicas. To prevent the master from becoming a bottleneck, the client caches this location information. This is a critical design choice: as long as that cache is valid, the client will talk directly to chunkservers for subsequent reads without ever checking back with the master.
 
