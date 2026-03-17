@@ -86,7 +86,7 @@ A 60% return sounds incredible. But if you lost 45% of your money at the low poi
 
 After every run, the tool automatically opens a visual dashboard in your browser. One that looks like this
 
-![Dashboard](../../../public/backtester.png)
+![Dashboard](/backtester.png)
 
 The dashboard shows equity curves for all four strategies plotted on the same chart, so you can see exactly where each one pulled ahead or fell behind. A comparison table with every metric side by side. A return vs. drawdown bar chart that makes the risk/reward trade-off immediately visual. And a trade log showing every entry and exit from your best-performing strategy.
 
