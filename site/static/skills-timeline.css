@@ -1,0 +1,576 @@
+/* ============================================
+   SKILLS TIMELINE
+   Drop-in component for personal websites.
+   Depends on: skills-timeline.js + data/skills.json
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap');
+
+/* ── CSS Variables (override in your own :root if needed) ── */
+:root {
+  --st-accent:        #1D9E75;
+  --st-accent-light:  #E1F5EE;
+  --st-accent-dark:   #0F6E56;
+  --st-warn:          #FAEEDA;
+  --st-warn-text:     #633806;
+  --st-font-display:  'DM Serif Display', Georgia, serif;
+  --st-font-body:     'DM Sans', system-ui, sans-serif;
+  --st-radius:        12px;
+  --st-radius-sm:     8px;
+  --st-radius-pill:   99px;
+  --st-transition:    0.2s ease;
+}
+
+/* ── Wrapper (light mode: strong contrast on white) ── */
+.st-root {
+  font-family: var(--st-font-body);
+  color: #1a1a18;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
+/* ── Page header ── */
+.st-page-header {
+  margin-bottom: 3rem;
+}
+
+.st-page-title {
+  font-family: var(--st-font-display);
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 0 0 0.5rem;
+  color: #0d0d0c;
+}
+
+.st-page-subtitle {
+  font-size: 0.9rem;
+  color: #3d3d3a;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* ── Skill tabs ── */
+.st-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 2.5rem;
+}
+
+.st-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: var(--st-radius-pill);
+  border: 0.5px solid #a8a6a0;
+  background: transparent;
+  font-family: var(--st-font-body);
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #3d3d3a;
+  cursor: pointer;
+  transition: border-color var(--st-transition), color var(--st-transition), background var(--st-transition);
+}
+
+.st-tab:hover {
+  border-color: var(--st-accent);
+  color: var(--st-accent-dark);
+}
+
+.st-tab.active {
+  border-color: var(--st-accent);
+  background: var(--st-accent-light);
+  color: var(--st-accent-dark);
+  font-weight: 500;
+}
+
+/* ── Skill panel ── */
+.st-panel { display: none; }
+.st-panel.active { display: block; }
+
+/* ── Skill header ── */
+.st-skill-header {
+  margin-bottom: 1.75rem;
+}
+
+.st-skill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #3d3d3a;
+  border: 0.5px solid #a8a6a0;
+  border-radius: var(--st-radius-pill);
+  padding: 4px 12px;
+  margin-bottom: 0.9rem;
+}
+
+.st-status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--st-accent);
+}
+
+.st-skill-title {
+  font-family: var(--st-font-display);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #0d0d0c;
+  margin: 0 0 0.35rem;
+}
+
+.st-skill-title em {
+  font-style: italic;
+  color: var(--st-accent);
+}
+
+.st-skill-meta {
+  font-size: 0.85rem;
+  color: #3d3d3a;
+  font-weight: 400;
+}
+
+/* ── Progress bar ── */
+.st-progress-wrap {
+  margin: 1.25rem 0 2.25rem;
+}
+
+.st-progress-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #3d3d3a;
+  margin-bottom: 6px;
+}
+
+.st-progress-track {
+  height: 3px;
+  background: #b4b2a9;
+  border-radius: var(--st-radius-pill);
+  overflow: hidden;
+}
+
+.st-progress-fill {
+  height: 100%;
+  background: var(--st-accent);
+  border-radius: var(--st-radius-pill);
+  transition: width 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 0%;
+}
+
+/* ── Timeline ── */
+.st-timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+.st-timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 12px;
+  bottom: 12px;
+  width: 1px;
+  background: #b4b2a9;
+}
+
+/* ── Milestone ── */
+.st-milestone {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.st-dot {
+  position: absolute;
+  left: -30px;
+  top: 13px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1.5px solid #a8a6a0;
+  background: #fff;
+  transition: all var(--st-transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.st-dot::after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: transparent;
+  transition: background var(--st-transition);
+}
+
+/* Done */
+.st-milestone[data-status="done"] .st-dot {
+  border-color: var(--st-accent);
+  background: var(--st-accent-light);
+}
+.st-milestone[data-status="done"] .st-dot::after {
+  background: var(--st-accent);
+}
+
+/* Now (current) */
+.st-milestone[data-status="now"] .st-dot {
+  border-color: var(--st-accent);
+  background: var(--st-accent);
+  box-shadow: 0 0 0 4px var(--st-accent-light);
+}
+.st-milestone[data-status="now"] .st-dot::after {
+  background: #fff;
+}
+
+/* Upcoming / Goal */
+.st-milestone[data-status="upcoming"] .st-dot,
+.st-milestone[data-status="goal"] .st-dot {
+  border-color: #a8a6a0;
+  opacity: 0.8;
+}
+
+/* ── Milestone card ── */
+.st-card {
+  padding: 1rem 1.15rem;
+  border: 0.5px solid #a8a6a0;
+  border-radius: var(--st-radius);
+  background: #fff;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: border-color var(--st-transition), transform var(--st-transition);
+  transform-origin: left center;
+  user-select: none;
+}
+
+.st-milestone[data-status="upcoming"] .st-card,
+.st-milestone[data-status="goal"] .st-card {
+  opacity: 0.65;
+}
+
+.st-card:hover {
+  border-color: #5f5e5a;
+  transform: translateX(2px);
+}
+
+.st-card.open {
+  border-color: var(--st-accent) !important;
+  transform: translateX(2px);
+}
+
+.st-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.st-card-left { flex: 1; min-width: 0; }
+
+.st-card-date {
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #3d3d3a;
+  font-weight: 400;
+  margin-bottom: 3px;
+}
+
+.st-card-title {
+  font-size: 0.925rem;
+  font-weight: 500;
+  color: #0d0d0c;
+  line-height: 1.35;
+}
+
+.st-card-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  padding-top: 2px;
+}
+
+/* ── Status badges ── */
+.st-badge {
+  font-size: 0.68rem;
+  padding: 3px 9px;
+  border-radius: var(--st-radius-pill);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.st-badge-done     { background: var(--st-accent-light); color: var(--st-accent-dark); }
+.st-badge-now      { background: var(--st-warn);         color: var(--st-warn-text); }
+.st-badge-upcoming { background: #e8e6e0; color: #3d3d3a; border: 0.5px solid #a8a6a0; }
+.st-badge-goal     { background: #e8e6e0; color: #3d3d3a; border: 0.5px solid #a8a6a0; }
+
+/* ── Chevron ── */
+.st-chevron {
+  font-size: 9px;
+  color: #5f5e5a;
+  transition: transform var(--st-transition);
+  flex-shrink: 0;
+}
+
+.st-card.open .st-chevron {
+  transform: rotate(180deg);
+}
+
+/* ── Expandable detail ── */
+.st-detail {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.32s ease, opacity 0.22s ease;
+}
+
+.st-detail.open {
+  max-height: 600px;
+  opacity: 1;
+}
+
+.st-detail-inner {
+  padding-top: 11px;
+  margin-top: 11px;
+  border-top: 0.5px solid #d3d1c7;
+  font-size: 0.84rem;
+  color: #3d3d3a;
+  line-height: 1.65;
+}
+
+.st-reflection {
+  font-style: italic;
+  font-size: 0.82rem;
+  color: #3d3d3a;
+  margin-top: 8px;
+  padding-left: 10px;
+  border-left: 2px solid var(--st-accent);
+}
+
+/* ── Add milestone button ── */
+.st-add-wrap {
+  position: relative;
+  padding-left: 0;
+}
+
+/* hide the vertical line segment next to the add button */
+.st-add-wrap::before {
+  content: none;
+}
+
+.st-add-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 0.85rem 1.15rem;
+  border: 0.5px dashed #b4b2a9;
+  border-radius: var(--st-radius);
+  background: transparent;
+  font-family: var(--st-font-body);
+  font-size: 0.875rem;
+  color: #73726c;
+  cursor: pointer;
+  text-align: left;
+  transition: border-color var(--st-transition), color var(--st-transition), background var(--st-transition);
+}
+
+.st-add-btn:hover {
+  border-color: var(--st-accent);
+  color: var(--st-accent-dark);
+  background: #f5fbf8;
+}
+
+.st-add-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid currentColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+/* ── Add milestone modal ── */
+.st-modal-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(26, 26, 24, 0.45);
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.st-modal-backdrop.open {
+  display: flex;
+}
+
+.st-modal {
+  background: #fff;
+  border-radius: var(--st-radius);
+  padding: 1.75rem;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.12);
+}
+
+.st-modal-title {
+  font-family: var(--st-font-display);
+  font-size: 1.35rem;
+  font-weight: 400;
+  margin: 0 0 1.25rem;
+  color: #1a1a18;
+}
+
+.st-field {
+  margin-bottom: 1rem;
+}
+
+.st-label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #73726c;
+  margin-bottom: 5px;
+}
+
+.st-input,
+.st-textarea,
+.st-select {
+  width: 100%;
+  padding: 9px 12px;
+  border: 0.5px solid #d3d1c7;
+  border-radius: var(--st-radius-sm);
+  font-family: var(--st-font-body);
+  font-size: 0.875rem;
+  color: #1a1a18;
+  background: #fff;
+  outline: none;
+  transition: border-color var(--st-transition);
+  box-sizing: border-box;
+}
+
+.st-input:focus,
+.st-textarea:focus,
+.st-select:focus {
+  border-color: var(--st-accent);
+  box-shadow: 0 0 0 3px var(--st-accent-light);
+}
+
+.st-textarea {
+  resize: vertical;
+  min-height: 80px;
+  line-height: 1.5;
+}
+
+.st-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 1.5rem;
+}
+
+.st-btn {
+  padding: 9px 20px;
+  border-radius: var(--st-radius-sm);
+  font-family: var(--st-font-body);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--st-transition);
+  border: none;
+}
+
+.st-btn-ghost {
+  background: transparent;
+  border: 0.5px solid #d3d1c7;
+  color: #5f5e5a;
+}
+
+.st-btn-ghost:hover {
+  border-color: #888780;
+  color: #1a1a18;
+}
+
+.st-btn-primary {
+  background: var(--st-accent);
+  color: #fff;
+}
+
+.st-btn-primary:hover {
+  background: var(--st-accent-dark);
+}
+
+/* ── Footer note ── */
+.st-footer {
+  margin-top: 1.75rem;
+  font-size: 0.75rem;
+  color: #3d3d3a;
+  text-align: center;
+}
+
+/* ── Dark mode (follows site theme: .dark on html from next-themes) ── */
+.dark .st-root             { color: #e2e0d6; }
+.dark .st-page-title,
+.dark .st-skill-title      { color: #e2e0d6; }
+.dark .st-page-subtitle,
+.dark .st-skill-meta,
+.dark .st-card-date,
+.dark .st-footer           { color: #73726c; }
+.dark .st-card-title       { color: #d3d1c7; }
+.dark .st-detail-inner     { color: #888780; }
+.dark .st-reflection       { color: #73726c; }
+.dark .st-progress-track   { background: #444441; }
+.dark .st-timeline::before { background: #444441; }
+.dark .st-card             { background: #2c2c2a; border-color: #444441; }
+.dark .st-card:hover       { border-color: #5f5e5a; }
+.dark .st-card.open        { border-color: var(--st-accent) !important; }
+.dark .st-detail-inner     { border-top-color: #444441; }
+.dark .st-dot              { background: #2c2c2a; border-color: #444441; }
+.dark .st-milestone[data-status="done"] .st-dot    { background: #085041; }
+.dark .st-milestone[data-status="now"]  .st-dot    { background: var(--st-accent); }
+.dark .st-tab              { border-color: #444441; color: #888780; }
+.dark .st-tab.active       { background: #085041; border-color: var(--st-accent); color: var(--st-accent-light); }
+.dark .st-skill-badge      { border-color: #444441; color: #73726c; }
+.dark .st-badge-done       { background: #085041; color: #9fe1cb; }
+.dark .st-badge-upcoming,
+.dark .st-badge-goal       { background: #2c2c2a; color: #73726c; border-color: #444441; }
+.dark .st-add-btn          { color: #73726c; border-color: #444441; }
+.dark .st-add-btn:hover    { background: #1a2d27; border-color: var(--st-accent); color: var(--st-accent-light); }
+.dark .st-modal            { background: #2c2c2a; }
+.dark .st-modal-title      { color: #e2e0d6; }
+.dark .st-input,
+.dark .st-textarea,
+.dark .st-select           { background: #1a1a18; border-color: #444441; color: #d3d1c7; }
+.dark .st-label            { color: #888780; }
+.dark .st-btn-ghost        { border-color: #444441; color: #888780; }
+.dark .st-btn-ghost:hover  { border-color: #888780; color: #d3d1c7; }
+.dark .st-modal-backdrop   { background: rgba(0,0,0,0.65); }
+.dark .st-milestone[data-status="upcoming"] .st-card,
+.dark .st-milestone[data-status="goal"] .st-card { opacity: 0.5; }
+
+/* ── Responsive ── */
+@media (max-width: 500px) {
+  .st-root         { padding: 2rem 1rem 3rem; }
+  .st-page-title,
+  .st-skill-title  { font-size: 1.65rem; }
+  .st-card-title   { font-size: 0.875rem; }
+  /* Let expanded detail use most of the viewport so reflections aren't cut off */
+  .st-detail.open  { max-height: 85vh; }
+}

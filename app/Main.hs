@@ -11,6 +11,7 @@ import Site.Types
 import Site.Pages.Home (home)
 import Site.Pages.Writing (postPage, writingIndex)
 import Site.Pages.Papers (paperPage, papersPage)
+import Site.Pages.Skills (skillsPage)
 import Site.Pages.Now (nowPage)
 import Site.Pages.Lens (lensPage)
 import Site.Pages.Other (otherPage)
@@ -83,6 +84,8 @@ rules showDrafts = do
 
   -- Papers: three to a page, and one page per paper.
   papersRules
+
+  create ["skills/index.html"] $ staticPage skillsPage
 
   create ["now/index.html"] $ staticPage nowPage
 

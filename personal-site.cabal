@@ -15,6 +15,7 @@ executable site
                       Site.Pages.Home
                       Site.Pages.Writing
                       Site.Pages.Papers
+                      Site.Pages.Skills
                       Site.Pages.Now
                       Site.Pages.Lens
                       Site.Pages.Other

@@ -1,0 +1,96 @@
+[
+  {
+    "id": "projects",
+    "skill": "Projects",
+    "emoji": "",
+    "started": "Feb 2026",
+    "goal": "Reusable tools with evidence",
+    "progress": 70,
+    "status": "active",
+    "milestones": [
+      {
+        "id": "m2",
+        "date": "Mar 17, 2026",
+        "title": "Backtester",
+        "status": "done",
+        "description": "Built a backtesting tool that fetches historical prices, runs four strategies in parallel (trend follower, contrarian RSI, adaptive range trader, and buy-and-hold baseline), and renders a dashboard with equity curves, side-by-side metrics (return, max drawdown, Sharpe, win rate, profit factor), and a trade log. Focus: using max drawdown to force honest risk assessment.",
+        "reflection": "Seeing equity curves side-by-side made it obvious which strategies win because of conditions vs. luck."
+      },
+      {
+        "id": "m1",
+        "date": "Feb 14, 2026",
+        "title": "Value-betting parlay automator",
+        "status": "done",
+        "description": "Built an end-to-end pipeline that loads config + credentials, logs in, scrapes events and odds, matches selections to a probability file, computes EV (EV = p·odds − 1), filters positive-EV picks, and places one parlay per run. Includes a fallback mode that still runs end-to-end by choosing a \"favorite\" per event when no probability model is available.",
+        "reflection": "Keeping the system as pure transformations over one selection shape made the logic testable and easy to reason about."
+      }
+    ]
+  },
+  {
+    "id": "health",
+    "skill": "Health",
+    "emoji": "",
+    "started": "Jan 2026",
+    "goal": "Consistent movement, runs + gym",
+    "progress": 80,
+    "status": "active",
+    "milestones": [
+      {
+        "id": "m7",
+        "date": "Mar 7, 2026",
+        "title": "Ran 5.02km",
+        "status": "done",
+        "description": "5.02km in 24:17.",
+        "reflection": ""
+      },
+      {
+        "id": "m6",
+        "date": "Mar 2, 2026",
+        "title": "Ran 2.01km",
+        "status": "done",
+        "description": "2.01km in 9:11.",
+        "reflection": ""
+      },
+      {
+        "id": "m5",
+        "date": "Feb 28, 2026",
+        "title": "Ran 7.56km",
+        "status": "done",
+        "description": "7.56km in 43:26.",
+        "reflection": ""
+      },
+      {
+        "id": "m4",
+        "date": "Feb 27, 2026",
+        "title": "Ran 3.56km",
+        "status": "done",
+        "description": "3.56km in 19:09.",
+        "reflection": ""
+      },
+      {
+        "id": "m3",
+        "date": "Feb 26, 2026",
+        "title": "Ran 5.06km",
+        "status": "done",
+        "description": "5.06km in 23:35.",
+        "reflection": ""
+      },
+      {
+        "id": "m2",
+        "date": "Feb 23, 2026",
+        "title": "Ran 4.06km",
+        "status": "done",
+        "description": "4.06km in 22:44.",
+        "reflection": ""
+      },
+      {
+        "id": "m1",
+        "date": "Jan 29, 2026",
+        "title": "One Punch Man set",
+        "status": "done",
+        "description": "100 pushups, 100 situps, 100 squats.",
+        "reflection": ""
+      }
+    ]
+  }
+]
