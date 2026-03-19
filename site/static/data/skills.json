@@ -9,7 +9,7 @@
     "status": "active",
     "milestones": [
       {
-        "id": "m2",
+        "id": "m3",
         "date": "Mar 17, 2026",
         "title": "Backtester",
         "status": "done",
@@ -17,12 +17,20 @@
         "reflection": "Seeing equity curves side-by-side made it obvious which strategies win because of conditions vs. luck."
       },
       {
-        "id": "m1",
+        "id": "m2",
         "date": "Feb 14, 2026",
         "title": "Value-betting parlay automator",
         "status": "done",
         "description": "Built an end-to-end pipeline that loads config + credentials, logs in, scrapes events and odds, matches selections to a probability file, computes EV (EV = p·odds − 1), filters positive-EV picks, and places one parlay per run. Includes a fallback mode that still runs end-to-end by choosing a \"favorite\" per event when no probability model is available.",
         "reflection": "Keeping the system as pure transformations over one selection shape made the logic testable and easy to reason about."
+      },
+      {
+        "id": "m1",
+        "date": "Oct 15, 2025",
+        "title": "MapReduce",
+        "status": "done",
+        "description": "Built a MapReduce-style word count system from a clean sequential pipeline to a parallel and then distributed master–worker architecture, with real-world sized text and instrumentation to see where parallelism actually helps vs. hurts.",
+        "reflection": "The Google MapReduce paper stopped being abstract once I had to design input splitting, partitioning, RPC endpoints, heartbeats, and deal with the overhead that made naive parallel versions slower than the single-threaded baseline."
       }
     ]
   },
