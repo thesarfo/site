@@ -61,7 +61,7 @@ The width of the band automatically adjusts to the market's volatility. In calm 
 
 ### Strategy 4: Buy and Hold (The Baseline)
 
-This one does exactly what it sounds like. Buy on day one, hold forever, never sell. No signals, no timing, no cleverness.
+This one does exactly what it sounds like. Buy on day one, hold forever, never sell. 
 
 I included this because its the baseline every other strategy has to beat. If your fancy strategy returned 30% but Apple stock returned 55% over the same period, you underperformed by doing more work. That's important to know.
 
