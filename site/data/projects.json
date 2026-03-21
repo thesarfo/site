@@ -1,0 +1,26 @@
+[
+  {
+    "name": "backtester",
+    "description": "Multi-market trading strategy backtester for crypto & stocks.",
+    "language": "Go",
+    "href": "https://github.com/thesarfo/backtester"
+  },
+  {
+    "name": "mapreduce",
+    "description": "MapReduce implementation for distributed data processing.",
+    "language": "C#",
+    "href": "https://github.com/thesarfo/mapreduce"
+  },
+  {
+    "name": "bgen",
+    "description": "Static blog site generator that converts Markdown files to HTML.",
+    "language": "Haskell",
+    "href": "https://github.com/thesarfo/bgen"
+  },
+  {
+    "name": "crossdial",
+    "description": "A lightweight library for validating and formatting international phone numbers.",
+    "language": "Java",
+    "href": "https://github.com/thesarfo/crossdial"
+  }
+]

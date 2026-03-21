@@ -10,6 +10,7 @@ import Site.Markdown
 import Site.Types
 import Site.Pages.Home (home)
 import Site.Pages.Writing (postPage, writingIndex)
+import Site.Pages.Projects (projectsPage)
 import Site.Pages.Papers (paperPage, papersPage)
 import Site.Pages.Skills (skillsPage)
 import Site.Pages.Now (nowPage)
@@ -81,6 +82,10 @@ rules showDrafts = do
       papers <- loadData "data/papers.json"
       quotes <- loadData "data/quotes.json"
       html (home entries projects papers quotes)
+
+  create ["projects/index.html"] $ do
+    route idRoute
+    compile $ loadData "data/projects.json" >>= html . projectsPage
 
   -- Papers: three to a page, and one page per paper.
   papersRules
