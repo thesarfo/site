@@ -6,11 +6,6 @@
     "year": 2010,
     "summary": "VMware FT is a commercial enterprise-grade system that provides fault-tolerant virtual machines using a primary/backup approach. The system leverages deterministic replay technology, where the hypervisor captures non-deterministic events and inputs, sending them to a backup VM via a logging channel. The backup replays execution in virtual lock-step with the primary, ensuring identical state. The system achieves less than 10% performance overhead and requires less than 20 Mbit/s logging bandwidth, making it practical for production use.",
     "interesting": "The deterministic replay approach is elegantinstead of continuously shipping memory updates (which would require massive bandwidth), VMware FT only logs non-deterministic events. The Output Rule is particularly clever: outputs are delayed until the backup acknowledges the log entry, ensuring consistency if failover occurs. What struck me is how they explicitly chose to delay only the output send, not the entire primary execution, which keeps performance overhead minimal. The system's automationauto-restoring redundancy after failureshows thoughtful engineering for real-world operations.",
-    "tags": [
-      "distributed-systems",
-      "fault-tolerance",
-      "virtualization"
-    ],
     "link": "https://www.cs.princeton.edu/courses/archive/fall16/cos418/papers/scales-vm.pdf"
   },
   {
@@ -20,11 +15,6 @@
     "year": 2004,
     "summary": "MapReduce is a programming model and implementation for processing large datasets across clusters of commodity machines. Users express computations using Map and Reduce functions, while the system automatically handles parallelization, fault tolerance, data distribution, and load balancing. The implementation uses a master-worker architecture where the master assigns Map and Reduce tasks, workers execute them, and intermediate data is shuffled and sorted between phases. The system achieved remarkable scale: processing 3,288 TB of data across nearly 30,000 jobs in August 2004.",
     "interesting": "The simplicity is deceptiveby restricting the programming model to just Map and Reduce, they enabled automatic parallelization and fault tolerance. The backup tasks mechanism for stragglers is brilliant: when a job is nearly done, they schedule redundant executions of remaining tasks and take whichever finishes first. This single optimization improved sort benchmark time by 44%. What's striking is how they designed for failure as the common casecompleted Map tasks are re-executed on worker failure because output is on local disk, but completed Reduce tasks don't need re-execution because output is in the distributed file system. The atomic rename pattern for output commits is elegant, ensuring exactly-once semantics.",
-    "tags": [
-      "distributed-systems",
-      "big-data",
-      "parallel-computing"
-    ],
     "link": "https://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf"
   },
   {
@@ -33,11 +23,7 @@
     "authors": "Diego Ongaro, John Ousterhout",
     "year": 2014,
     "summary": "Raft is a consensus algorithm designed to be more understandable than Paxos. It separates leader election, log replication, and safety into distinct subproblems, making the algorithm easier to reason about and implement correctly.",
-    "interesting": "The authors explicitly optimized for understandability over theoretical elegance. They ran user studies comparing Raft to Paxos and found students understood Raft significantly better. This is a rare example of a systems paper that treats 'ease of understanding' as a first-class design goal.",
-    "tags": [
-      "distributed-systems",
-      "consensus"
-    ]
+    "interesting": "The authors explicitly optimized for understandability over theoretical elegance. They ran user studies comparing Raft to Paxos and found students understood Raft significantly better. This is a rare example of a systems paper that treats 'ease of understanding' as a first-class design goal."
   },
   {
     "slug": "dynamo-paper",
@@ -45,12 +31,7 @@
     "authors": "Giuseppe DeCandia et al.",
     "year": 2007,
     "summary": "Dynamo is a highly available, eventually consistent key-value store built by Amazon. It uses consistent hashing, vector clocks, and quorum-based replication to achieve high availability even during network partitions.",
-    "interesting": "The paper explicitly chooses availability over consistency (AP in CAP theorem terms). What struck me is how the design decisions flow directly from Amazon's business requirements: even a brief outage during peak shopping means lost revenue. The engineering follows the constraints.",
-    "tags": [
-      "distributed-systems",
-      "scalability",
-      "databases"
-    ]
+    "interesting": "The paper explicitly chooses availability over consistency (AP in CAP theorem terms). What struck me is how the design decisions flow directly from Amazon's business requirements: even a brief outage during peak shopping means lost revenue. The engineering follows the constraints."
   },
   {
     "slug": "google-spanner",
@@ -58,11 +39,6 @@
     "authors": "James C. Corbett et al.",
     "year": 2012,
     "summary": "Spanner is a globally distributed database that provides externally consistent reads and writes at global scale. It uses TrueTime, a globally synchronized clock, to implement lock-free read-only transactions.",
-    "interesting": "The TrueTime API is brilliant. Instead of pretending clocks are perfectly synchronized (they're not), Spanner explicitly models clock uncertainty as an interval. This honest modeling of reality enables a cleaner theoretical foundation for consistency guarantees.",
-    "tags": [
-      "distributed-systems",
-      "databases",
-      "scalability"
-    ]
+    "interesting": "The TrueTime API is brilliant. Instead of pretending clocks are perfectly synchronized (they're not), Spanner explicitly models clock uncertainty as an interval. This honest modeling of reality enables a cleaner theoretical foundation for consistency guarantees."
   }
 ]

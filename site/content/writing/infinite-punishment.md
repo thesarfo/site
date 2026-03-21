@@ -9,7 +9,7 @@ I recently came across a TikTok where someone talked about the idea of *infinite
 
 The argument wasn’t that Hitler wasn’t evil. He absolutely was. The point was simpler: even for someone responsible for unimaginable suffering, is there really no point where punishment has been “enough”? There is a level of punishment, however severe, where even in a case like his, you’re forced to admit that nothing further is being achieved. At some point, you look at the suffering and think: this has gone on long enough.
 
-After centuries, thousands of years even, you’d imagine there’s a moment where the punishment no longer serves any purpose. No justice. No lesson. No balance. Just endless suffering for the sake of it.
+After centuries, thousands of years even, you’d imagine there’s a moment where the punishment no longer serves any purpose. Just endless suffering for the sake of it.
 
 And that’s what got me thinking about [hell](https://en.wikipedia.org/wiki/Hell).
 
