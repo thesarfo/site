@@ -12,6 +12,12 @@
     "href": "https://github.com/thesarfo/mapreduce"
   },
   {
+    "name": "dozer",
+    "description": "A minimal Object Relational Mapper for .NET.",
+    "language": "C#",
+    "href": "https://github.com/thesarfo/dozer"
+  },
+  {
     "name": "bgen",
     "description": "Static blog site generator that converts Markdown files to HTML.",
     "language": "Haskell",
