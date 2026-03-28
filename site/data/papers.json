@@ -1,5 +1,14 @@
 [
   {
+    "slug": "what_every_programmer_should_know_about_memory",
+    "title": "What Every Programmer Should Know About Memory",
+    "authors": "Ulrich Drepper",
+    "year": 2007,
+    "summary": "",
+    "interesting": "Modern performance bottlenecks are dominated by memory latency, not CPU speed. CPU caches help bridge the gap, but they only work well when code is written to exploit spatial and temporal locality. Sequential, predictable memory access allows effective caching and prefetching; random access patterns undermine both and significantly hurt performance. Data layout and access patterns matter as much as algorithmic complexity. Poor structure can lead to cache misses, TLB misses, pipeline stalls, and issues like false sharing in multithreaded code. On modern systems (e.g., NUMA architectures), ignoring memory topology can further degrade performance.",
+    "link": "https://people.freebsd.org/~lstewart/articles/cpumemory.pdf"
+  },
+  {
     "slug": "the_design_of_a_practical_system_for_fault_tolerant_virtual_machines",
     "title": "The Design of a Practical System for Fault-Tolerant Virtual Machines",
     "authors": "T. C. Bressoud, F. B. Schneider",
