@@ -19,15 +19,15 @@ The average human life is maybe 70 or 80 years. Even if someone lived a full cen
 
 So how does it make sense to punish them endlessly?
 
-If justice is supposed to be proportional, then eternity breaks the scale completely. Once punishment becomes infinite, degrees of wrongdoing stop mattering. The worst dictator in history and a petty thief end up in the same category: suffering forever. That doesn’t feel like justice, it feels like a system that gave up on fairness altogether.
+If justice is supposed to be proportional, then eternity breaks the scale completely. Once punishment becomes infinite, degrees of wrongdoing stop mattering. The worst dictator in history and a petty thief end up in the same category: suffering forever. That doesn’t feel like justice.
 
 And this isn’t about excusing evil or minimizing harm. Accountability matters, and actions have consequences. But punishment should *mean something*. It should aim to restore balance, protect others, or at the very least acknowledge proportionality.
 
 Eternal torment does none of that.
 
-It also raises an uncomfortable question about the nature of the being enforcing it. If a system is designed by an all-knowing, all-just, all-merciful entity, why does it resemble the most extreme form of vengeance imaginable? Infinite punishment doesn’t feel like justice, it feels like anger preserved forever.
+It also raises an uncomfortable question about the nature of the being enforcing it. If a system is designed by an all-knowing, all-just, all-merciful entity, why does it resemble the most extreme form of vengeance imaginable? Infinite punishment doesn’t feel like justice.
 
-What makes this even stranger is how casually hell is often discussed. As if eternal suffering is a reasonable response to disbelief, moral failure, or simply being born into the wrong belief system. Billions of people, across history, condemned forever, not because they were monsters, but because they were human.
+What makes this even stranger is how casually hell is often discussed. As if eternal suffering is a reasonable response to disbelief, moral failure, or simply being born into the wrong belief system. Billions of people, across history, condemned forever because they were human.
 
 When you really sit with that, it becomes hard to defend.
 
