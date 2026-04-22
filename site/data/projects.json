@@ -1,5 +1,11 @@
 [
   {
+    "name": "payments-engine",
+    "description": "Financial infrastructure for all kinds of money-moving.",
+    "language": "Go",
+    "href": "https://github.com/thesarfo/payments-engine"
+  },
+  {
     "name": "backtester",
     "description": "Multi-market trading strategy backtester for crypto & stocks.",
     "language": "Go",
