@@ -9,7 +9,7 @@ image: "/hum-result.png"
 
 And so, I wrote [a small service](https://hum.thesarfo.com) that ingests WAV files, generates fingerprints, and identifies songs from microphone recordings.
 
-![Hum identifying Still Dreaming by Nas and Kanye West](/hum-result.png)
+![Hum recording a song](/hum-recording.png)
 
 The obvious approach to matching audio is to compare two recordings point by point. However, this breaks immediately once there's any noise. Room echo, someone talking nearby, etc: any of it shifts the audio to kill the comparison.
 
@@ -103,7 +103,7 @@ if (maxAmp > 1e-6f)
 Laptop microphones recording laptop speakers at moderate volume produce a quiet signal. The threshold needs to be relative to the input, not some fixed reference level.
 
 
-![Hum recording a song](/hum-recording.png)
+![Hum identifying Still Dreaming by Nas and Kanye West](/hum-result.png)
 
 The algorithm works. A laptop mic picking up a laptop speaker from half a meter away with background noise still produces a correct match. The dominant peaks survives and the fingerprint holds: the whole thing even runs in under a second.
 
