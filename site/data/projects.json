@@ -1,5 +1,23 @@
 [
   {
+    "name": "hum",
+    "description": "Audio fingerprinting service based on the Wang 2003 paper.",
+    "language": "C#",
+    "href": "https://github.com/thesarfo/hum"
+  },
+  {
+    "name": "mapreduce",
+    "description": "MapReduce implementation based on Google's 2004 paper.",
+    "language": "C#",
+    "href": "https://github.com/thesarfo/mapreduce"
+  },
+  {
+    "name": "distcache",
+    "description": "Distributed read-through cache engine.",
+    "language": "C#",
+    "href": "https://github.com/thesarfo/distcache"
+  },
+  {
     "name": "payments-engine",
     "description": "Financial infrastructure for all kinds of money-moving.",
     "language": "Go",
@@ -12,22 +30,16 @@
     "href": "https://github.com/thesarfo/backtester"
   },
   {
-    "name": "mapreduce",
-    "description": "MapReduce implementation for distributed data processing.",
-    "language": "C#",
-    "href": "https://github.com/thesarfo/mapreduce"
+    "name": "bgen",
+    "description": "Static blog site generator that converts Markdown files to HTML.",
+    "language": "Haskell",
+    "href": "https://github.com/thesarfo/bgen"
   },
   {
     "name": "dozer",
     "description": "A minimal Object Relational Mapper for .NET.",
     "language": "C#",
     "href": "https://github.com/thesarfo/dozer"
-  },
-  {
-    "name": "bgen",
-    "description": "Static blog site generator that converts Markdown files to HTML.",
-    "language": "Haskell",
-    "href": "https://github.com/thesarfo/bgen"
   },
   {
     "name": "crossdial",
