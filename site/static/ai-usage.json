@@ -1,30 +1,30 @@
 {
-  "generated_at": "2026-06-06T14:43:23.350Z",
+  "generated_at": "2026-06-06T18:35:17.243Z",
   "all_time": {
-    "input_tokens": 6519425,
-    "output_tokens": 111382080,
-    "cache_creation_tokens": 714511710,
-    "cache_read_tokens": 13460596222,
-    "cost_usd": 10007.38,
-    "from_logs_usd": 176.51,
-    "historical_estimate_usd": 9830.87,
+    "input_tokens": 6523873,
+    "output_tokens": 112722075,
+    "cache_creation_tokens": 753010256,
+    "cache_read_tokens": 13749087804,
+    "cost_usd": 10345.03,
+    "from_logs_usd": 182.96,
+    "historical_estimate_usd": 10162.07,
     "sessions": 18
   },
   "last_30_days": {
-    "input_tokens": 124575,
-    "output_tokens": 2128320,
-    "cache_creation_tokens": 13653090,
-    "cache_read_tokens": 257208845,
-    "cost_usd": 246.51,
+    "input_tokens": 124660,
+    "output_tokens": 2153925,
+    "cache_creation_tokens": 14388731,
+    "cache_read_tokens": 262721423,
+    "cost_usd": 252.96,
     "sessions": 18
   },
   "by_model": {
     "claude-sonnet-4-6": {
-      "input_tokens": 93348,
-      "output_tokens": 2055964,
-      "cache_creation_tokens": 11639210,
-      "cache_read_tokens": 240884174,
-      "cost_usd": 171.97,
+      "input_tokens": 93433,
+      "output_tokens": 2081569,
+      "cache_creation_tokens": 12374851,
+      "cache_read_tokens": 246396752,
+      "cost_usd": 178.42,
       "sessions": 18
     },
     "claude-haiku-4-5": {
@@ -156,35 +156,35 @@
     },
     {
       "date": "2026-06-06",
-      "input_tokens": 121717,
-      "output_tokens": 1308727,
-      "cache_creation_tokens": 8056730,
-      "cache_read_tokens": 159127883,
-      "cost_usd": 104.0414,
+      "input_tokens": 121802,
+      "output_tokens": 1334332,
+      "cache_creation_tokens": 8792371,
+      "cache_read_tokens": 164640461,
+      "cost_usd": 110.4934,
       "sessions": 6
     }
   ],
   "opencode": {
     "all_time": {
-      "input_tokens": 1311638,
-      "output_tokens": 145296,
+      "input_tokens": 1441212,
+      "output_tokens": 153029,
       "cache_write_tokens": 0,
-      "cache_read_tokens": 23251072,
+      "cache_read_tokens": 27425920,
       "sessions": 24
     },
     "last_30_days": {
-      "input_tokens": 1311638,
-      "output_tokens": 145296,
+      "input_tokens": 1441212,
+      "output_tokens": 153029,
       "cache_write_tokens": 0,
-      "cache_read_tokens": 23251072,
+      "cache_read_tokens": 27425920,
       "sessions": 24
     },
     "by_model": {
       "opencode/big-pickle": {
-        "input_tokens": 1311638,
-        "output_tokens": 145296,
+        "input_tokens": 1441212,
+        "output_tokens": 153029,
         "cache_write_tokens": 0,
-        "cache_read_tokens": 23251072,
+        "cache_read_tokens": 27425920,
         "sessions": 19
       },
       "github-copilot/claude-sonnet-4.6": {
@@ -198,8 +198,8 @@
     "agent_breakdown": {
       "build": {
         "sessions": 13,
-        "tokens_input": 442618,
-        "tokens_output": 82154
+        "tokens_input": 572192,
+        "tokens_output": 89887
       },
       "explore": {
         "sessions": 6,
@@ -218,14 +218,14 @@
       }
     },
     "part_types": {
-      "text": 354,
-      "step-start": 547,
-      "reasoning": 503,
-      "tool": 715,
-      "step-finish": 544,
-      "patch": 64,
+      "text": 375,
+      "step-start": 597,
+      "reasoning": 549,
+      "tool": 766,
+      "step-finish": 594,
+      "patch": 75,
       "file": 1,
-      "compaction": 4
+      "compaction": 5
     },
     "task_categories": {
       "Infrastructure & DevOps": {
@@ -260,13 +260,13 @@
       }
     },
     "tool_groups": {
-      "Code reading & exploration": 148,
-      "Git operations": 15,
+      "Code reading & exploration": 160,
+      "Git operations": 16,
       "Database & infrastructure": 5,
       "Code editing & writing": 3,
       "Package & dependency management": 9,
-      "Build & verification": 14,
-      "System & file operations": 4,
+      "Build & verification": 18,
+      "System & file operations": 5,
       "GitHub & issues": 1
     }
   },
@@ -301,147 +301,147 @@
   },
   "usage": {
     "cc_tools": {
-      "Bash": 783,
-      "Read": 660,
+      "Bash": 804,
+      "Read": 663,
       "Write": 93,
       "ToolSearch": 15,
       "AskUserQuestion": 3,
-      "Edit": 303,
+      "Edit": 307,
       "ExitPlanMode": 20,
       "Agent": 21,
       "Skill": 4,
       "TodoWrite": 38
     },
     "cc_content_types": {
-      "thinking": 423,
-      "text": 832,
-      "tool_use": 1940
+      "thinking": 433,
+      "text": 845,
+      "tool_use": 1968
     },
     "cc_prompt_sources": {
-      "typed": 41,
+      "typed": 46,
       "queued": 1,
-      "sdk": 91
+      "sdk": 93
     }
   },
   "chart_data": [
     {
       "date": "2026-05-08",
-      "cost": 57.2,
+      "cost": 103.55,
       "estimated": true
     },
     {
       "date": "2026-05-09",
-      "cost": 14.79,
+      "cost": 64.32,
       "estimated": true
     },
     {
       "date": "2026-05-10",
-      "cost": 48.2,
+      "cost": 23.05,
       "estimated": true
     },
     {
       "date": "2026-05-11",
-      "cost": 104.61,
+      "cost": 56.26,
       "estimated": true
     },
     {
       "date": "2026-05-12",
-      "cost": 90.75,
+      "cost": 26.84,
       "estimated": true
     },
     {
       "date": "2026-05-13",
-      "cost": 70.04,
+      "cost": 21.22,
       "estimated": true
     },
     {
       "date": "2026-05-14",
-      "cost": 49.42,
+      "cost": 67.88,
       "estimated": true
     },
     {
       "date": "2026-05-15",
-      "cost": 66.95,
+      "cost": 45.06,
       "estimated": true
     },
     {
       "date": "2026-05-16",
-      "cost": 43.13,
+      "cost": 15.13,
       "estimated": true
     },
     {
       "date": "2026-05-17",
-      "cost": 87.18,
+      "cost": 97.11,
       "estimated": true
     },
     {
       "date": "2026-05-18",
-      "cost": 53.96,
+      "cost": 21.77,
       "estimated": true
     },
     {
       "date": "2026-05-19",
-      "cost": 98.02,
+      "cost": 72.75,
       "estimated": true
     },
     {
       "date": "2026-05-20",
-      "cost": 21.36,
+      "cost": 60.88,
       "estimated": true
     },
     {
       "date": "2026-05-21",
-      "cost": 46.31,
+      "cost": 71.46,
       "estimated": true
     },
     {
       "date": "2026-05-22",
-      "cost": 15.34,
+      "cost": 40.18,
       "estimated": true
     },
     {
       "date": "2026-05-23",
-      "cost": 11.84,
+      "cost": 56.34,
       "estimated": true
     },
     {
       "date": "2026-05-24",
-      "cost": 20.81,
+      "cost": 63.17,
       "estimated": true
     },
     {
       "date": "2026-05-25",
-      "cost": 13.73,
+      "cost": 25.52,
       "estimated": true
     },
     {
       "date": "2026-05-26",
-      "cost": 48.92,
+      "cost": 48.22,
       "estimated": true
     },
     {
       "date": "2026-05-27",
-      "cost": 29.85,
+      "cost": 16.29,
       "estimated": true
     },
     {
       "date": "2026-05-28",
-      "cost": 92.56,
+      "cost": 32.13,
       "estimated": true
     },
     {
       "date": "2026-05-29",
-      "cost": 47.53,
+      "cost": 49.14,
       "estimated": true
     },
     {
       "date": "2026-05-30",
-      "cost": 23.43,
+      "cost": 72.09,
       "estimated": true
     },
     {
       "date": "2026-05-31",
-      "cost": 90.86,
+      "cost": 84.11,
       "estimated": true
     },
     {
@@ -451,12 +451,12 @@
     },
     {
       "date": "2026-06-02",
-      "cost": 43.62,
+      "cost": 74.3,
       "estimated": true
     },
     {
       "date": "2026-06-03",
-      "cost": 57.63,
+      "cost": 62.55,
       "estimated": true
     },
     {
@@ -471,9 +471,9 @@
     },
     {
       "date": "2026-06-06",
-      "cost": 104.0414,
+      "cost": 110.4934,
       "estimated": false
     }
   ],
-  "summary": "Based on recent activity, the majority of AI-assisted work (45%) falls under <strong>Code Exploration</strong>, followed by <strong>Other</strong> (22%). The ratio of 148:3 read-to-write calls confirms most effort goes into navigating and comprehending code. 15 Git operations suggest frequent commits, branching, and an iterative workflow."
+  "summary": "Looking at token usage, <strong>Code Exploration</strong> accounts for the largest share at 45%, followed by <strong>Other</strong> (22%). With 160 read calls against just 3 writes, the emphasis is on understanding existing code rather than generating new. Active Git usage (16 calls) points to version-control-heavy development with regular commits and branch management."
 }
