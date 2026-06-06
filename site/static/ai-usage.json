@@ -1,0 +1,479 @@
+{
+  "generated_at": "2026-06-06T14:43:23.350Z",
+  "all_time": {
+    "input_tokens": 6519425,
+    "output_tokens": 111382080,
+    "cache_creation_tokens": 714511710,
+    "cache_read_tokens": 13460596222,
+    "cost_usd": 10007.38,
+    "from_logs_usd": 176.51,
+    "historical_estimate_usd": 9830.87,
+    "sessions": 18
+  },
+  "last_30_days": {
+    "input_tokens": 124575,
+    "output_tokens": 2128320,
+    "cache_creation_tokens": 13653090,
+    "cache_read_tokens": 257208845,
+    "cost_usd": 246.51,
+    "sessions": 18
+  },
+  "by_model": {
+    "claude-sonnet-4-6": {
+      "input_tokens": 93348,
+      "output_tokens": 2055964,
+      "cache_creation_tokens": 11639210,
+      "cache_read_tokens": 240884174,
+      "cost_usd": 171.97,
+      "sessions": 18
+    },
+    "claude-haiku-4-5": {
+      "input_tokens": 31227,
+      "output_tokens": 72356,
+      "cache_creation_tokens": 2013880,
+      "cache_read_tokens": 16324671,
+      "cost_usd": 4.54,
+      "sessions": 8
+    }
+  },
+  "by_day": [
+    {
+      "date": "2025-08-01",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cache_creation_tokens": 0,
+      "cache_read_tokens": 0,
+      "cost_usd": 70,
+      "sessions": 0
+    },
+    {
+      "date": "2025-09-01",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cache_creation_tokens": 0,
+      "cache_read_tokens": 0,
+      "cost_usd": 70,
+      "sessions": 0
+    },
+    {
+      "date": "2025-10-01",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cache_creation_tokens": 0,
+      "cache_read_tokens": 0,
+      "cost_usd": 70,
+      "sessions": 0
+    },
+    {
+      "date": "2025-11-01",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cache_creation_tokens": 0,
+      "cache_read_tokens": 0,
+      "cost_usd": 70,
+      "sessions": 0
+    },
+    {
+      "date": "2025-12-01",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cache_creation_tokens": 0,
+      "cache_read_tokens": 0,
+      "cost_usd": 70,
+      "sessions": 0
+    },
+    {
+      "date": "2026-01-01",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cache_creation_tokens": 0,
+      "cache_read_tokens": 0,
+      "cost_usd": 70,
+      "sessions": 0
+    },
+    {
+      "date": "2026-02-01",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cache_creation_tokens": 0,
+      "cache_read_tokens": 0,
+      "cost_usd": 70,
+      "sessions": 0
+    },
+    {
+      "date": "2026-03-01",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cache_creation_tokens": 0,
+      "cache_read_tokens": 0,
+      "cost_usd": 70,
+      "sessions": 0
+    },
+    {
+      "date": "2026-04-01",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cache_creation_tokens": 0,
+      "cache_read_tokens": 0,
+      "cost_usd": 70,
+      "sessions": 0
+    },
+    {
+      "date": "2026-05-01",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cache_creation_tokens": 0,
+      "cache_read_tokens": 0,
+      "cost_usd": 70,
+      "sessions": 0
+    },
+    {
+      "date": "2026-06-01",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cache_creation_tokens": 0,
+      "cache_read_tokens": 0,
+      "cost_usd": 70,
+      "sessions": 0
+    },
+    {
+      "date": "2026-06-04",
+      "input_tokens": 1521,
+      "output_tokens": 372404,
+      "cache_creation_tokens": 3428774,
+      "cache_read_tokens": 62597483,
+      "cost_usd": 43.5261,
+      "sessions": 5
+    },
+    {
+      "date": "2026-06-05",
+      "input_tokens": 1337,
+      "output_tokens": 447189,
+      "cache_creation_tokens": 2167586,
+      "cache_read_tokens": 35483479,
+      "cost_usd": 28.943,
+      "sessions": 8
+    },
+    {
+      "date": "2026-06-06",
+      "input_tokens": 121717,
+      "output_tokens": 1308727,
+      "cache_creation_tokens": 8056730,
+      "cache_read_tokens": 159127883,
+      "cost_usd": 104.0414,
+      "sessions": 6
+    }
+  ],
+  "opencode": {
+    "all_time": {
+      "input_tokens": 1311638,
+      "output_tokens": 145296,
+      "cache_write_tokens": 0,
+      "cache_read_tokens": 23251072,
+      "sessions": 24
+    },
+    "last_30_days": {
+      "input_tokens": 1311638,
+      "output_tokens": 145296,
+      "cache_write_tokens": 0,
+      "cache_read_tokens": 23251072,
+      "sessions": 24
+    },
+    "by_model": {
+      "opencode/big-pickle": {
+        "input_tokens": 1311638,
+        "output_tokens": 145296,
+        "cache_write_tokens": 0,
+        "cache_read_tokens": 23251072,
+        "sessions": 19
+      },
+      "github-copilot/claude-sonnet-4.6": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cache_write_tokens": 0,
+        "cache_read_tokens": 0,
+        "sessions": 6
+      }
+    },
+    "agent_breakdown": {
+      "build": {
+        "sessions": 13,
+        "tokens_input": 442618,
+        "tokens_output": 82154
+      },
+      "explore": {
+        "sessions": 6,
+        "tokens_input": 526082,
+        "tokens_output": 45071
+      },
+      "general": {
+        "sessions": 2,
+        "tokens_input": 61825,
+        "tokens_output": 3715
+      },
+      "plan": {
+        "sessions": 3,
+        "tokens_input": 281113,
+        "tokens_output": 14356
+      }
+    },
+    "part_types": {
+      "text": 354,
+      "step-start": 547,
+      "reasoning": 503,
+      "tool": 715,
+      "step-finish": 544,
+      "patch": 64,
+      "file": 1,
+      "compaction": 4
+    },
+    "task_categories": {
+      "Infrastructure & DevOps": {
+        "sessions": 5,
+        "tokens_input": 227804,
+        "tokens_output": 32368
+      },
+      "Feature Development": {
+        "sessions": 1,
+        "tokens_input": 109024,
+        "tokens_output": 12214
+      },
+      "Code Exploration": {
+        "sessions": 7,
+        "tokens_input": 561345,
+        "tokens_output": 47004
+      },
+      "Debugging & Fixes": {
+        "sessions": 2,
+        "tokens_input": 50772,
+        "tokens_output": 4681
+      },
+      "Repository Setup": {
+        "sessions": 1,
+        "tokens_input": 8404,
+        "tokens_output": 12
+      },
+      "Other": {
+        "sessions": 2,
+        "tokens_input": 281113,
+        "tokens_output": 14356
+      }
+    },
+    "tool_groups": {
+      "Code reading & exploration": 148,
+      "Git operations": 15,
+      "Database & infrastructure": 5,
+      "Code editing & writing": 3,
+      "Package & dependency management": 9,
+      "Build & verification": 14,
+      "System & file operations": 4,
+      "GitHub & issues": 1
+    }
+  },
+  "cursor": {
+    "ai_code_generations": 99,
+    "by_model": {
+      "claude-opus-4-8": 10197
+    },
+    "file_extensions": {
+      "cs": 15,
+      "gitconfig": 2,
+      "gitconfig-hubtel": 3,
+      "md": 79
+    },
+    "scored_commits": [
+      {
+        "hash": "3eadeb3",
+        "date": "Thu Jun 4 09:28:40 2026 +0000",
+        "ai_pct": 100,
+        "lines_added": 6,
+        "ai_lines_added": 6
+      }
+    ],
+    "estimated_total_generations": 10197
+  },
+  "subscriptions": {
+    "cursor_usd": 20,
+    "opencode_usd": 50,
+    "billing_day": 1,
+    "cursor_start": "2025-08-01",
+    "opencode_start": "2025-08-01"
+  },
+  "usage": {
+    "cc_tools": {
+      "Bash": 783,
+      "Read": 660,
+      "Write": 93,
+      "ToolSearch": 15,
+      "AskUserQuestion": 3,
+      "Edit": 303,
+      "ExitPlanMode": 20,
+      "Agent": 21,
+      "Skill": 4,
+      "TodoWrite": 38
+    },
+    "cc_content_types": {
+      "thinking": 423,
+      "text": 832,
+      "tool_use": 1940
+    },
+    "cc_prompt_sources": {
+      "typed": 41,
+      "queued": 1,
+      "sdk": 91
+    }
+  },
+  "chart_data": [
+    {
+      "date": "2026-05-08",
+      "cost": 57.2,
+      "estimated": true
+    },
+    {
+      "date": "2026-05-09",
+      "cost": 14.79,
+      "estimated": true
+    },
+    {
+      "date": "2026-05-10",
+      "cost": 48.2,
+      "estimated": true
+    },
+    {
+      "date": "2026-05-11",
+      "cost": 104.61,
+      "estimated": true
+    },
+    {
+      "date": "2026-05-12",
+      "cost": 90.75,
+      "estimated": true
+    },
+    {
+      "date": "2026-05-13",
+      "cost": 70.04,
+      "estimated": true
+    },
+    {
+      "date": "2026-05-14",
+      "cost": 49.42,
+      "estimated": true
+    },
+    {
+      "date": "2026-05-15",
+      "cost": 66.95,
+      "estimated": true
+    },
+    {
+      "date": "2026-05-16",
+      "cost": 43.13,
+      "estimated": true
+    },
+    {
+      "date": "2026-05-17",
+      "cost": 87.18,
+      "estimated": true
+    },
+    {
+      "date": "2026-05-18",
+      "cost": 53.96,
+      "estimated": true
+    },
+    {
+      "date": "2026-05-19",
+      "cost": 98.02,
+      "estimated": true
+    },
+    {
+      "date": "2026-05-20",
+      "cost": 21.36,
+      "estimated": true
+    },
+    {
+      "date": "2026-05-21",
+      "cost": 46.31,
+      "estimated": true
+    },
+    {
+      "date": "2026-05-22",
+      "cost": 15.34,
+      "estimated": true
+    },
+    {
+      "date": "2026-05-23",
+      "cost": 11.84,
+      "estimated": true
+    },
+    {
+      "date": "2026-05-24",
+      "cost": 20.81,
+      "estimated": true
+    },
+    {
+      "date": "2026-05-25",
+      "cost": 13.73,
+      "estimated": true
+    },
+    {
+      "date": "2026-05-26",
+      "cost": 48.92,
+      "estimated": true
+    },
+    {
+      "date": "2026-05-27",
+      "cost": 29.85,
+      "estimated": true
+    },
+    {
+      "date": "2026-05-28",
+      "cost": 92.56,
+      "estimated": true
+    },
+    {
+      "date": "2026-05-29",
+      "cost": 47.53,
+      "estimated": true
+    },
+    {
+      "date": "2026-05-30",
+      "cost": 23.43,
+      "estimated": true
+    },
+    {
+      "date": "2026-05-31",
+      "cost": 90.86,
+      "estimated": true
+    },
+    {
+      "date": "2026-06-01",
+      "cost": 70,
+      "estimated": false
+    },
+    {
+      "date": "2026-06-02",
+      "cost": 43.62,
+      "estimated": true
+    },
+    {
+      "date": "2026-06-03",
+      "cost": 57.63,
+      "estimated": true
+    },
+    {
+      "date": "2026-06-04",
+      "cost": 43.5261,
+      "estimated": false
+    },
+    {
+      "date": "2026-06-05",
+      "cost": 28.943,
+      "estimated": false
+    },
+    {
+      "date": "2026-06-06",
+      "cost": 104.0414,
+      "estimated": false
+    }
+  ],
+  "summary": "Based on recent activity, the majority of AI-assisted work (45%) falls under <strong>Code Exploration</strong>, followed by <strong>Other</strong> (22%). The ratio of 148:3 read-to-write calls confirms most effort goes into navigating and comprehending code. 15 Git operations suggest frequent commits, branching, and an iterative workflow."
+}
