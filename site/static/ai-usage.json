@@ -1,30 +1,29 @@
 {
-  "generated_at": "2026-06-06T21:23:17.651Z",
+  "generated_at": "2026-06-06T21:35:34.237Z",
   "all_time": {
-    "input_tokens": 7534849,
-    "output_tokens": 124172818,
-    "cache_creation_tokens": 875107481,
-    "cache_read_tokens": 15340544052,
-    "cost_usd": 11537.98,
-    "from_logs_usd": 205.76,
-    "historical_estimate_usd": 11332.22,
+    "input_tokens": 154004,
+    "output_tokens": 2389682,
+    "cache_creation_tokens": 17057766,
+    "cache_read_tokens": 295985363,
+    "cost_usd": 978.56,
+    "from_logs_usd": 208.56,
     "sessions": 19
   },
   "last_30_days": {
-    "input_tokens": 143978,
-    "output_tokens": 2372729,
-    "cache_creation_tokens": 16721799,
-    "cache_read_tokens": 293131415,
-    "cost_usd": 275.76,
+    "input_tokens": 154004,
+    "output_tokens": 2389682,
+    "cache_creation_tokens": 17057766,
+    "cache_read_tokens": 295985363,
+    "cost_usd": 278.56,
     "sessions": 19
   },
   "by_model": {
     "claude-sonnet-4-6": {
-      "input_tokens": 112751,
-      "output_tokens": 2300373,
-      "cache_creation_tokens": 14707919,
-      "cache_read_tokens": 276806744,
-      "cost_usd": 201.21,
+      "input_tokens": 112794,
+      "output_tokens": 2311204,
+      "cache_creation_tokens": 14851750,
+      "cache_read_tokens": 278519823,
+      "cost_usd": 202.12,
       "sessions": 19
     },
     "claude-haiku-4-5": {
@@ -32,8 +31,16 @@
       "output_tokens": 72356,
       "cache_creation_tokens": 2013880,
       "cache_read_tokens": 16324671,
-      "cost_usd": 4.54,
+      "cost_usd": 4.51,
       "sessions": 8
+    },
+    "claude-opus-4-8": {
+      "input_tokens": 9983,
+      "output_tokens": 6122,
+      "cache_creation_tokens": 192136,
+      "cache_read_tokens": 1140869,
+      "cost_usd": 1.92,
+      "sessions": 1
     }
   },
   "by_day": [
@@ -142,7 +149,7 @@
       "output_tokens": 372404,
       "cache_creation_tokens": 3428774,
       "cache_read_tokens": 62597483,
-      "cost_usd": 43.5261,
+      "cost_usd": 43.5232,
       "sessions": 5
     },
     {
@@ -151,32 +158,32 @@
       "output_tokens": 447189,
       "cache_creation_tokens": 2167586,
       "cache_read_tokens": 35483479,
-      "cost_usd": 28.943,
+      "cost_usd": 28.9396,
       "sessions": 8
     },
     {
       "date": "2026-06-06",
-      "input_tokens": 141120,
-      "output_tokens": 1553136,
-      "cache_creation_tokens": 11125439,
-      "cache_read_tokens": 195050453,
-      "cost_usd": 133.2885,
+      "input_tokens": 151146,
+      "output_tokens": 1570089,
+      "cache_creation_tokens": 11461406,
+      "cache_read_tokens": 197904401,
+      "cost_usd": 136.093,
       "sessions": 7
     }
   ],
   "opencode": {
     "all_time": {
-      "input_tokens": 1475796,
-      "output_tokens": 155438,
+      "input_tokens": 1506859,
+      "output_tokens": 161526,
       "cache_write_tokens": 0,
-      "cache_read_tokens": 27628288,
+      "cache_read_tokens": 28871296,
       "sessions": 25
     },
     "last_30_days": {
-      "input_tokens": 1475796,
-      "output_tokens": 155438,
+      "input_tokens": 1506859,
+      "output_tokens": 161526,
       "cache_write_tokens": 0,
-      "cache_read_tokens": 27628288,
+      "cache_read_tokens": 28871296,
       "sessions": 25
     },
     "by_model": {
@@ -195,18 +202,18 @@
         "sessions": 6
       },
       "opencode/deepseek-v4-flash-free": {
-        "input_tokens": 34584,
-        "output_tokens": 2409,
+        "input_tokens": 65647,
+        "output_tokens": 8497,
         "cache_write_tokens": 0,
-        "cache_read_tokens": 202368,
+        "cache_read_tokens": 1445376,
         "sessions": 3
       }
     },
     "agent_breakdown": {
       "build": {
         "sessions": 14,
-        "tokens_input": 606776,
-        "tokens_output": 92296
+        "tokens_input": 637839,
+        "tokens_output": 98384
       },
       "explore": {
         "sessions": 6,
@@ -225,12 +232,12 @@
       }
     },
     "part_types": {
-      "text": 387,
-      "step-start": 622,
-      "reasoning": 572,
-      "tool": 796,
-      "step-finish": 618,
-      "patch": 75,
+      "text": 397,
+      "step-start": 652,
+      "reasoning": 597,
+      "tool": 822,
+      "step-finish": 648,
+      "patch": 88,
       "file": 1,
       "compaction": 5
     },
@@ -267,8 +274,8 @@
       }
     },
     "tool_groups": {
-      "Code reading & exploration": 163,
-      "Git operations": 18,
+      "Code reading & exploration": 164,
+      "Git operations": 19,
       "Database & infrastructure": 5,
       "Code editing & writing": 3,
       "Package & dependency management": 9,
@@ -308,23 +315,23 @@
   },
   "usage": {
     "cc_tools": {
-      "Bash": 1014,
-      "Read": 815,
+      "Bash": 1032,
+      "Read": 834,
       "Write": 106,
       "ToolSearch": 18,
       "AskUserQuestion": 3,
-      "Edit": 327,
+      "Edit": 331,
       "ExitPlanMode": 20,
-      "Agent": 42,
+      "Agent": 45,
       "Skill": 5,
       "TodoWrite": 38,
       "TaskCreate": 7,
       "TaskUpdate": 20
     },
     "cc_content_types": {
-      "thinking": 452,
-      "text": 1016,
-      "tool_use": 2415
+      "thinking": 453,
+      "text": 1042,
+      "tool_use": 2459
     },
     "cc_prompt_sources": {
       "typed": 48,
@@ -332,157 +339,5 @@
       "sdk": 93
     }
   },
-  "chart_data": [
-    {
-      "date": "2026-05-08",
-      "cost": 129.52,
-      "estimated": true
-    },
-    {
-      "date": "2026-05-09",
-      "cost": 56.89,
-      "estimated": true
-    },
-    {
-      "date": "2026-05-10",
-      "cost": 69.86,
-      "estimated": true
-    },
-    {
-      "date": "2026-05-11",
-      "cost": 37.53,
-      "estimated": true
-    },
-    {
-      "date": "2026-05-12",
-      "cost": 44.39,
-      "estimated": true
-    },
-    {
-      "date": "2026-05-13",
-      "cost": 14.4,
-      "estimated": true
-    },
-    {
-      "date": "2026-05-14",
-      "cost": 27.17,
-      "estimated": true
-    },
-    {
-      "date": "2026-05-15",
-      "cost": 81.68,
-      "estimated": true
-    },
-    {
-      "date": "2026-05-16",
-      "cost": 62.32,
-      "estimated": true
-    },
-    {
-      "date": "2026-05-17",
-      "cost": 68.09,
-      "estimated": true
-    },
-    {
-      "date": "2026-05-18",
-      "cost": 72.62,
-      "estimated": true
-    },
-    {
-      "date": "2026-05-19",
-      "cost": 67.26,
-      "estimated": true
-    },
-    {
-      "date": "2026-05-20",
-      "cost": 27.95,
-      "estimated": true
-    },
-    {
-      "date": "2026-05-21",
-      "cost": 46.33,
-      "estimated": true
-    },
-    {
-      "date": "2026-05-22",
-      "cost": 62.36,
-      "estimated": true
-    },
-    {
-      "date": "2026-05-23",
-      "cost": 121.48,
-      "estimated": true
-    },
-    {
-      "date": "2026-05-24",
-      "cost": 17.58,
-      "estimated": true
-    },
-    {
-      "date": "2026-05-25",
-      "cost": 31.78,
-      "estimated": true
-    },
-    {
-      "date": "2026-05-26",
-      "cost": 115.01,
-      "estimated": true
-    },
-    {
-      "date": "2026-05-27",
-      "cost": 40.32,
-      "estimated": true
-    },
-    {
-      "date": "2026-05-28",
-      "cost": 93.65,
-      "estimated": true
-    },
-    {
-      "date": "2026-05-29",
-      "cost": 15.66,
-      "estimated": true
-    },
-    {
-      "date": "2026-05-30",
-      "cost": 21.29,
-      "estimated": true
-    },
-    {
-      "date": "2026-05-31",
-      "cost": 136.75,
-      "estimated": true
-    },
-    {
-      "date": "2026-06-01",
-      "cost": 70,
-      "estimated": false
-    },
-    {
-      "date": "2026-06-02",
-      "cost": 27.88,
-      "estimated": true
-    },
-    {
-      "date": "2026-06-03",
-      "cost": 41.39,
-      "estimated": true
-    },
-    {
-      "date": "2026-06-04",
-      "cost": 43.5261,
-      "estimated": false
-    },
-    {
-      "date": "2026-06-05",
-      "cost": 28.943,
-      "estimated": false
-    },
-    {
-      "date": "2026-06-06",
-      "cost": 133.2885,
-      "estimated": false
-    }
-  ],
-  "summary": "Looking at token usage, <strong>Code Exploration</strong> accounts for the largest share at 45%, followed by <strong>Other</strong> (22%). The ratio of 163:3 read-to-write calls confirms most effort goes into navigating and comprehending code. With 18 Git-related calls, version control is deeply integrated into the workflow."
+  "summary": "Looking at token usage, <strong>Code Exploration</strong> accounts for the largest share at 45%, followed by <strong>Other</strong> (22%). Tool calls skew heavily toward reading (164) over writing (3), pointing to a codebase-exploration-heavy workflow. 19 Git operations suggest frequent commits, branching, and an iterative workflow."
 }
