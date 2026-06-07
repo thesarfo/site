@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07T10:43:52.849Z",
+  "generated_at": "2026-06-07T12:55:54.331Z",
   "all_time": {
     "input_tokens": 218213,
     "output_tokens": 3192041,
@@ -182,26 +182,26 @@
   ],
   "opencode": {
     "all_time": {
-      "input_tokens": 1841255,
-      "output_tokens": 186367,
+      "input_tokens": 2145894,
+      "output_tokens": 234577,
       "cache_write_tokens": 0,
-      "cache_read_tokens": 33484800,
-      "sessions": 26
+      "cache_read_tokens": 38089600,
+      "sessions": 31
     },
     "last_30_days": {
-      "input_tokens": 1841255,
-      "output_tokens": 186367,
+      "input_tokens": 2145894,
+      "output_tokens": 234577,
       "cache_write_tokens": 0,
-      "cache_read_tokens": 33484800,
-      "sessions": 26
+      "cache_read_tokens": 38089600,
+      "sessions": 31
     },
     "by_model": {
       "opencode/big-pickle": {
-        "input_tokens": 1655932,
-        "output_tokens": 167623,
+        "input_tokens": 1797907,
+        "output_tokens": 193154,
         "cache_write_tokens": 0,
-        "cache_read_tokens": 30279936,
-        "sessions": 19
+        "cache_read_tokens": 31697152,
+        "sessions": 21
       },
       "github-copilot/claude-sonnet-4.6": {
         "input_tokens": 0,
@@ -211,23 +211,23 @@
         "sessions": 7
       },
       "opencode/deepseek-v4-flash-free": {
-        "input_tokens": 185323,
-        "output_tokens": 18744,
+        "input_tokens": 347987,
+        "output_tokens": 41423,
         "cache_write_tokens": 0,
-        "cache_read_tokens": 3204864,
-        "sessions": 4
+        "cache_read_tokens": 6392448,
+        "sessions": 7
       }
     },
     "agent_breakdown": {
       "build": {
-        "sessions": 15,
-        "tokens_input": 972235,
-        "tokens_output": 123225
+        "sessions": 17,
+        "tokens_input": 1130957,
+        "tokens_output": 144094
       },
       "explore": {
-        "sessions": 6,
-        "tokens_input": 526082,
-        "tokens_output": 45071
+        "sessions": 9,
+        "tokens_input": 671999,
+        "tokens_output": 72412
       },
       "general": {
         "sessions": 2,
@@ -241,35 +241,35 @@
       }
     },
     "part_types": {
-      "text": 423,
-      "step-start": 734,
-      "reasoning": 665,
-      "tool": 940,
-      "step-finish": 730,
-      "patch": 91,
+      "text": 522,
+      "step-start": 832,
+      "reasoning": 751,
+      "tool": 1105,
+      "step-finish": 828,
+      "patch": 99,
       "file": 1,
       "compaction": 5
     },
     "task_categories": {
       "Infrastructure & DevOps": {
         "sessions": 5,
-        "tokens_input": 442524,
-        "tokens_output": 46962
+        "tokens_input": 470757,
+        "tokens_output": 52553
       },
       "Feature Development": {
-        "sessions": 1,
-        "tokens_input": 109024,
-        "tokens_output": 12214
+        "sessions": 2,
+        "tokens_input": 201952,
+        "tokens_output": 21666
       },
       "Code Exploration": {
-        "sessions": 7,
-        "tokens_input": 561345,
-        "tokens_output": 47004
+        "sessions": 8,
+        "tokens_input": 593520,
+        "tokens_output": 54405
       },
       "Debugging & Fixes": {
-        "sessions": 3,
-        "tokens_input": 61884,
-        "tokens_output": 5896
+        "sessions": 4,
+        "tokens_input": 82698,
+        "tokens_output": 16384
       },
       "Repository Setup": {
         "sessions": 1,
@@ -277,20 +277,20 @@
         "tokens_output": 12
       },
       "Other": {
-        "sessions": 2,
-        "tokens_input": 281113,
-        "tokens_output": 14356
+        "sessions": 4,
+        "tokens_input": 345237,
+        "tokens_output": 27812
       }
     },
     "tool_groups": {
-      "Code reading & exploration": 199,
-      "Git operations": 22,
+      "Code reading & exploration": 215,
+      "Git operations": 23,
       "Database & infrastructure": 5,
       "Code editing & writing": 6,
       "Package & dependency management": 10,
-      "Build & verification": 21,
+      "Build & verification": 23,
       "System & file operations": 5,
-      "GitHub & issues": 9
+      "GitHub & issues": 12
     }
   },
   "cursor": {
@@ -352,5 +352,5 @@
       "system": 7
     }
   },
-  "summary": "Based on recent activity, the majority of AI-assisted work (38%) falls under <strong>Code Exploration</strong>, followed by <strong>Infrastructure & DevOps</strong> (31%). Tool calls skew heavily toward reading (199) over writing (6), pointing to a codebase-exploration-heavy workflow. With 22 Git-related calls, version control is deeply integrated into the workflow."
+  "summary": "Looking at token usage, <strong>Code Exploration</strong> accounts for the largest share at 35%, followed by <strong>Infrastructure & DevOps</strong> (28%). With 215 read calls against just 6 writes, the emphasis is on understanding existing code rather than generating new. With 23 Git-related calls, version control is deeply integrated into the workflow."
 }
