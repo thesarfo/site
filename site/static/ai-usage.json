@@ -1,38 +1,38 @@
 {
-  "generated_at": "2026-06-08T09:02:35.883Z",
+  "generated_at": "2026-06-08T09:27:46.562Z",
   "all_time": {
-    "input_tokens": 227330,
-    "output_tokens": 3622083,
-    "cache_creation_tokens": 25026145,
-    "cache_read_tokens": 448283734,
-    "cost_usd": 1079.04,
-    "from_logs_usd": 309.04,
-    "sessions": 30
+    "input_tokens": 333677,
+    "output_tokens": 4618260,
+    "cache_creation_tokens": 30756429,
+    "cache_read_tokens": 569399479,
+    "cost_usd": 1149.67,
+    "from_logs_usd": 379.67,
+    "sessions": 47
   },
   "last_30_days": {
-    "input_tokens": 227330,
-    "output_tokens": 3622083,
-    "cache_creation_tokens": 25026145,
-    "cache_read_tokens": 448283734,
-    "cost_usd": 379.04,
-    "sessions": 35
+    "input_tokens": 333677,
+    "output_tokens": 4618260,
+    "cache_creation_tokens": 30756429,
+    "cache_read_tokens": 569399479,
+    "cost_usd": 449.67,
+    "sessions": 53
   },
   "by_model": {
     "claude-sonnet-4-6": {
-      "input_tokens": 173928,
-      "output_tokens": 3502096,
-      "cache_creation_tokens": 21867607,
-      "cache_read_tokens": 420607679,
-      "cost_usd": 300.19,
-      "sessions": 30
+      "input_tokens": 275149,
+      "output_tokens": 4416852,
+      "cache_creation_tokens": 25961547,
+      "cache_read_tokens": 513050824,
+      "cost_usd": 365.5,
+      "sessions": 47
     },
     "claude-haiku-4-5": {
-      "input_tokens": 43419,
-      "output_tokens": 113865,
-      "cache_creation_tokens": 2966402,
-      "cache_read_tokens": 26535186,
-      "cost_usd": 6.93,
-      "sessions": 12
+      "input_tokens": 48545,
+      "output_tokens": 195286,
+      "cache_creation_tokens": 4602746,
+      "cache_read_tokens": 55207786,
+      "cost_usd": 12.25,
+      "sessions": 17
     },
     "claude-opus-4-8": {
       "input_tokens": 9983,
@@ -135,6 +135,51 @@
       "sessions": 0
     },
     {
+      "date": "2026-05-20",
+      "input_tokens": 2586,
+      "output_tokens": 35599,
+      "cache_creation_tokens": 293606,
+      "cache_read_tokens": 3630271,
+      "cost_usd": 2.1902,
+      "sessions": 2
+    },
+    {
+      "date": "2026-05-25",
+      "input_tokens": 3223,
+      "output_tokens": 45512,
+      "cache_creation_tokens": 230976,
+      "cache_read_tokens": 4836648,
+      "cost_usd": 3.5195,
+      "sessions": 1
+    },
+    {
+      "date": "2026-05-26",
+      "input_tokens": 273,
+      "output_tokens": 47387,
+      "cache_creation_tokens": 220478,
+      "cache_read_tokens": 2295385,
+      "cost_usd": 2.7223,
+      "sessions": 1
+    },
+    {
+      "date": "2026-05-27",
+      "input_tokens": 13565,
+      "output_tokens": 158461,
+      "cache_creation_tokens": 1077323,
+      "cache_read_tokens": 14173620,
+      "cost_usd": 9.6145,
+      "sessions": 1
+    },
+    {
+      "date": "2026-05-29",
+      "input_tokens": 175,
+      "output_tokens": 22884,
+      "cache_creation_tokens": 255787,
+      "cache_read_tokens": 5492466,
+      "cost_usd": 1.6064,
+      "sessions": 1
+    },
+    {
       "date": "2026-06-01",
       "input_tokens": 0,
       "output_tokens": 0,
@@ -142,6 +187,24 @@
       "cache_read_tokens": 0,
       "cost_usd": 70,
       "sessions": 0
+    },
+    {
+      "date": "2026-06-02",
+      "input_tokens": 58268,
+      "output_tokens": 599628,
+      "cache_creation_tokens": 3171319,
+      "cache_read_tokens": 83877190,
+      "cost_usd": 45.0193,
+      "sessions": 9
+    },
+    {
+      "date": "2026-06-03",
+      "input_tokens": 198,
+      "output_tokens": 42542,
+      "cache_creation_tokens": 106034,
+      "cache_read_tokens": 4382367,
+      "cost_usd": 2.589,
+      "sessions": 2
     },
     {
       "date": "2026-06-04",
@@ -172,12 +235,12 @@
     },
     {
       "date": "2026-06-07",
-      "input_tokens": 54346,
-      "output_tokens": 946721,
-      "cache_creation_tokens": 6145668,
-      "cache_read_tokens": 109786944,
-      "cost_usd": 76.9621,
-      "sessions": 11
+      "input_tokens": 82405,
+      "output_tokens": 990885,
+      "cache_creation_tokens": 6520429,
+      "cache_read_tokens": 112214742,
+      "cost_usd": 80.3288,
+      "sessions": 12
     },
     {
       "date": "2026-06-08",
@@ -191,26 +254,26 @@
   ],
   "opencode": {
     "all_time": {
-      "input_tokens": 2607153,
-      "output_tokens": 276990,
+      "input_tokens": 2658070,
+      "output_tokens": 284366,
       "cache_write_tokens": 0,
-      "cache_read_tokens": 47452544,
-      "sessions": 37
+      "cache_read_tokens": 48246400,
+      "sessions": 39
     },
     "last_30_days": {
-      "input_tokens": 2607153,
-      "output_tokens": 276990,
+      "input_tokens": 2658070,
+      "output_tokens": 284366,
       "cache_write_tokens": 0,
-      "cache_read_tokens": 47452544,
-      "sessions": 37
+      "cache_read_tokens": 48246400,
+      "sessions": 39
     },
     "by_model": {
       "opencode/big-pickle": {
-        "input_tokens": 1797907,
-        "output_tokens": 193154,
+        "input_tokens": 1848824,
+        "output_tokens": 200530,
         "cache_write_tokens": 0,
-        "cache_read_tokens": 31697152,
-        "sessions": 21
+        "cache_read_tokens": 32491008,
+        "sessions": 23
       },
       "github-copilot/claude-sonnet-4.6": {
         "input_tokens": 0,
@@ -229,14 +292,14 @@
     },
     "agent_breakdown": {
       "build": {
-        "sessions": 19,
-        "tokens_input": 1489824,
-        "tokens_output": 175257
+        "sessions": 20,
+        "tokens_input": 1522634,
+        "tokens_output": 180836
       },
       "explore": {
-        "sessions": 12,
-        "tokens_input": 717263,
-        "tokens_output": 79604
+        "sessions": 13,
+        "tokens_input": 735370,
+        "tokens_output": 81401
       },
       "general": {
         "sessions": 2,
@@ -250,16 +313,26 @@
       }
     },
     "part_types": {
-      "text": 611,
-      "step-start": 994,
-      "reasoning": 903,
-      "tool": 1327,
-      "step-finish": 989,
-      "patch": 131,
+      "text": 624,
+      "step-start": 1030,
+      "reasoning": 937,
+      "tool": 1369,
+      "step-finish": 1025,
+      "patch": 139,
       "file": 1,
       "compaction": 5
     },
     "task_categories": {
+      "Other": {
+        "sessions": 7,
+        "tokens_input": 675782,
+        "tokens_output": 51117
+      },
+      "Code Exploration": {
+        "sessions": 12,
+        "tokens_input": 656891,
+        "tokens_output": 63394
+      },
       "Infrastructure & DevOps": {
         "sessions": 5,
         "tokens_input": 470757,
@@ -269,11 +342,6 @@
         "sessions": 2,
         "tokens_input": 201952,
         "tokens_output": 21666
-      },
-      "Code Exploration": {
-        "sessions": 11,
-        "tokens_input": 638784,
-        "tokens_output": 61597
       },
       "Debugging & Fixes": {
         "sessions": 4,
@@ -285,11 +353,6 @@
         "tokens_input": 8404,
         "tokens_output": 12
       },
-      "Other": {
-        "sessions": 6,
-        "tokens_input": 642972,
-        "tokens_output": 45538
-      },
       "Git & CI/CD": {
         "sessions": 1,
         "tokens_input": 14275,
@@ -297,13 +360,13 @@
       }
     },
     "tool_groups": {
-      "Code reading & exploration": 250,
+      "Code reading & exploration": 263,
       "Git operations": 37,
       "Database & infrastructure": 5,
       "Code editing & writing": 9,
       "Package & dependency management": 10,
-      "Build & verification": 31,
-      "System & file operations": 5,
+      "Build & verification": 32,
+      "System & file operations": 6,
       "GitHub & issues": 12
     }
   },
@@ -320,11 +383,74 @@
     },
     "scored_commits": [
       {
-        "hash": "3eadeb3",
-        "date": "Thu Jun 4 09:28:40 2026 +0000",
+        "hash": "51a9059",
+        "date": "Fri Feb 20 10:52:45 2026 +0000",
         "ai_pct": 100,
-        "lines_added": 6,
-        "ai_lines_added": 6
+        "lines_added": 16,
+        "ai_lines_added": 16
+      },
+      {
+        "hash": "162b8c8",
+        "date": "Fri Feb 20 11:39:05 2026 +0000",
+        "ai_pct": 100,
+        "lines_added": 5,
+        "ai_lines_added": 5
+      },
+      {
+        "hash": "96dcf7e",
+        "date": "Fri Feb 27 05:00:23 2026 +0000",
+        "ai_pct": 100,
+        "lines_added": 92,
+        "ai_lines_added": 91
+      },
+      {
+        "hash": "f7659b5",
+        "date": "Fri Feb 27 05:01:59 2026 +0000",
+        "ai_pct": 100,
+        "lines_added": 25,
+        "ai_lines_added": 24
+      },
+      {
+        "hash": "bbc57af",
+        "date": "Fri Feb 20 10:39:25 2026 +0000",
+        "ai_pct": 100,
+        "lines_added": 4,
+        "ai_lines_added": 4
+      },
+      {
+        "hash": "0665a3f",
+        "date": null,
+        "ai_pct": null,
+        "lines_added": null,
+        "ai_lines_added": null
+      },
+      {
+        "hash": "7565075",
+        "date": null,
+        "ai_pct": null,
+        "lines_added": null,
+        "ai_lines_added": null
+      },
+      {
+        "hash": "bb796aa",
+        "date": null,
+        "ai_pct": null,
+        "lines_added": null,
+        "ai_lines_added": null
+      },
+      {
+        "hash": "6098a3e",
+        "date": null,
+        "ai_pct": null,
+        "lines_added": null,
+        "ai_lines_added": null
+      },
+      {
+        "hash": "bc8a852",
+        "date": null,
+        "ai_pct": null,
+        "lines_added": null,
+        "ai_lines_added": null
       }
     ],
     "estimated_total_generations": 6158
@@ -338,33 +464,33 @@
   },
   "usage": {
     "cc_tools": {
-      "Bash": 1603,
-      "Read": 1295,
-      "Write": 122,
-      "ToolSearch": 30,
-      "AskUserQuestion": 7,
-      "Edit": 473,
-      "ExitPlanMode": 25,
-      "Agent": 72,
-      "Skill": 14,
+      "Bash": 2070,
+      "Read": 1738,
+      "Write": 154,
+      "Edit": 577,
+      "Agent": 86,
+      "ToolSearch": 39,
+      "TodoWrite": 91,
+      "ExitPlanMode": 32,
+      "AskUserQuestion": 8,
+      "Glob": 39,
+      "Grep": 28,
+      "Skill": 15,
       "WebFetch": 1,
-      "TodoWrite": 74,
-      "Glob": 30,
-      "Grep": 25,
       "TaskCreate": 14,
       "TaskUpdate": 34
     },
     "cc_content_types": {
-      "thinking": 717,
-      "text": 1628,
-      "tool_use": 3819
+      "thinking": 945,
+      "text": 2091,
+      "tool_use": 4926
     },
     "cc_prompt_sources": {
-      "typed": 63,
+      "typed": 86,
       "queued": 1,
       "sdk": 138,
       "system": 7
     }
   },
-  "summary": "The data shows <strong>Code Exploration</strong> dominating at 31% of all AI-assisted work, followed by <strong>Other</strong> (30%). Tool calls skew heavily toward reading (250) over writing (9), pointing to a codebase-exploration-heavy workflow. Active Git usage (37 calls) points to version-control-heavy development with regular commits and branch management."
+  "summary": "Looking at token usage, <strong>Other</strong> accounts for the largest share at 66%, followed by <strong>Code Exploration</strong> (34%). Tool calls skew heavily toward reading (13) over writing (0), pointing to a codebase-exploration-heavy workflow. The data shows <strong>Code Exploration</strong> dominating at 31% of all AI-assisted work, followed by <strong>Other</strong> (30%). Tool calls skew heavily toward reading (250) over writing (9), pointing to a codebase-exploration-heavy workflow. Active Git usage (37 calls) points to version-control-heavy development with regular commits and branch management."
 }

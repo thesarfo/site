@@ -1,0 +1,289 @@
+{
+  "generated_at": "2026-06-08T09:27:46.374Z",
+  "hostname": "Shadys-MacBook-Pro_local",
+  "by_day": [
+    {
+      "date": "2026-05-20",
+      "input_tokens": 2586,
+      "output_tokens": 35599,
+      "cache_creation_tokens": 293606,
+      "cache_read_tokens": 3630271,
+      "cost_usd": 2.1902,
+      "sessions": 2
+    },
+    {
+      "date": "2026-05-25",
+      "input_tokens": 3223,
+      "output_tokens": 45512,
+      "cache_creation_tokens": 230976,
+      "cache_read_tokens": 4836648,
+      "cost_usd": 3.5195,
+      "sessions": 1
+    },
+    {
+      "date": "2026-05-26",
+      "input_tokens": 273,
+      "output_tokens": 47387,
+      "cache_creation_tokens": 220478,
+      "cache_read_tokens": 2295385,
+      "cost_usd": 2.7223,
+      "sessions": 1
+    },
+    {
+      "date": "2026-05-27",
+      "input_tokens": 13565,
+      "output_tokens": 158461,
+      "cache_creation_tokens": 1077323,
+      "cache_read_tokens": 14173620,
+      "cost_usd": 9.6145,
+      "sessions": 1
+    },
+    {
+      "date": "2026-05-29",
+      "input_tokens": 175,
+      "output_tokens": 22884,
+      "cache_creation_tokens": 255787,
+      "cache_read_tokens": 5492466,
+      "cost_usd": 1.6064,
+      "sessions": 1
+    },
+    {
+      "date": "2026-06-02",
+      "input_tokens": 58268,
+      "output_tokens": 599628,
+      "cache_creation_tokens": 3171319,
+      "cache_read_tokens": 83877190,
+      "cost_usd": 45.0193,
+      "sessions": 9
+    },
+    {
+      "date": "2026-06-03",
+      "input_tokens": 198,
+      "output_tokens": 42542,
+      "cache_creation_tokens": 106034,
+      "cache_read_tokens": 4382367,
+      "cost_usd": 2.589,
+      "sessions": 2
+    },
+    {
+      "date": "2026-06-07",
+      "input_tokens": 28059,
+      "output_tokens": 44164,
+      "cache_creation_tokens": 374761,
+      "cache_read_tokens": 2427798,
+      "cost_usd": 3.3667,
+      "sessions": 1
+    }
+  ],
+  "by_model": {
+    "claude-sonnet-4-6": {
+      "input_tokens": 101221,
+      "output_tokens": 914756,
+      "cache_creation_tokens": 4093940,
+      "cache_read_tokens": 92443145,
+      "cost_usd": 65.31,
+      "sessions": 17
+    },
+    "claude-haiku-4-5": {
+      "input_tokens": 5126,
+      "output_tokens": 81421,
+      "cache_creation_tokens": 1636344,
+      "cache_read_tokens": 28672600,
+      "cost_usd": 5.32,
+      "sessions": 5
+    }
+  },
+  "sessions_count": 17,
+  "toolUseCounts": {
+    "Bash": 467,
+    "Read": 443,
+    "Write": 32,
+    "Edit": 104,
+    "Agent": 14,
+    "ToolSearch": 9,
+    "TodoWrite": 17,
+    "ExitPlanMode": 7,
+    "AskUserQuestion": 1,
+    "Glob": 9,
+    "Grep": 3,
+    "Skill": 1
+  },
+  "assistantContentTypes": {
+    "thinking": 228,
+    "text": 463,
+    "tool_use": 1107
+  },
+  "promptSourceCounts": {
+    "typed": 23
+  },
+  "opencode": {
+    "all_time": {
+      "input_tokens": 50917,
+      "output_tokens": 7376,
+      "cache_write_tokens": 0,
+      "cache_read_tokens": 793856,
+      "sessions": 2
+    },
+    "last_30_days": {
+      "input_tokens": 50917,
+      "output_tokens": 7376,
+      "cache_write_tokens": 0,
+      "cache_read_tokens": 793856,
+      "sessions": 2
+    },
+    "by_model": {
+      "opencode/big-pickle": {
+        "input_tokens": 50917,
+        "output_tokens": 7376,
+        "cache_write_tokens": 0,
+        "cache_read_tokens": 793856,
+        "sessions": 2
+      }
+    },
+    "agent_breakdown": {
+      "build": {
+        "sessions": 1,
+        "tokens_input": 32810,
+        "tokens_output": 5579
+      },
+      "explore": {
+        "sessions": 1,
+        "tokens_input": 18107,
+        "tokens_output": 1797
+      }
+    },
+    "part_types": {
+      "text": 13,
+      "step-start": 36,
+      "reasoning": 34,
+      "tool": 42,
+      "step-finish": 36,
+      "patch": 8
+    },
+    "task_categories": {
+      "Other": {
+        "sessions": 1,
+        "tokens_input": 32810,
+        "tokens_output": 5579
+      },
+      "Code Exploration": {
+        "sessions": 1,
+        "tokens_input": 18107,
+        "tokens_output": 1797
+      }
+    },
+    "tool_groups": {
+      "Code reading & exploration": 13,
+      "Git operations": 0,
+      "Database & infrastructure": 0,
+      "Code editing & writing": 0,
+      "Package & dependency management": 0,
+      "Build & verification": 1,
+      "System & file operations": 1,
+      "GitHub & issues": 0
+    }
+  },
+  "cursor": {
+    "ai_code_generations": 0,
+    "by_model": {},
+    "file_extensions": {},
+    "scored_commits": [
+      {
+        "hash": "51a9059",
+        "date": "Fri Feb 20 10:52:45 2026 +0000",
+        "ai_pct": 100,
+        "lines_added": 16,
+        "ai_lines_added": 16
+      },
+      {
+        "hash": "162b8c8",
+        "date": "Fri Feb 20 11:39:05 2026 +0000",
+        "ai_pct": 100,
+        "lines_added": 5,
+        "ai_lines_added": 5
+      },
+      {
+        "hash": "96dcf7e",
+        "date": "Fri Feb 27 05:00:23 2026 +0000",
+        "ai_pct": 100,
+        "lines_added": 92,
+        "ai_lines_added": 91
+      },
+      {
+        "hash": "f7659b5",
+        "date": "Fri Feb 27 05:01:59 2026 +0000",
+        "ai_pct": 100,
+        "lines_added": 25,
+        "ai_lines_added": 24
+      },
+      {
+        "hash": "bbc57af",
+        "date": "Fri Feb 20 10:39:25 2026 +0000",
+        "ai_pct": 100,
+        "lines_added": 4,
+        "ai_lines_added": 4
+      },
+      {
+        "hash": "0665a3f",
+        "date": null,
+        "ai_pct": null,
+        "lines_added": null,
+        "ai_lines_added": null
+      },
+      {
+        "hash": "7565075",
+        "date": null,
+        "ai_pct": null,
+        "lines_added": null,
+        "ai_lines_added": null
+      },
+      {
+        "hash": "bb796aa",
+        "date": null,
+        "ai_pct": null,
+        "lines_added": null,
+        "ai_lines_added": null
+      },
+      {
+        "hash": "6098a3e",
+        "date": null,
+        "ai_pct": null,
+        "lines_added": null,
+        "ai_lines_added": null
+      },
+      {
+        "hash": "bc8a852",
+        "date": null,
+        "ai_pct": null,
+        "lines_added": null,
+        "ai_lines_added": null
+      }
+    ],
+    "estimated_total_generations": 0
+  },
+  "usage": {
+    "cc_tools": {
+      "Bash": 467,
+      "Read": 443,
+      "Write": 32,
+      "Edit": 104,
+      "Agent": 14,
+      "ToolSearch": 9,
+      "TodoWrite": 17,
+      "ExitPlanMode": 7,
+      "AskUserQuestion": 1,
+      "Glob": 9,
+      "Grep": 3,
+      "Skill": 1
+    },
+    "cc_content_types": {
+      "thinking": 228,
+      "text": 463,
+      "tool_use": 1107
+    },
+    "cc_prompt_sources": {
+      "typed": 23
+    }
+  },
+  "summary": "Looking at token usage, <strong>Other</strong> accounts for the largest share at 66%, followed by <strong>Code Exploration</strong> (34%). Tool calls skew heavily toward reading (13) over writing (0), pointing to a codebase-exploration-heavy workflow."
+}
