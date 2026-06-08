@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-06-08T15:03:51.376Z",
+  "generated_at": "2026-06-08T16:16:09.341Z",
   "all_time": {
-    "input_tokens": 337484,
-    "output_tokens": 5299550,
-    "cache_creation_tokens": 33576684,
-    "cache_read_tokens": 637390582,
-    "cost_usd": 1193.2,
-    "from_logs_usd": 423.2,
+    "input_tokens": 337561,
+    "output_tokens": 5331185,
+    "cache_creation_tokens": 33627907,
+    "cache_read_tokens": 646599695,
+    "cost_usd": 1196.74,
+    "from_logs_usd": 426.74,
     "sessions": 49
   },
   "last_30_days": {
-    "input_tokens": 337484,
-    "output_tokens": 5299550,
-    "cache_creation_tokens": 33576684,
-    "cache_read_tokens": 637390582,
-    "cost_usd": 493.2,
+    "input_tokens": 337561,
+    "output_tokens": 5331185,
+    "cache_creation_tokens": 33627907,
+    "cache_read_tokens": 646599695,
+    "cost_usd": 496.74,
     "sessions": 55
   },
   "by_model": {
     "claude-sonnet-4-6": {
-      "input_tokens": 276965,
-      "output_tokens": 5080318,
-      "cache_creation_tokens": 28289205,
-      "cache_read_tokens": 573579343,
-      "cost_usd": 407.57,
+      "input_tokens": 277042,
+      "output_tokens": 5111953,
+      "cache_creation_tokens": 28340428,
+      "cache_read_tokens": 582788456,
+      "cost_usd": 411.12,
       "sessions": 49
     },
     "claude-haiku-4-5": {
@@ -244,28 +244,28 @@
     },
     {
       "date": "2026-06-08",
-      "input_tokens": 4109,
-      "output_tokens": 816715,
-      "cache_creation_tokens": 3371954,
-      "cache_read_tokens": 95471829,
-      "cost_usd": 57.1134,
+      "input_tokens": 4186,
+      "output_tokens": 848350,
+      "cache_creation_tokens": 3423177,
+      "cache_read_tokens": 104680942,
+      "cost_usd": 60.658,
       "sessions": 3
     }
   ],
   "opencode": {
     "all_time": {
-      "input_tokens": 4265062,
-      "output_tokens": 472350,
+      "input_tokens": 4649709,
+      "output_tokens": 512013,
       "cache_write_tokens": 0,
-      "cache_read_tokens": 119983232,
-      "sessions": 49
+      "cache_read_tokens": 139680896,
+      "sessions": 50
     },
     "last_30_days": {
-      "input_tokens": 4265062,
-      "output_tokens": 472350,
+      "input_tokens": 4649709,
+      "output_tokens": 512013,
       "cache_write_tokens": 0,
-      "cache_read_tokens": 119983232,
-      "sessions": 49
+      "cache_read_tokens": 139680896,
+      "sessions": 50
     },
     "by_model": {
       "opencode/big-pickle": {
@@ -283,23 +283,37 @@
         "sessions": 7
       },
       "opencode/deepseek-v4-flash-free": {
-        "input_tokens": 2416238,
-        "output_tokens": 271820,
+        "input_tokens": 2708655,
+        "output_tokens": 301673,
         "cache_write_tokens": 0,
-        "cache_read_tokens": 87492224,
-        "sessions": 23
+        "cache_read_tokens": 102697600,
+        "sessions": 24
+      },
+      "opencode-go/deepseek-v4-pro": {
+        "input_tokens": 92230,
+        "output_tokens": 9810,
+        "cache_write_tokens": 0,
+        "cache_read_tokens": 4492288,
+        "sessions": 1
+      },
+      "opencode-go/kimi-k2.6": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cache_write_tokens": 0,
+        "cache_read_tokens": 0,
+        "sessions": 1
       }
     },
     "agent_breakdown": {
       "build": {
         "sessions": 23,
-        "tokens_input": 2808116,
-        "tokens_output": 326843
+        "tokens_input": 3174802,
+        "tokens_output": 364136
       },
       "explore": {
-        "sessions": 19,
-        "tokens_input": 1016637,
-        "tokens_output": 115295
+        "sessions": 20,
+        "tokens_input": 1034598,
+        "tokens_output": 117665
       },
       "general": {
         "sessions": 4,
@@ -313,14 +327,14 @@
       }
     },
     "part_types": {
-      "text": 842,
-      "step-start": 1764,
-      "reasoning": 1549,
-      "tool": 2271,
-      "step-finish": 1760,
-      "patch": 288,
+      "text": 901,
+      "step-start": 1981,
+      "reasoning": 1741,
+      "tool": 2514,
+      "step-finish": 1976,
+      "patch": 334,
       "file": 6,
-      "compaction": 9
+      "compaction": 10
     },
     "task_categories": {
       "Infrastructure & DevOps": {
@@ -334,14 +348,14 @@
         "tokens_output": 21666
       },
       "Code Exploration": {
-        "sessions": 18,
-        "tokens_input": 938158,
-        "tokens_output": 97288
+        "sessions": 19,
+        "tokens_input": 956119,
+        "tokens_output": 99658
       },
       "Debugging & Fixes": {
         "sessions": 6,
-        "tokens_input": 610925,
-        "tokens_output": 86869
+        "tokens_input": 977116,
+        "tokens_output": 123935
       },
       "Repository Setup": {
         "sessions": 1,
@@ -360,13 +374,13 @@
       }
     },
     "tool_groups": {
-      "Code reading & exploration": 368,
-      "Database & infrastructure": 10,
+      "Code reading & exploration": 434,
+      "Database & infrastructure": 11,
       "Code editing & writing": 31,
       "Package & dependency management": 11,
-      "Build & verification": 67,
+      "Build & verification": 71,
       "System & file operations": 6,
-      "GitHub & issues": 22,
+      "GitHub & issues": 25,
       "Git operations": 0
     }
   },
@@ -401,12 +415,12 @@
   },
   "usage": {
     "cc_tools": {
-      "Bash": 2322,
-      "Read": 1911,
+      "Bash": 2335,
+      "Read": 1917,
       "Write": 162,
       "ToolSearch": 52,
       "AskUserQuestion": 9,
-      "Edit": 606,
+      "Edit": 621,
       "ExitPlanMode": 32,
       "Agent": 89,
       "Skill": 15,
@@ -425,16 +439,16 @@
       "mcp__hubtel-sprint-planner__submit_task": 1
     },
     "cc_content_types": {
-      "thinking": 1081,
-      "text": 2276,
-      "tool_use": 5439
+      "thinking": 1089,
+      "text": 2295,
+      "tool_use": 5473
     },
     "cc_prompt_sources": {
-      "typed": 110,
+      "typed": 113,
       "queued": 1,
       "sdk": 138,
       "system": 8
     }
   },
-  "summary": "Looking at token usage, <strong>Other</strong> accounts for the largest share at 36%, followed by <strong>Code Exploration</strong> (26%). Tool calls skew heavily toward reading (368) over writing (31), pointing to a codebase-exploration-heavy workflow. 10 infrastructure-related calls indicate DevOps concerns like containers, databases, and environment setup."
+  "summary": "The data shows <strong>Other</strong> dominating at 33% of all AI-assisted work, followed by <strong>Debugging & Fixes</strong> (25%). With 434 read calls against just 31 writes, the emphasis is on understanding existing code rather than generating new. 11 infrastructure-related calls indicate DevOps concerns like containers, databases, and environment setup."
 }
