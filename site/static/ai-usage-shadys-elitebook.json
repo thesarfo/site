@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T13:21:44.236Z",
+  "generated_at": "2026-06-08T15:03:50.330Z",
   "hostname": "shadys-elitebook",
   "by_day": [
     {
@@ -40,21 +40,21 @@
     },
     {
       "date": "2026-06-08",
-      "input_tokens": 3531,
-      "output_tokens": 600305,
-      "cache_creation_tokens": 2607368,
-      "cache_read_tokens": 68622092,
-      "cost_usd": 41.2248,
+      "input_tokens": 4109,
+      "output_tokens": 816715,
+      "cache_creation_tokens": 3371954,
+      "cache_read_tokens": 95471829,
+      "cost_usd": 57.1134,
       "sessions": 3
     }
   ],
   "by_model": {
     "claude-sonnet-4-6": {
-      "input_tokens": 175166,
-      "output_tokens": 3949152,
-      "cache_creation_tokens": 23430679,
-      "cache_read_tokens": 454286461,
-      "cost_usd": 326.37,
+      "input_tokens": 175744,
+      "output_tokens": 4165562,
+      "cache_creation_tokens": 24195265,
+      "cache_read_tokens": 481136198,
+      "cost_usd": 342.26,
       "sessions": 32
     },
     "claude-haiku-4-5": {
@@ -76,12 +76,12 @@
   },
   "sessions_count": 32,
   "toolUseCounts": {
-    "Bash": 1785,
-    "Read": 1452,
-    "Write": 127,
-    "ToolSearch": 30,
-    "AskUserQuestion": 7,
-    "Edit": 480,
+    "Bash": 1855,
+    "Read": 1468,
+    "Write": 130,
+    "ToolSearch": 43,
+    "AskUserQuestion": 8,
+    "Edit": 502,
     "ExitPlanMode": 25,
     "Agent": 75,
     "Skill": 14,
@@ -89,33 +89,40 @@
     "TodoWrite": 74,
     "Glob": 30,
     "Grep": 25,
-    "TaskCreate": 14,
-    "TaskUpdate": 34
+    "TaskCreate": 32,
+    "TaskUpdate": 43,
+    "mcp__hubtel-sprint-planner__how_to_use": 1,
+    "mcp__hubtel-sprint-planner__get_current_user": 1,
+    "mcp__hubtel-sprint-planner__validate_sprint_board": 1,
+    "mcp__hubtel-sprint-planner__get_task_structure": 1,
+    "mcp__hubtel-sprint-planner__cleanup_sprint_planner_workspace": 1,
+    "mcp__hubtel-sprint-planner__get_past_experience": 1,
+    "mcp__hubtel-sprint-planner__submit_task": 1
   },
   "assistantContentTypes": {
-    "thinking": 808,
-    "text": 1753,
-    "tool_use": 4173
+    "thinking": 853,
+    "text": 1813,
+    "tool_use": 4332
   },
   "promptSourceCounts": {
-    "typed": 71,
+    "typed": 87,
     "queued": 1,
     "sdk": 138,
-    "system": 7
+    "system": 8
   },
   "opencode": {
     "all_time": {
-      "input_tokens": 3935930,
-      "output_tokens": 427509,
+      "input_tokens": 4214145,
+      "output_tokens": 464974,
       "cache_write_tokens": 0,
-      "cache_read_tokens": 92237952,
+      "cache_read_tokens": 119189376,
       "sessions": 47
     },
     "last_30_days": {
-      "input_tokens": 3935930,
-      "output_tokens": 427509,
+      "input_tokens": 4214145,
+      "output_tokens": 464974,
       "cache_write_tokens": 0,
-      "cache_read_tokens": 92237952,
+      "cache_read_tokens": 119189376,
       "sessions": 47
     },
     "by_model": {
@@ -134,18 +141,18 @@
         "sessions": 7
       },
       "opencode/deepseek-v4-flash-free": {
-        "input_tokens": 2138023,
-        "output_tokens": 234355,
+        "input_tokens": 2416238,
+        "output_tokens": 271820,
         "cache_write_tokens": 0,
-        "cache_read_tokens": 60540800,
+        "cache_read_tokens": 87492224,
         "sessions": 23
       }
     },
     "agent_breakdown": {
       "build": {
         "sessions": 22,
-        "tokens_input": 2497091,
-        "tokens_output": 283799
+        "tokens_input": 2775306,
+        "tokens_output": 321264
       },
       "explore": {
         "sessions": 18,
@@ -164,14 +171,14 @@
       }
     },
     "part_types": {
-      "text": 788,
-      "step-start": 1464,
-      "reasoning": 1306,
-      "tool": 1982,
-      "step-finish": 1460,
-      "patch": 243,
+      "text": 829,
+      "step-start": 1728,
+      "reasoning": 1515,
+      "tool": 2229,
+      "step-finish": 1724,
+      "patch": 280,
       "file": 6,
-      "compaction": 8
+      "compaction": 9
     },
     "task_categories": {
       "Infrastructure & DevOps": {
@@ -191,8 +198,8 @@
       },
       "Debugging & Fixes": {
         "sessions": 6,
-        "tokens_input": 424441,
-        "tokens_output": 56763
+        "tokens_input": 610925,
+        "tokens_output": 86869
       },
       "Repository Setup": {
         "sessions": 1,
@@ -201,8 +208,8 @@
       },
       "Other": {
         "sessions": 8,
-        "tokens_input": 1210830,
-        "tokens_output": 115327
+        "tokens_input": 1274035,
+        "tokens_output": 116510
       },
       "Git & CI/CD": {
         "sessions": 1,
@@ -211,13 +218,13 @@
       }
     },
     "tool_groups": {
-      "Code reading & exploration": 312,
-      "Database & infrastructure": 5,
-      "Code editing & writing": 24,
+      "Code reading & exploration": 355,
+      "Database & infrastructure": 10,
+      "Code editing & writing": 31,
       "Package & dependency management": 11,
-      "Build & verification": 48,
+      "Build & verification": 66,
       "System & file operations": 5,
-      "GitHub & issues": 15
+      "GitHub & issues": 22
     }
   },
   "cursor": {
@@ -244,12 +251,12 @@
   },
   "usage": {
     "cc_tools": {
-      "Bash": 1785,
-      "Read": 1452,
-      "Write": 127,
-      "ToolSearch": 30,
-      "AskUserQuestion": 7,
-      "Edit": 480,
+      "Bash": 1855,
+      "Read": 1468,
+      "Write": 130,
+      "ToolSearch": 43,
+      "AskUserQuestion": 8,
+      "Edit": 502,
       "ExitPlanMode": 25,
       "Agent": 75,
       "Skill": 14,
@@ -257,20 +264,27 @@
       "TodoWrite": 74,
       "Glob": 30,
       "Grep": 25,
-      "TaskCreate": 14,
-      "TaskUpdate": 34
+      "TaskCreate": 32,
+      "TaskUpdate": 43,
+      "mcp__hubtel-sprint-planner__how_to_use": 1,
+      "mcp__hubtel-sprint-planner__get_current_user": 1,
+      "mcp__hubtel-sprint-planner__validate_sprint_board": 1,
+      "mcp__hubtel-sprint-planner__get_task_structure": 1,
+      "mcp__hubtel-sprint-planner__cleanup_sprint_planner_workspace": 1,
+      "mcp__hubtel-sprint-planner__get_past_experience": 1,
+      "mcp__hubtel-sprint-planner__submit_task": 1
     },
     "cc_content_types": {
-      "thinking": 808,
-      "text": 1753,
-      "tool_use": 4173
+      "thinking": 853,
+      "text": 1813,
+      "tool_use": 4332
     },
     "cc_prompt_sources": {
-      "typed": 71,
+      "typed": 87,
       "queued": 1,
       "sdk": 138,
-      "system": 7
+      "system": 8
     }
   },
-  "summary": "Based on recent activity, the majority of AI-assisted work (37%) falls under <strong>Other</strong>, followed by <strong>Code Exploration</strong> (28%). Tool calls skew heavily toward reading (312) over writing (24), pointing to a codebase-exploration-heavy workflow."
+  "summary": "Based on recent activity, the majority of AI-assisted work (36%) falls under <strong>Other</strong>, followed by <strong>Code Exploration</strong> (26%). With 355 read calls against just 31 writes, the emphasis is on understanding existing code rather than generating new. 10 infrastructure-related calls indicate DevOps concerns like containers, databases, and environment setup."
 }
