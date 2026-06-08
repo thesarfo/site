@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T12:22:02.795Z",
+  "generated_at": "2026-06-08T13:21:44.236Z",
   "hostname": "shadys-elitebook",
   "by_day": [
     {
@@ -40,21 +40,21 @@
     },
     {
       "date": "2026-06-08",
-      "input_tokens": 3382,
-      "output_tokens": 515399,
-      "cache_creation_tokens": 2230365,
-      "cache_read_tokens": 55697174,
-      "cost_usd": 33.8117,
+      "input_tokens": 3531,
+      "output_tokens": 600305,
+      "cache_creation_tokens": 2607368,
+      "cache_read_tokens": 68622092,
+      "cost_usd": 41.2248,
       "sessions": 3
     }
   ],
   "by_model": {
     "claude-sonnet-4-6": {
-      "input_tokens": 175017,
-      "output_tokens": 3864246,
-      "cache_creation_tokens": 23053676,
-      "cache_read_tokens": 441361543,
-      "cost_usd": 318.96,
+      "input_tokens": 175166,
+      "output_tokens": 3949152,
+      "cache_creation_tokens": 23430679,
+      "cache_read_tokens": 454286461,
+      "cost_usd": 326.37,
       "sessions": 32
     },
     "claude-haiku-4-5": {
@@ -76,12 +76,12 @@
   },
   "sessions_count": 32,
   "toolUseCounts": {
-    "Bash": 1741,
-    "Read": 1423,
+    "Bash": 1785,
+    "Read": 1452,
     "Write": 127,
     "ToolSearch": 30,
     "AskUserQuestion": 7,
-    "Edit": 473,
+    "Edit": 480,
     "ExitPlanMode": 25,
     "Agent": 75,
     "Skill": 14,
@@ -93,30 +93,30 @@
     "TaskUpdate": 34
   },
   "assistantContentTypes": {
-    "thinking": 775,
-    "text": 1733,
-    "tool_use": 4093
+    "thinking": 808,
+    "text": 1753,
+    "tool_use": 4173
   },
   "promptSourceCounts": {
-    "typed": 70,
+    "typed": 71,
     "queued": 1,
     "sdk": 138,
     "system": 7
   },
   "opencode": {
     "all_time": {
-      "input_tokens": 3682731,
-      "output_tokens": 379519,
+      "input_tokens": 3935930,
+      "output_tokens": 427509,
       "cache_write_tokens": 0,
-      "cache_read_tokens": 79835776,
-      "sessions": 45
+      "cache_read_tokens": 92237952,
+      "sessions": 47
     },
     "last_30_days": {
-      "input_tokens": 3682731,
-      "output_tokens": 379519,
+      "input_tokens": 3935930,
+      "output_tokens": 427509,
       "cache_write_tokens": 0,
-      "cache_read_tokens": 79835776,
-      "sessions": 45
+      "cache_read_tokens": 92237952,
+      "sessions": 47
     },
     "by_model": {
       "opencode/big-pickle": {
@@ -134,18 +134,18 @@
         "sessions": 7
       },
       "opencode/deepseek-v4-flash-free": {
-        "input_tokens": 1884824,
-        "output_tokens": 186365,
+        "input_tokens": 2138023,
+        "output_tokens": 234355,
         "cache_write_tokens": 0,
-        "cache_read_tokens": 48138624,
-        "sessions": 21
+        "cache_read_tokens": 60540800,
+        "sessions": 23
       }
     },
     "agent_breakdown": {
       "build": {
         "sessions": 22,
-        "tokens_input": 2341263,
-        "tokens_output": 247950
+        "tokens_input": 2497091,
+        "tokens_output": 283799
       },
       "explore": {
         "sessions": 18,
@@ -153,9 +153,9 @@
         "tokens_output": 113498
       },
       "general": {
-        "sessions": 2,
-        "tokens_input": 61825,
-        "tokens_output": 3715
+        "sessions": 4,
+        "tokens_input": 159196,
+        "tokens_output": 15856
       },
       "plan": {
         "sessions": 3,
@@ -164,14 +164,14 @@
       }
     },
     "part_types": {
-      "text": 770,
-      "step-start": 1335,
-      "reasoning": 1201,
-      "tool": 1794,
-      "step-finish": 1331,
-      "patch": 205,
+      "text": 788,
+      "step-start": 1464,
+      "reasoning": 1306,
+      "tool": 1982,
+      "step-finish": 1460,
+      "patch": 243,
       "file": 6,
-      "compaction": 7
+      "compaction": 8
     },
     "task_categories": {
       "Infrastructure & DevOps": {
@@ -190,9 +190,9 @@
         "tokens_output": 95491
       },
       "Debugging & Fixes": {
-        "sessions": 5,
-        "tokens_input": 252649,
-        "tokens_output": 19875
+        "sessions": 6,
+        "tokens_input": 424441,
+        "tokens_output": 56763
       },
       "Repository Setup": {
         "sessions": 1,
@@ -200,9 +200,9 @@
         "tokens_output": 12
       },
       "Other": {
-        "sessions": 7,
-        "tokens_input": 1130038,
-        "tokens_output": 104530
+        "sessions": 8,
+        "tokens_input": 1210830,
+        "tokens_output": 115327
       },
       "Git & CI/CD": {
         "sessions": 1,
@@ -211,11 +211,11 @@
       }
     },
     "tool_groups": {
-      "Code reading & exploration": 291,
+      "Code reading & exploration": 312,
       "Database & infrastructure": 5,
       "Code editing & writing": 24,
       "Package & dependency management": 11,
-      "Build & verification": 42,
+      "Build & verification": 48,
       "System & file operations": 5,
       "GitHub & issues": 15
     }
@@ -244,12 +244,12 @@
   },
   "usage": {
     "cc_tools": {
-      "Bash": 1741,
-      "Read": 1423,
+      "Bash": 1785,
+      "Read": 1452,
       "Write": 127,
       "ToolSearch": 30,
       "AskUserQuestion": 7,
-      "Edit": 473,
+      "Edit": 480,
       "ExitPlanMode": 25,
       "Agent": 75,
       "Skill": 14,
@@ -261,16 +261,16 @@
       "TaskUpdate": 34
     },
     "cc_content_types": {
-      "thinking": 775,
-      "text": 1733,
-      "tool_use": 4093
+      "thinking": 808,
+      "text": 1753,
+      "tool_use": 4173
     },
     "cc_prompt_sources": {
-      "typed": 70,
+      "typed": 71,
       "queued": 1,
       "sdk": 138,
       "system": 7
     }
   },
-  "summary": "Looking at token usage, <strong>Other</strong> accounts for the largest share at 37%, followed by <strong>Code Exploration</strong> (31%). The ratio of 291:24 read-to-write calls confirms most effort goes into navigating and comprehending code."
+  "summary": "Based on recent activity, the majority of AI-assisted work (37%) falls under <strong>Other</strong>, followed by <strong>Code Exploration</strong> (28%). Tool calls skew heavily toward reading (312) over writing (24), pointing to a codebase-exploration-heavy workflow."
 }

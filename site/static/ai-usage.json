@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-06-08T12:22:03.267Z",
+  "generated_at": "2026-06-08T13:21:44.525Z",
   "all_time": {
-    "input_tokens": 336757,
-    "output_tokens": 4998234,
-    "cache_creation_tokens": 32435095,
-    "cache_read_tokens": 597615927,
-    "cost_usd": 1169.9,
-    "from_logs_usd": 399.9,
+    "input_tokens": 336906,
+    "output_tokens": 5083140,
+    "cache_creation_tokens": 32812098,
+    "cache_read_tokens": 610540845,
+    "cost_usd": 1177.31,
+    "from_logs_usd": 407.31,
     "sessions": 49
   },
   "last_30_days": {
-    "input_tokens": 336757,
-    "output_tokens": 4998234,
-    "cache_creation_tokens": 32435095,
-    "cache_read_tokens": 597615927,
-    "cost_usd": 469.9,
+    "input_tokens": 336906,
+    "output_tokens": 5083140,
+    "cache_creation_tokens": 32812098,
+    "cache_read_tokens": 610540845,
+    "cost_usd": 477.31,
     "sessions": 55
   },
   "by_model": {
     "claude-sonnet-4-6": {
-      "input_tokens": 276238,
-      "output_tokens": 4779002,
-      "cache_creation_tokens": 27147616,
-      "cache_read_tokens": 533804688,
-      "cost_usd": 384.27,
+      "input_tokens": 276387,
+      "output_tokens": 4863908,
+      "cache_creation_tokens": 27524619,
+      "cache_read_tokens": 546729606,
+      "cost_usd": 391.68,
       "sessions": 49
     },
     "claude-haiku-4-5": {
@@ -244,28 +244,28 @@
     },
     {
       "date": "2026-06-08",
-      "input_tokens": 3382,
-      "output_tokens": 515399,
-      "cache_creation_tokens": 2230365,
-      "cache_read_tokens": 55697174,
-      "cost_usd": 33.8117,
+      "input_tokens": 3531,
+      "output_tokens": 600305,
+      "cache_creation_tokens": 2607368,
+      "cache_read_tokens": 68622092,
+      "cost_usd": 41.2248,
       "sessions": 3
     }
   ],
   "opencode": {
     "all_time": {
-      "input_tokens": 3733648,
-      "output_tokens": 386895,
+      "input_tokens": 3986847,
+      "output_tokens": 434885,
       "cache_write_tokens": 0,
-      "cache_read_tokens": 80629632,
-      "sessions": 47
+      "cache_read_tokens": 93031808,
+      "sessions": 49
     },
     "last_30_days": {
-      "input_tokens": 3733648,
-      "output_tokens": 386895,
+      "input_tokens": 3986847,
+      "output_tokens": 434885,
       "cache_write_tokens": 0,
-      "cache_read_tokens": 80629632,
-      "sessions": 47
+      "cache_read_tokens": 93031808,
+      "sessions": 49
     },
     "by_model": {
       "opencode/big-pickle": {
@@ -283,18 +283,18 @@
         "sessions": 7
       },
       "opencode/deepseek-v4-flash-free": {
-        "input_tokens": 1884824,
-        "output_tokens": 186365,
+        "input_tokens": 2138023,
+        "output_tokens": 234355,
         "cache_write_tokens": 0,
-        "cache_read_tokens": 48138624,
-        "sessions": 21
+        "cache_read_tokens": 60540800,
+        "sessions": 23
       }
     },
     "agent_breakdown": {
       "build": {
         "sessions": 23,
-        "tokens_input": 2374073,
-        "tokens_output": 253529
+        "tokens_input": 2529901,
+        "tokens_output": 289378
       },
       "explore": {
         "sessions": 19,
@@ -302,9 +302,9 @@
         "tokens_output": 115295
       },
       "general": {
-        "sessions": 2,
-        "tokens_input": 61825,
-        "tokens_output": 3715
+        "sessions": 4,
+        "tokens_input": 159196,
+        "tokens_output": 15856
       },
       "plan": {
         "sessions": 3,
@@ -313,14 +313,14 @@
       }
     },
     "part_types": {
-      "text": 783,
-      "step-start": 1371,
-      "reasoning": 1235,
-      "tool": 1836,
-      "step-finish": 1367,
-      "patch": 213,
+      "text": 801,
+      "step-start": 1500,
+      "reasoning": 1340,
+      "tool": 2024,
+      "step-finish": 1496,
+      "patch": 251,
       "file": 6,
-      "compaction": 7
+      "compaction": 8
     },
     "task_categories": {
       "Infrastructure & DevOps": {
@@ -339,9 +339,9 @@
         "tokens_output": 97288
       },
       "Debugging & Fixes": {
-        "sessions": 5,
-        "tokens_input": 252649,
-        "tokens_output": 19875
+        "sessions": 6,
+        "tokens_input": 424441,
+        "tokens_output": 56763
       },
       "Repository Setup": {
         "sessions": 1,
@@ -349,9 +349,9 @@
         "tokens_output": 12
       },
       "Other": {
-        "sessions": 8,
-        "tokens_input": 1162848,
-        "tokens_output": 110109
+        "sessions": 9,
+        "tokens_input": 1243640,
+        "tokens_output": 120906
       },
       "Git & CI/CD": {
         "sessions": 1,
@@ -360,11 +360,11 @@
       }
     },
     "tool_groups": {
-      "Code reading & exploration": 304,
+      "Code reading & exploration": 325,
       "Database & infrastructure": 5,
       "Code editing & writing": 24,
       "Package & dependency management": 11,
-      "Build & verification": 43,
+      "Build & verification": 49,
       "System & file operations": 6,
       "GitHub & issues": 15,
       "Git operations": 0
@@ -401,12 +401,12 @@
   },
   "usage": {
     "cc_tools": {
-      "Bash": 2208,
-      "Read": 1866,
+      "Bash": 2252,
+      "Read": 1895,
       "Write": 159,
       "ToolSearch": 39,
       "AskUserQuestion": 8,
-      "Edit": 577,
+      "Edit": 584,
       "ExitPlanMode": 32,
       "Agent": 89,
       "Skill": 15,
@@ -418,16 +418,16 @@
       "TaskUpdate": 34
     },
     "cc_content_types": {
-      "thinking": 1003,
-      "text": 2196,
-      "tool_use": 5200
+      "thinking": 1036,
+      "text": 2216,
+      "tool_use": 5280
     },
     "cc_prompt_sources": {
-      "typed": 93,
+      "typed": 94,
       "queued": 1,
       "sdk": 138,
       "system": 7
     }
   },
-  "summary": "Based on recent activity, the majority of AI-assisted work (38%) falls under <strong>Other</strong>, followed by <strong>Code Exploration</strong> (31%). With 304 read calls against just 24 writes, the emphasis is on understanding existing code rather than generating new."
+  "summary": "Based on recent activity, the majority of AI-assisted work (37%) falls under <strong>Other</strong>, followed by <strong>Code Exploration</strong> (28%). Tool calls skew heavily toward reading (325) over writing (24), pointing to a codebase-exploration-heavy workflow."
 }
