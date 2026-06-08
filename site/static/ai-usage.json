@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T12:13:14.913Z",
+  "generated_at": "2026-06-08T12:22:03.267Z",
   "all_time": {
     "input_tokens": 336757,
     "output_tokens": 4998234,
@@ -254,17 +254,17 @@
   ],
   "opencode": {
     "all_time": {
-      "input_tokens": 3647534,
-      "output_tokens": 384415,
+      "input_tokens": 3733648,
+      "output_tokens": 386895,
       "cache_write_tokens": 0,
-      "cache_read_tokens": 80279168,
+      "cache_read_tokens": 80629632,
       "sessions": 47
     },
     "last_30_days": {
-      "input_tokens": 3647534,
-      "output_tokens": 384415,
+      "input_tokens": 3733648,
+      "output_tokens": 386895,
       "cache_write_tokens": 0,
-      "cache_read_tokens": 80279168,
+      "cache_read_tokens": 80629632,
       "sessions": 47
     },
     "by_model": {
@@ -283,18 +283,18 @@
         "sessions": 7
       },
       "opencode/deepseek-v4-flash-free": {
-        "input_tokens": 1798710,
-        "output_tokens": 183885,
+        "input_tokens": 1884824,
+        "output_tokens": 186365,
         "cache_write_tokens": 0,
-        "cache_read_tokens": 47788160,
+        "cache_read_tokens": 48138624,
         "sessions": 21
       }
     },
     "agent_breakdown": {
       "build": {
-        "sessions": 22,
-        "tokens_input": 2192424,
-        "tokens_output": 248234
+        "sessions": 23,
+        "tokens_input": 2374073,
+        "tokens_output": 253529
       },
       "explore": {
         "sessions": 19,
@@ -307,18 +307,18 @@
         "tokens_output": 3715
       },
       "plan": {
-        "sessions": 4,
-        "tokens_input": 376648,
-        "tokens_output": 17171
+        "sessions": 3,
+        "tokens_input": 281113,
+        "tokens_output": 14356
       }
     },
     "part_types": {
-      "text": 775,
-      "step-start": 1359,
-      "reasoning": 1224,
-      "tool": 1826,
-      "step-finish": 1355,
-      "patch": 208,
+      "text": 783,
+      "step-start": 1371,
+      "reasoning": 1235,
+      "tool": 1836,
+      "step-finish": 1367,
+      "patch": 213,
       "file": 6,
       "compaction": 7
     },
@@ -340,8 +340,8 @@
       },
       "Debugging & Fixes": {
         "sessions": 5,
-        "tokens_input": 178233,
-        "tokens_output": 19199
+        "tokens_input": 252649,
+        "tokens_output": 19875
       },
       "Repository Setup": {
         "sessions": 1,
@@ -360,14 +360,14 @@
       }
     },
     "tool_groups": {
-      "Code reading & exploration": 303,
-      "Git operations": 45,
+      "Code reading & exploration": 304,
       "Database & infrastructure": 5,
-      "Code editing & writing": 19,
+      "Code editing & writing": 24,
       "Package & dependency management": 11,
-      "Build & verification": 42,
+      "Build & verification": 43,
       "System & file operations": 6,
-      "GitHub & issues": 14
+      "GitHub & issues": 15,
+      "Git operations": 0
     }
   },
   "cursor": {
@@ -429,5 +429,5 @@
       "system": 7
     }
   },
-  "summary": "Based on recent activity, the majority of AI-assisted work (38%) falls under <strong>Other</strong>, followed by <strong>Code Exploration</strong> (32%). With 290 read calls against just 19 writes, the emphasis is on understanding existing code rather than generating new. 45 Git operations suggest frequent commits, branching, and an iterative workflow. Looking at token usage, <strong>Other</strong> accounts for the largest share at 66%, followed by <strong>Code Exploration</strong> (34%). Tool calls skew heavily toward reading (13) over writing (0), pointing to a codebase-exploration-heavy workflow."
+  "summary": "Based on recent activity, the majority of AI-assisted work (38%) falls under <strong>Other</strong>, followed by <strong>Code Exploration</strong> (31%). With 304 read calls against just 24 writes, the emphasis is on understanding existing code rather than generating new."
 }
