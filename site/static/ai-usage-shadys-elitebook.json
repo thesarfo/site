@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T00:34:26.395Z",
+  "generated_at": "2026-06-11T14:12:32.116Z",
   "hostname": "shadys-elitebook",
   "by_day": [
     {
@@ -67,22 +67,22 @@
     },
     {
       "date": "2026-06-11",
-      "input_tokens": 178,
-      "output_tokens": 85442,
-      "cache_creation_tokens": 183796,
-      "cache_read_tokens": 9545438,
-      "cost_usd": 5.248,
-      "sessions": 1
+      "input_tokens": 1314,
+      "output_tokens": 962644,
+      "cache_creation_tokens": 2339812,
+      "cache_read_tokens": 66624379,
+      "cost_usd": 48.3817,
+      "sessions": 7
     }
   ],
   "by_model": {
     "claude-sonnet-4-6": {
-      "input_tokens": 181825,
-      "output_tokens": 5899515,
-      "cache_creation_tokens": 30981167,
-      "cache_read_tokens": 685899129,
-      "cost_usd": 468.3,
-      "sessions": 43
+      "input_tokens": 182961,
+      "output_tokens": 6776717,
+      "cache_creation_tokens": 33137183,
+      "cache_read_tokens": 742978070,
+      "cost_usd": 511.43,
+      "sessions": 49
     },
     "claude-haiku-4-5": {
       "input_tokens": 46641,
@@ -101,23 +101,23 @@
       "sessions": 1
     }
   },
-  "sessions_count": 43,
+  "sessions_count": 49,
   "toolUseCounts": {
-    "Bash": 2498,
-    "Read": 1808,
-    "Write": 188,
-    "ToolSearch": 58,
-    "AskUserQuestion": 10,
-    "Edit": 712,
+    "Bash": 2661,
+    "Read": 1877,
+    "Edit": 782,
+    "Write": 239,
+    "AskUserQuestion": 14,
+    "ToolSearch": 61,
     "ExitPlanMode": 32,
-    "Agent": 115,
-    "Skill": 25,
+    "Agent": 116,
+    "Skill": 31,
+    "TodoWrite": 82,
+    "TaskCreate": 65,
+    "TaskUpdate": 107,
     "WebFetch": 4,
-    "TodoWrite": 81,
     "Glob": 40,
     "Grep": 28,
-    "TaskCreate": 51,
-    "TaskUpdate": 81,
     "mcp__hubtel-sprint-planner__how_to_use": 3,
     "mcp__hubtel-sprint-planner__get_task_structure": 3,
     "mcp__hubtel-sprint-planner__cleanup_sprint_planner_workspace": 3,
@@ -127,27 +127,27 @@
     "mcp__hubtel-sprint-planner__validate_sprint_board": 3
   },
   "assistantContentTypes": {
-    "thinking": 1325,
-    "text": 2680,
-    "tool_use": 5751
+    "thinking": 1449,
+    "text": 2878,
+    "tool_use": 6159
   },
   "promptSourceCounts": {
-    "typed": 310,
-    "queued": 2,
-    "sdk": 188,
+    "sdk": 199,
+    "typed": 350,
+    "queued": 5,
     "system": 10
   },
   "opencode": {
     "all_time": {
-      "input_tokens": 14560207,
-      "output_tokens": 523096,
+      "input_tokens": 14638413,
+      "output_tokens": 523326,
       "cache_write_tokens": 0,
       "cache_read_tokens": 145537462,
       "sessions": 50
     },
     "last_30_days": {
-      "input_tokens": 14560207,
-      "output_tokens": 523096,
+      "input_tokens": 14638413,
+      "output_tokens": 523326,
       "cache_write_tokens": 0,
       "cache_read_tokens": 145537462,
       "sessions": 50
@@ -196,8 +196,8 @@
         "sessions": 1
       },
       "opencode/nemotron-3-ultra-free": {
-        "input_tokens": 9883475,
-        "output_tokens": 9844,
+        "input_tokens": 9961681,
+        "output_tokens": 10074,
         "cache_write_tokens": 0,
         "cache_read_tokens": 0,
         "sessions": 3
@@ -206,8 +206,8 @@
     "agent_breakdown": {
       "build": {
         "sessions": 24,
-        "tokens_input": 13103407,
-        "tokens_output": 377016
+        "tokens_input": 13181613,
+        "tokens_output": 377246
       },
       "explore": {
         "sessions": 19,
@@ -226,12 +226,12 @@
       }
     },
     "part_types": {
-      "text": 949,
-      "step-start": 2077,
-      "reasoning": 1838,
-      "tool": 2599,
-      "step-finish": 2073,
-      "patch": 351,
+      "text": 951,
+      "step-start": 2080,
+      "reasoning": 1841,
+      "tool": 2601,
+      "step-finish": 2076,
+      "patch": 352,
       "file": 6,
       "compaction": 10
     },
@@ -268,8 +268,8 @@
       },
       "Git & CI/CD": {
         "sessions": 2,
-        "tokens_input": 279862,
-        "tokens_output": 3954
+        "tokens_input": 358068,
+        "tokens_output": 4184
       }
     },
     "tool_groups": {
@@ -306,21 +306,21 @@
   },
   "usage": {
     "cc_tools": {
-      "Bash": 2498,
-      "Read": 1808,
-      "Write": 188,
-      "ToolSearch": 58,
-      "AskUserQuestion": 10,
-      "Edit": 712,
+      "Bash": 2661,
+      "Read": 1877,
+      "Edit": 782,
+      "Write": 239,
+      "AskUserQuestion": 14,
+      "ToolSearch": 61,
       "ExitPlanMode": 32,
-      "Agent": 115,
-      "Skill": 25,
+      "Agent": 116,
+      "Skill": 31,
+      "TodoWrite": 82,
+      "TaskCreate": 65,
+      "TaskUpdate": 107,
       "WebFetch": 4,
-      "TodoWrite": 81,
       "Glob": 40,
       "Grep": 28,
-      "TaskCreate": 51,
-      "TaskUpdate": 81,
       "mcp__hubtel-sprint-planner__how_to_use": 3,
       "mcp__hubtel-sprint-planner__get_task_structure": 3,
       "mcp__hubtel-sprint-planner__cleanup_sprint_planner_workspace": 3,
@@ -330,16 +330,16 @@
       "mcp__hubtel-sprint-planner__validate_sprint_board": 3
     },
     "cc_content_types": {
-      "thinking": 1325,
-      "text": 2680,
-      "tool_use": 5751
+      "thinking": 1449,
+      "text": 2878,
+      "tool_use": 6159
     },
     "cc_prompt_sources": {
-      "typed": 310,
-      "queued": 2,
-      "sdk": 188,
+      "sdk": 199,
+      "typed": 350,
+      "queued": 5,
       "system": 10
     }
   },
-  "summary": "Looking at token usage, <strong>Debugging & Fixes</strong> accounts for the largest share at 75%, followed by <strong>Other</strong> (10%). The ratio of 437:33 read-to-write calls confirms most effort goes into navigating and comprehending code. Infrastructure tasks (12 calls) show ongoing work with Docker, databases, and deployment configuration."
+  "summary": "Looking at token usage, <strong>Debugging & Fixes</strong> accounts for the largest share at 75%, followed by <strong>Other</strong> (10%). With 437 read calls against just 33 writes, the emphasis is on understanding existing code rather than generating new. 12 infrastructure-related calls indicate DevOps concerns like containers, databases, and environment setup."
 }
