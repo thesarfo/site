@@ -184,3 +184,10 @@ For slow queries, `EXPLAIN ANALYZE` is the primary tool. Look at:
 Understanding this pipeline won't fix every problem of yours but at least it will tell you where to look.
 
 END.
+
+---
+
+### References
+
+- Graefe, G. (1994). [Volcano - An Extensible and Parallel Query Evaluation System](https://paperhub.s3.amazonaws.com/dace52a42c07f7f8348b08dc2b186061.pdf). *IEEE Transactions on Knowledge and Data Engineering*. the original paper naming the iterator model used in PostgreSQL's executor
+- [PostgreSQL Documentation](https://www.postgresql.org/docs/current/). system catalogs, planner internals, EXPLAIN, configuration parameters

@@ -16,6 +16,7 @@ import Site.Pages.Skills (skillsPage)
 import Site.Pages.Now (nowPage)
 import Site.Pages.Lens (lensPage)
 import Site.Pages.Other (otherPage)
+import Site.Pages.Books (bookPage, booksIndex, chapterPage)
 import Site.Pages.NotFound (notFoundPage)
 import System.Environment (lookupEnv)
 import System.FilePath (takeBaseName, takeDirectory, takeFileName)
@@ -73,6 +74,33 @@ rules showDrafts = do
   create ["writing/index.html"] $ do
     route idRoute
     compile $ allEntries showDrafts >>= html . writingIndex
+
+  -- Book chapters: content/books/<book>/chapter-<n>.md -> /books/<book>/<n>
+  match "content/books/*/*.md" $ do
+    route $ customRoute $ \ident ->
+      let path = toFilePath ident
+       in "books/" ++ takeFileName (takeDirectory path) ++ "/" ++ drop 8 (takeBaseName path) ++ "/index.html"
+    compile $ do
+      ident <- getUnderlying
+      books <- loadData "data/books.json" :: Compiler [Book]
+      let path = toFilePath ident
+          slug = takeFileName (takeDirectory path)
+          num = read (drop 8 (takeBaseName path)) :: Int
+      case [(b, c) | b <- books, T.unpack (bookSlug b) == slug, c <- bookChapters b, chNumber c == num] of
+        ((b, c) : _) -> do
+          body <- renderMarkdown Notes =<< getResourceBody
+          makeItem (renderHtml (chapterPage b c (itemBody body)))
+        [] -> fail ("no chapter entry in books.json for " ++ path)
+
+  create ["books/index.html"] $ do
+    route idRoute
+    compile $ loadData "data/books.json" >>= html . booksIndex
+
+  create ["books/ddia/index.html"] $ do
+    route idRoute
+    compile $ do
+      books <- loadData "data/books.json" :: Compiler [Book]
+      html (bookPage (head books))
 
   create ["index.html"] $ do
     route idRoute

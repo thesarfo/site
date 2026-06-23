@@ -1,0 +1,30 @@
+[
+  {
+    "slug": "ddia",
+    "title": "Designing Data-Intensive Applications",
+    "author": "Martin Kleppmann",
+    "year": 2017,
+    "chapters": [
+      {
+        "number": 1,
+        "title": "Reliable, Scalable, and Maintainable Applications"
+      },
+      {
+        "number": 2,
+        "title": "Data Models and Query Languages"
+      },
+      {
+        "number": 3,
+        "title": "Storage and Retrieval"
+      },
+      {
+        "number": 4,
+        "title": "Encoding and Evolution"
+      },
+      {
+        "number": 5,
+        "title": "Replication"
+      }
+    ]
+  }
+]

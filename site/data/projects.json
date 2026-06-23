@@ -46,5 +46,11 @@
     "description": "A lightweight library for validating and formatting international phone numbers.",
     "language": "Java",
     "href": "https://github.com/thesarfo/crossdial"
+  },
+  {
+    "name": "linear-kv",
+    "description": "Linearizable key-value store based on the Linearizability paper.",
+    "language": "Go",
+    "href": "https://github.com/thesarfo/linear-kv"
   }
 ]

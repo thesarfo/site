@@ -49,5 +49,31 @@
     "year": 2012,
     "summary": "Spanner is a globally distributed database that provides externally consistent reads and writes at global scale. It uses TrueTime, a globally synchronized clock, to implement lock-free read-only transactions.",
     "interesting": "The TrueTime API is brilliant. Instead of pretending clocks are perfectly synchronized (they're not), Spanner explicitly models clock uncertainty as an interval. This honest modeling of reality enables a cleaner theoretical foundation for consistency guarantees."
+  },
+  {
+    "slug": "chubby",
+    "title": "The Chubby Lock Service for Loosely-Coupled Distributed Systems",
+    "authors": "Mike Burrows",
+    "year": 2006,
+    "summary": "Chubby is a distributed lock service built at Google for coarse-grained synchronization and reliable low-volume metadata storage across loosely-coupled distributed systems. A Chubby cell consists of five replicas running Paxos for consensus, exposing a file-system-like namespace with advisory locks, ephemeral nodes, and an event notification mechanism. Clients maintain a consistent, write-through cache backed by master invalidations rather than TTL-based expiry.",
+    "interesting": "The most telling observation in the paper is a failure of success: developers across Google treated Chubby as though it were permanently available, building systems that responded catastrophically to even brief outages, initiating lengthy recovery procedures or outright crashing when a Chubby cell failed over. The system's reliability created complacency. Also striking: Chubby's primary designed purpose was leader election, but its largest real-world use turned out to be as a name service. The consistent caching model, with explicit invalidations instead of TTLs, solved the polling and load-spike problems that plagued DNS at Google's scale, a capability the designers built for locks that the ecosystem adopted for a completely different use case.",
+    "link": "https://static.googleusercontent.com/media/research.google.com/en//archive/chubby-osdi06.pdf"
+  },
+  {
+    "slug": "gfs",
+    "title": "The Google File System",
+    "authors": "Sanjay Ghemawat, Howard Gobioff, Shun-Tak Leung",
+    "year": 2003,
+    "summary": "GFS is a distributed file system built on commodity hardware for Google's large-scale data processing workloads. A single master holds all metadata in memory; clients contact it only for metadata and then transfer data directly with chunkservers. Files are split into 64 MB chunks, each stored on three replicas. The system is explicitly optimized for large sequential reads and atomic record appends, not random writes or low latency.",
+    "interesting": "The single master sounds alarming, a textbook single point of failure, yet it works because the design ruthlessly separates control from data: clients cache chunk locations and never touch the master for actual I/O. The master handles hundreds of metadata operations per second without becoming a bottleneck. Atomic record append is the quietly powerful feature: multiple producers can append to a shared file concurrently with no application-level synchronization, which underpins several internal Google pipeline designs. The paper also has a satisfying retroactive justification: they discovered silent disk corruption from IDE driver bugs, which validated the choice to checksum every 64 KB block.",
+    "link": "https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf"
+  },
+  {
+    "slug": "linearizability",
+    "title": "Linearizability: A Correctness Condition for Concurrent Objects",
+    "authors": "Maurice Herlihy, Jeannette Wing",
+    "year": 1990,
+    "summary": "Linearizability formalizes what it means for a concurrent object to behave correctly. An execution history is linearizable if each operation can be assigned a single instantaneous point in time, its linearization point, such that the resulting sequential order is consistent with the object's sequential specification, and no linearization point falls outside the real time interval of its operation.",
+    "interesting": "The locality theorem is the key insight: a system is linearizable if and only if each individual object within it is linearizable. This means you can verify and reason about correctness per object in isolation, which makes the property composable in a way that sequential consistency is not. Sequential consistency only requires some legal sequential ordering, without respecting real-time order, it allows a later operation to appear before an earlier one in the history. Linearizability is strictly stronger: it enforces that non-overlapping operations respect their actual wall-clock order. That constraint is what makes it useful as a foundation for distributed databases and why 'is this system linearizable?' became the standard question to ask."
   }
 ]

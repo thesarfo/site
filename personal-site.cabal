@@ -20,6 +20,7 @@ executable site
                       Site.Pages.Now
                       Site.Pages.Lens
                       Site.Pages.Other
+                      Site.Pages.Books
                       Site.Pages.NotFound
                       Site.Pages.Common
     build-depends:    base >=4 && <5
