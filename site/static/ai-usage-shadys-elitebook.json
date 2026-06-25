@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-21T11:40:14.087Z",
+  "generated_at": "2026-06-25T11:34:00.136Z",
   "hostname": "shadys-elitebook",
   "by_day": [
     {
@@ -148,30 +148,66 @@
     },
     {
       "date": "2026-06-21",
-      "input_tokens": 27520,
-      "output_tokens": 323696,
-      "cache_creation_tokens": 1753275,
-      "cache_read_tokens": 30894471,
-      "cost_usd": 21.981,
+      "input_tokens": 27709,
+      "output_tokens": 400460,
+      "cache_creation_tokens": 2311017,
+      "cache_read_tokens": 42836627,
+      "cost_usd": 30.0616,
       "sessions": 3
+    },
+    {
+      "date": "2026-06-22",
+      "input_tokens": 10905,
+      "output_tokens": 699526,
+      "cache_creation_tokens": 5293571,
+      "cache_read_tokens": 84560024,
+      "cost_usd": 59.4632,
+      "sessions": 13
+    },
+    {
+      "date": "2026-06-23",
+      "input_tokens": 32893,
+      "output_tokens": 631637,
+      "cache_creation_tokens": 4197237,
+      "cache_read_tokens": 93695174,
+      "cost_usd": 58.2012,
+      "sessions": 7
+    },
+    {
+      "date": "2026-06-24",
+      "input_tokens": 9036,
+      "output_tokens": 942497,
+      "cache_creation_tokens": 5440585,
+      "cache_read_tokens": 132478395,
+      "cost_usd": 81.4022,
+      "sessions": 9
+    },
+    {
+      "date": "2026-06-25",
+      "input_tokens": 12486,
+      "output_tokens": 144776,
+      "cache_creation_tokens": 1591801,
+      "cache_read_tokens": 24739697,
+      "cost_usd": 18.0782,
+      "sessions": 8
     }
   ],
   "by_model": {
     "claude-sonnet-4-6": {
-      "input_tokens": 266344,
-      "output_tokens": 11202033,
-      "cache_creation_tokens": 56095430,
-      "cache_read_tokens": 1194230686,
-      "cost_usd": 842.51,
-      "sessions": 84
+      "input_tokens": 324787,
+      "output_tokens": 13642322,
+      "cache_creation_tokens": 71984992,
+      "cache_read_tokens": 1526422874,
+      "cost_usd": 1064.45,
+      "sessions": 113
     },
     "claude-haiku-4-5": {
-      "input_tokens": 53491,
-      "output_tokens": 320704,
-      "cache_creation_tokens": 8108630,
-      "cache_read_tokens": 76850552,
-      "cost_usd": 19.42,
-      "sessions": 28
+      "input_tokens": 60557,
+      "output_tokens": 375615,
+      "cache_creation_tokens": 9300004,
+      "cache_read_tokens": 92073810,
+      "cost_usd": 22.71,
+      "sessions": 34
     },
     "claude-opus-4-8": {
       "input_tokens": 9983,
@@ -182,55 +218,59 @@
       "sessions": 1
     }
   },
-  "sessions_count": 84,
+  "sessions_count": 113,
   "toolUseCounts": {
-    "Bash": 4762,
-    "Read": 3211,
-    "Edit": 1169,
-    "Write": 593,
-    "AskUserQuestion": 25,
-    "Skill": 68,
-    "ToolSearch": 105,
-    "TaskCreate": 119,
-    "TaskUpdate": 198,
-    "Agent": 260,
+    "Bash": 5989,
+    "Read": 4271,
+    "Edit": 1544,
+    "Write": 651,
+    "AskUserQuestion": 31,
+    "Skill": 89,
+    "ToolSearch": 126,
+    "TaskCreate": 154,
+    "TaskUpdate": 227,
+    "Agent": 301,
     "ExitPlanMode": 37,
-    "TodoWrite": 183,
-    "Glob": 80,
-    "Grep": 56,
+    "TodoWrite": 210,
+    "Glob": 162,
+    "Grep": 140,
     "EnterWorktree": 1,
-    "WebFetch": 4,
-    "mcp__hubtel-sprint-planner__how_to_use": 6,
-    "mcp__hubtel-sprint-planner__get_task_structure": 6,
-    "mcp__hubtel-sprint-planner__cleanup_sprint_planner_workspace": 6,
-    "mcp__hubtel-sprint-planner__get_past_experience": 6,
-    "mcp__hubtel-sprint-planner__submit_task": 6,
-    "mcp__hubtel-sprint-planner__get_current_user": 3,
-    "mcp__hubtel-sprint-planner__validate_sprint_board": 3,
+    "WebSearch": 17,
+    "WebFetch": 20,
+    "mcp__hubtel-sprint-planner__how_to_use": 7,
+    "mcp__hubtel-sprint-planner__get_task_structure": 8,
+    "mcp__hubtel-sprint-planner__cleanup_sprint_planner_workspace": 8,
+    "mcp__hubtel-sprint-planner__get_past_experience": 7,
+    "mcp__hubtel-sprint-planner__submit_task": 7,
+    "mcp__hubtel-sprint-planner__get_current_user": 4,
+    "mcp__hubtel-sprint-planner__validate_sprint_board": 4,
+    "Monitor": 2,
+    "bash": 2,
+    "mcp__hubtel-sprint-planner__get_active_sprint_boards": 1,
     "mcp__hubtel-sprint-planner__update_past_experience_preference": 1
   },
   "assistantContentTypes": {
-    "thinking": 2419,
-    "text": 5139,
-    "tool_use": 10908
+    "thinking": 3090,
+    "text": 6527,
+    "tool_use": 14021
   },
   "promptSourceCounts": {
-    "sdk": 340,
-    "typed": 525,
+    "sdk": 528,
+    "typed": 639,
     "queued": 8,
-    "system": 10
+    "system": 17
   },
   "opencode": {
     "all_time": {
-      "input_tokens": 15423592,
-      "output_tokens": 612003,
+      "input_tokens": 15508613,
+      "output_tokens": 612248,
       "cache_write_tokens": 0,
       "cache_read_tokens": 150403382,
       "sessions": 56
     },
     "last_30_days": {
-      "input_tokens": 15423592,
-      "output_tokens": 612003,
+      "input_tokens": 15508613,
+      "output_tokens": 612248,
       "cache_write_tokens": 0,
       "cache_read_tokens": 150403382,
       "sessions": 56
@@ -279,8 +319,8 @@
         "sessions": 1
       },
       "opencode/nemotron-3-ultra-free": {
-        "input_tokens": 10414060,
-        "output_tokens": 14344,
+        "input_tokens": 10499081,
+        "output_tokens": 14589,
         "cache_write_tokens": 0,
         "cache_read_tokens": 0,
         "sessions": 4
@@ -296,8 +336,8 @@
     "agent_breakdown": {
       "build": {
         "sessions": 27,
-        "tokens_input": 13782725,
-        "tokens_output": 440934
+        "tokens_input": 13867746,
+        "tokens_output": 441179
       },
       "explore": {
         "sessions": 22,
@@ -316,12 +356,12 @@
       }
     },
     "part_types": {
-      "text": 1021,
-      "step-start": 2224,
-      "reasoning": 1975,
-      "tool": 2956,
-      "step-finish": 2220,
-      "patch": 366,
+      "text": 1022,
+      "step-start": 2226,
+      "reasoning": 1977,
+      "tool": 2957,
+      "step-finish": 2223,
+      "patch": 367,
       "file": 8,
       "compaction": 10
     },
@@ -358,8 +398,8 @@
       },
       "Git & CI/CD": {
         "sessions": 2,
-        "tokens_input": 521277,
-        "tokens_output": 4648
+        "tokens_input": 606298,
+        "tokens_output": 4893
       }
     },
     "tool_groups": {
@@ -373,15 +413,18 @@
     }
   },
   "cursor": {
-    "ai_code_generations": 99,
+    "ai_code_generations": 623,
     "by_model": {
-      "claude-opus-4-8": 1887
+      "claude-opus-4-8": 1546,
+      "gpt-5.3-codex": 8185
     },
     "file_extensions": {
-      "cs": 15,
+      "cs": 508,
       "gitconfig": 2,
       "gitconfig-hubtel": 3,
-      "md": 79
+      "md": 79,
+      "csproj": 6,
+      "json": 25
     },
     "scored_commits": [
       {
@@ -392,46 +435,50 @@
         "ai_lines_added": 6
       }
     ],
-    "estimated_total_generations": 1887
+    "estimated_total_generations": 9731
   },
   "usage": {
     "cc_tools": {
-      "Bash": 4762,
-      "Read": 3211,
-      "Edit": 1169,
-      "Write": 593,
-      "AskUserQuestion": 25,
-      "Skill": 68,
-      "ToolSearch": 105,
-      "TaskCreate": 119,
-      "TaskUpdate": 198,
-      "Agent": 260,
+      "Bash": 5989,
+      "Read": 4271,
+      "Edit": 1544,
+      "Write": 651,
+      "AskUserQuestion": 31,
+      "Skill": 89,
+      "ToolSearch": 126,
+      "TaskCreate": 154,
+      "TaskUpdate": 227,
+      "Agent": 301,
       "ExitPlanMode": 37,
-      "TodoWrite": 183,
-      "Glob": 80,
-      "Grep": 56,
+      "TodoWrite": 210,
+      "Glob": 162,
+      "Grep": 140,
       "EnterWorktree": 1,
-      "WebFetch": 4,
-      "mcp__hubtel-sprint-planner__how_to_use": 6,
-      "mcp__hubtel-sprint-planner__get_task_structure": 6,
-      "mcp__hubtel-sprint-planner__cleanup_sprint_planner_workspace": 6,
-      "mcp__hubtel-sprint-planner__get_past_experience": 6,
-      "mcp__hubtel-sprint-planner__submit_task": 6,
-      "mcp__hubtel-sprint-planner__get_current_user": 3,
-      "mcp__hubtel-sprint-planner__validate_sprint_board": 3,
+      "WebSearch": 17,
+      "WebFetch": 20,
+      "mcp__hubtel-sprint-planner__how_to_use": 7,
+      "mcp__hubtel-sprint-planner__get_task_structure": 8,
+      "mcp__hubtel-sprint-planner__cleanup_sprint_planner_workspace": 8,
+      "mcp__hubtel-sprint-planner__get_past_experience": 7,
+      "mcp__hubtel-sprint-planner__submit_task": 7,
+      "mcp__hubtel-sprint-planner__get_current_user": 4,
+      "mcp__hubtel-sprint-planner__validate_sprint_board": 4,
+      "Monitor": 2,
+      "bash": 2,
+      "mcp__hubtel-sprint-planner__get_active_sprint_boards": 1,
       "mcp__hubtel-sprint-planner__update_past_experience_preference": 1
     },
     "cc_content_types": {
-      "thinking": 2419,
-      "text": 5139,
-      "tool_use": 10908
+      "thinking": 3090,
+      "text": 6527,
+      "tool_use": 14021
     },
     "cc_prompt_sources": {
-      "sdk": 340,
-      "typed": 525,
+      "sdk": 528,
+      "typed": 639,
       "queued": 8,
-      "system": 10
+      "system": 17
     }
   },
-  "summary": "Based on recent activity, the majority of AI-assisted work (70%) falls under <strong>Debugging & Fixes</strong>, followed by <strong>Other</strong> (12%). Tool calls skew heavily toward reading (458) over writing (50), pointing to a codebase-exploration-heavy workflow. Environment and infrastructure work accounts for 12 tool calls, pointing to active DevOps and configuration management."
+  "summary": "Based on recent activity, the majority of AI-assisted work (70%) falls under <strong>Debugging & Fixes</strong>, followed by <strong>Other</strong> (12%). The ratio of 458:50 read-to-write calls confirms most effort goes into navigating and comprehending code. Infrastructure tasks (12 calls) show ongoing work with Docker, databases, and deployment configuration."
 }
