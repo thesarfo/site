@@ -4,7 +4,6 @@ number: 5
 book: ddia
 ---
 
-# Chapter 5, Replication
 
 ## The Core Problem
 

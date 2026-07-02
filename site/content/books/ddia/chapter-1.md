@@ -5,8 +5,6 @@ book: ddia
 ---
 
 
-# Chapter 1, Reliable, Scalable, and Maintainable Applications
-
 > "The Internet was done so well that most people think of it as a natural resource like the Pacific Ocean, rather than something that was man-made.", Alan Kay
 
 ## Core Idea

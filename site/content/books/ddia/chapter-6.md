@@ -4,7 +4,6 @@ number: 6
 book: ddia
 ---
 
-# Chapter 6, Partitioning
 
 ## The Core Problem
 

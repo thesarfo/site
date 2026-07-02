@@ -4,8 +4,6 @@ number: 2
 book: ddia
 ---
 
-## Chapter 2, Data Models and Query Languages
-
 *Data models are the most important part of any software system, because they determine how we think about the problem we are solving, and this chapter surveys the major families of data models, the query languages that accompany them, and the trade-offs that guide which one to choose.*
 
 ---

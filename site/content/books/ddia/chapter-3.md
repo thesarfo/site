@@ -4,8 +4,6 @@ number: 3
 book: ddia
 ---
 
-## Chapter 3, Storage and Retrieval
-
 *Databases must store data and retrieve it on demand, and this chapter explains the internal data structures and algorithms that make that possible, while showing why no single storage engine excels at both transactional and analytical workloads.*
 
 ---

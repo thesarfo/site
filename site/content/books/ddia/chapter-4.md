@@ -5,8 +5,6 @@ book: ddia
 ---
 
 
-# Chapter 4, Encoding and Evolution
-
 ## The Core Problem
 
 Data outlives code. An application writes data today that will be read by a future version of itself, by a different service, or by a consumer that cannot be upgraded on the same schedule. Old and new versions coexist constantly, in databases, in APIs, in message queues, and the system must function correctly despite this heterogeneity. Encoding (serialization) translates in-memory data structures into a transmissible byte sequence; evolution is the set of rules that allows that encoding to change over time without breaking readers or writers.
