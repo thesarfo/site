@@ -4,19 +4,19 @@ number: 6
 book: ddia
 ---
 
-
 # Chapter 6, Partitioning
 
 ## The Core Problem
 
 Partitioning (sharding) is the deliberate splitting of a large dataset across multiple machines. The reason is straightforward: no single machine can store an unbounded amount of data or serve an unbounded number of requests. Partitioning breaks the dataset into pieces small enough to fit on individual nodes, and by spreading the load, it enables the system to scale beyond the limits of a single box. The central challenge is that the split must be done in a way that keeps related data together, balances load evenly, and remains efficient as the dataset grows and the cluster membership changes.
 
+---
 
 ## Partitioning and Replication
 
 Partitioning and replication are orthogonal but usually deployed together. Each partition is replicated onto multiple nodes for fault tolerance, so that a given node holds some partitions as a leader and other partitions as a follower. The relationship means that a node's failure affects multiple partitions, and recovery involves redistributing leadership and catching up followers across the cluster. Understanding this interplay is essential: partitioning determines how data is spread, and replication determines how each chunk survives failure.
 
-
+---
 
 ## Partitioning of Key-Value Data
 
@@ -34,7 +34,7 @@ A hash function applied to the key scatters records uniformly across partitions,
 
 Hashing eliminates skew from data distribution but cannot fix skew from access patterns. If a celebrity on a social network generates a disproportionate volume of writes and reads, that single key becomes a hot spot regardless of how perfectly the hash function spreads the rest of the data. The remedy is application-level: split the hot key into multiple sub-keys (e.g., `celebrity_1`, `celebrity_2`, ..., `celebrity_N`), distribute them across partitions, and have reads aggregate across all sub-keys. This is awkward and manual, and Kleppmann notes that truly eliminating hot spots remains an open problem.
 
-
+---
 
 ## Partitioning and Secondary Indexes
 
@@ -46,9 +46,9 @@ Each partition maintains an independent secondary index covering only the record
 
 ### Partitioning by Term (Global Indexes)
 
-A global secondary index is itself partitioned, but independently of the primary data. All entries for a given indexed term (e.g., `color: red`) are stored together on a single partition, regardless of where the corresponding records live. This makes reads efficient,a query for red items hits exactly one partition, but makes writes expensive because inserting a record now requires updating a secondary index that may reside on a different partition, involving a distributed transaction or at least a two-phase write. Most databases that offer global secondary indexes (such as DynamoDB's global secondary indexes) update them asynchronously, meaning the index can briefly lag behind the primary data.
+A global secondary index is itself partitioned, but independently of the primary data. All entries for a given indexed term (e.g., `color: red`) are stored together on a single partition, regardless of where the corresponding records live. This makes reads efficient, a query for red items hits exactly one partition, but makes writes expensive because inserting a record now requires updating a secondary index that may reside on a different partition, involving a distributed transaction or at least a two-phase write. Most databases that offer global secondary indexes (such as DynamoDB's global secondary indexes) update them asynchronously, meaning the index can briefly lag behind the primary data.
 
-
+---
 
 ## Rebalancing Partitions
 
@@ -66,19 +66,19 @@ As machines are added or removed, partitions must be redistributed, a process ca
 
 Fully automatic rebalancing, where the system detects imbalance and begins moving partitions without human intervention, is seductive but dangerous. A node that is merely slow (due to a heavy query, not a fault) can be mistaken for a failed node, triggering an unnecessary rebalance that compounds the overload and can cascade into a total cluster outage. Kleppmann recommends that rebalancing be triggered manually by an administrator, with the actual partition movement automated. The human provides judgment about whether the cluster is genuinely stable enough to rebalance; the system handles the mechanical work of relocating data safely.
 
-
+---
 
 ## Request Routing
 
 Once data is partitioned, a client must know which node holds the partition for a given key. There are three approaches. In the simplest, each node knows the partitioning scheme and any node can forward a request to the correct destination, a gossip protocol disseminates cluster membership changes, and clients just contact any node. Alternatively, a dedicated routing tier (like a load balancer) sits between clients and nodes and directs requests. In the most sophisticated approach, clients themselves maintain the mapping and contact the correct node directly. ZooKeeper is frequently used to maintain the authoritative mapping of partitions to nodes; each node registers itself in ZooKeeper, and clients or routing tiers subscribe to changes, so that when partitions move, the mapping is updated within seconds and stale routing causes at most a transient error that can be retried. The trade-off is straightforward: client-side routing eliminates a network hop (and the routing tier as a scalability bottleneck), but requires more complexity in the client library.
 
-
+---
 
 ## Parallel Query Execution
 
 For simple key-value reads and writes, a query touches exactly one partition and the routing problem is solved by any of the methods above. But analytical queries that aggregate across the entire dataset, sums, counts, averages, joins, must touch every partition. This is where the massively parallel processing (MPP) architecture of data warehouses enters: the query is broken into a query plan, each partition executes a portion of the plan on its local data, and the results are combined. The same principle underlies MapReduce and Spark, which partition computation alongside data. The distinction is that MPP databases (like Teradata or Vertica) do this within a SQL engine optimized for interactive analytical queries, while batch processing frameworks (like MapReduce) do it with a more general-purpose execution model at higher latency.
 
-
+---
 
 ## Synthesis
 
