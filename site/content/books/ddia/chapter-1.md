@@ -201,6 +201,45 @@ Requirements never stay the same. Systems must adapt to:
 
 ---
 
+### Back-of-Envelope Estimation
+
+> "A crude but efficient quantitative analysis can help you to narrow down the design space considerably.", Martin Kleppmann
+
+These are rough numbers to sanity-check designs before writing code:
+
+#### Latency Numbers Every Programmer Should Know
+
+| Operation | Time | Relative |
+|---|---|---|
+| L1 cache reference | 0.5 ns | — |
+| L2 cache reference | 7 ns | 14× L1 |
+| Main memory reference | 100 ns | ~200× L1 |
+| Compress 1 KB with Snappy | 3 µs | — |
+| Read 1 MB sequentially **from memory** | 3 µs | — |
+| Send 1 KB over 1 Gbps network | 10 µs | — |
+| Read 1 MB sequentially **from SSD** | 1 ms | ~20× HDD |
+| **Round trip within same datacenter** | 0.5 ms | — |
+| Read 1 MB sequentially **from HDD** | 20 ms | — |
+| **Round trip CA → Netherlands → CA** | 150 ms | — |
+
+Key ratios to remember:
+- **Memory vs disk:** RAM is ~1000× faster than seek. Read 1 MB sequentially from RAM in 3 µs vs 20 ms from spinning disk; you can do ~6,700 sequential memory reads in the time of one HDD read.
+- **Network within DC ~ SSD:** A round trip in the same datacenter (~0.5 ms) is half the time of reading 1 MB from SSD (~1 ms). Local network is fast, but treat remote calls as roughly as expensive as local disk I/O.
+- **Cross-DC is punishing:** 150 ms is 300× the latency of an intra-DC round trip, which changes the entire architecture (async replication, multi-leader, etc.).
+- **Seek vs sequential on HDD:** Random HDD seeks are ~10 ms each. Sequential HDD throughput can be ~50–100 MB/s, so you get ~50× more throughput sequentially. This is why LSM-trees write sequentially.
+
+#### How to Use These Numbers
+
+1. **Know the scale of numbers**, not just their values. Is something nanoseconds, microseconds, or milliseconds? Being off by 3 orders of magnitude means the architectural decision is probably wrong.
+2. **Estimate with powers of 10.** Don't reach for a calculator. 10^3, 10^6, 10^9 is usually good enough to rule designs in or out.
+3. **Use queuing theory intuitions.** If requests arrive at rate λ and each take time S to process, the system can handle throughput up to 1/S. Approaching that limit makes queueing delays explode.
+4. **Ask "what is the bottleneck?"** CPU, memory, disk I/O, or network? The bottleneck determines where to spend optimization effort. Everything else is noise.
+5. **Amortize.** One expensive operation spread over a million cheap operations may be acceptable. A single disk seek (~10 ms) in a 100 µs request budget dominates; if you can batch or avoid it, everything gets faster.
+
+> Worked example: You want to serve 100,000 req/sec. Each request reads ~100 KB from disk and does ~1 ms of CPU. Disk throughput needed: 100,000 × 100 KB = 10 GB/s → ~100 HDDs or ~10 SSDs (seq read). CPU time: 100,000 × 1 ms = 100 CPU-seconds per second → ~100 cores. Sanity-check passes: you'll need a cluster, not a laptop, but a modest one.
+
+---
+
 ## Summary
 
 | Property | Core Idea |
