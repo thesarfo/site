@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-07T08:48:49.764Z",
+  "generated_at": "2026-07-07T09:21:20.619Z",
   "all_time": {
-    "input_tokens": 631908,
-    "output_tokens": 17942862,
-    "cache_creation_tokens": 106822113,
-    "cache_read_tokens": 2611805827,
-    "cost_usd": 2086.93,
-    "from_logs_usd": 1246.93,
+    "input_tokens": 658707,
+    "output_tokens": 18018676,
+    "cache_creation_tokens": 107640396,
+    "cache_read_tokens": 2623775334,
+    "cost_usd": 2089.94,
+    "from_logs_usd": 1249.94,
     "sessions": 124
   },
   "last_30_days": {
-    "input_tokens": 553620,
-    "output_tokens": 16990849,
-    "cache_creation_tokens": 101466590,
-    "cache_read_tokens": 2493117880,
-    "cost_usd": 1249.67,
+    "input_tokens": 580419,
+    "output_tokens": 17066663,
+    "cache_creation_tokens": 102284873,
+    "cache_read_tokens": 2505087387,
+    "cost_usd": 1252.68,
     "sessions": 145
   },
   "by_model": {
@@ -27,20 +27,28 @@
       "sessions": 114
     },
     "claude-haiku-4-5": {
-      "input_tokens": 59443,
-      "output_tokens": 515596,
-      "cache_creation_tokens": 11495796,
-      "cache_read_tokens": 125547602,
-      "cost_usd": 29.5,
+      "input_tokens": 59905,
+      "output_tokens": 518283,
+      "cache_creation_tokens": 11609064,
+      "cache_read_tokens": 127089910,
+      "cost_usd": 29.81,
       "sessions": 32
     },
     "claude-sonnet-5": {
-      "input_tokens": 25992,
-      "output_tokens": 1962441,
-      "cache_creation_tokens": 18169685,
-      "cache_read_tokens": 612205119,
+      "input_tokens": 26178,
+      "output_tokens": 2028903,
+      "cache_creation_tokens": 18576014,
+      "cache_read_tokens": 621301259,
       "cost_usd": 0,
       "sessions": 8
+    },
+    "claude-opus-4-8": {
+      "input_tokens": 93058,
+      "output_tokens": 821996,
+      "cache_creation_tokens": 2591823,
+      "cache_read_tokens": 150711646,
+      "cost_usd": 120.7,
+      "sessions": 2
     },
     "claude-fable-5": {
       "input_tokens": 154050,
@@ -49,14 +57,6 @@
       "cache_read_tokens": 103617549,
       "cost_usd": 0,
       "sessions": 3
-    },
-    "claude-opus-4-8": {
-      "input_tokens": 66907,
-      "output_tokens": 815331,
-      "cache_creation_tokens": 2293137,
-      "cache_read_tokens": 149380587,
-      "cost_usd": 118,
-      "sessions": 1
     }
   },
   "by_day": [
@@ -485,11 +485,11 @@
     },
     {
       "date": "2026-07-07",
-      "input_tokens": 1144,
-      "output_tokens": 194816,
-      "cache_creation_tokens": 3375710,
-      "cache_read_tokens": 28682015,
-      "cost_usd": 0.5491,
+      "input_tokens": 27943,
+      "output_tokens": 270630,
+      "cache_creation_tokens": 4193993,
+      "cache_read_tokens": 40651522,
+      "cost_usd": 3.5573,
       "sessions": 3
     }
   ],
@@ -680,17 +680,17 @@
   },
   "usage": {
     "cc_tools": {
-      "Bash": 7344,
-      "Read": 4779,
-      "Edit": 1870,
-      "Write": 699,
-      "AskUserQuestion": 88,
+      "Bash": 7386,
+      "Read": 4801,
+      "Edit": 1876,
+      "Write": 701,
+      "AskUserQuestion": 89,
       "Skill": 108,
-      "ToolSearch": 142,
+      "ToolSearch": 143,
       "TaskCreate": 152,
       "TaskUpdate": 226,
-      "Agent": 318,
-      "TodoWrite": 255,
+      "Agent": 323,
+      "TodoWrite": 257,
       "Glob": 190,
       "Grep": 145,
       "EnterWorktree": 3,
@@ -713,9 +713,9 @@
       "mcp__hubtel-sprint-planner__update_past_experience_preference": 1
     },
     "cc_content_types": {
-      "thinking": 4581,
-      "text": 7756,
-      "tool_use": 16469
+      "thinking": 4635,
+      "text": 7798,
+      "tool_use": 16550
     },
     "cc_prompt_sources": {
       "sdk": 637,
@@ -735,11 +735,11 @@
         "human_lines": 2277
       },
       "TypeScript": {
-        "ai_lines": 16331,
-        "human_lines": 46827
+        "ai_lines": 16635,
+        "human_lines": 46894
       },
       "JavaScript": {
-        "ai_lines": 302,
+        "ai_lines": 31,
         "human_lines": 407
       },
       "HTML": {
@@ -755,15 +755,15 @@
         "human_lines": 34545
       },
       "Python": {
-        "ai_lines": 6597,
+        "ai_lines": 5622,
         "human_lines": 11628
       },
       "Shell": {
-        "ai_lines": 295,
+        "ai_lines": 256,
         "human_lines": 208
       }
     },
     "since": "2025-08-01"
   },
-  "summary": "The data shows <strong>Debugging & Fixes</strong> dominating at 64% of all AI-assisted work, followed by <strong>Other</strong> (12%). The ratio of 538:50 read-to-write calls confirms most effort goes into navigating and comprehending code. Infrastructure tasks (12 calls) show ongoing work with Docker, databases, and deployment configuration."
+  "summary": "The data shows <strong>Debugging & Fixes</strong> dominating at 64% of all AI-assisted work, followed by <strong>Other</strong> (12%). The ratio of 538:50 read-to-write calls confirms most effort goes into navigating and comprehending code. Environment and infrastructure work accounts for 12 tool calls, pointing to active DevOps and configuration management."
 }

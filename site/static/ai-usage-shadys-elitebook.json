@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T08:48:42.881Z",
+  "generated_at": "2026-07-07T09:21:16.172Z",
   "hostname": "shadys-elitebook",
   "by_day": [
     {
@@ -265,11 +265,11 @@
     },
     {
       "date": "2026-07-07",
-      "input_tokens": 1144,
-      "output_tokens": 194816,
-      "cache_creation_tokens": 3375710,
-      "cache_read_tokens": 28682015,
-      "cost_usd": 0.5491,
+      "input_tokens": 27943,
+      "output_tokens": 270630,
+      "cache_creation_tokens": 4193993,
+      "cache_read_tokens": 40651522,
+      "cost_usd": 3.5573,
       "sessions": 3
     }
   ],
@@ -283,20 +283,28 @@
       "sessions": 97
     },
     "claude-haiku-4-5": {
-      "input_tokens": 54317,
-      "output_tokens": 434175,
-      "cache_creation_tokens": 9859452,
-      "cache_read_tokens": 96875002,
-      "cost_usd": 24.18,
+      "input_tokens": 54779,
+      "output_tokens": 436862,
+      "cache_creation_tokens": 9972720,
+      "cache_read_tokens": 98417310,
+      "cost_usd": 24.49,
       "sessions": 27
     },
     "claude-sonnet-5": {
-      "input_tokens": 25992,
-      "output_tokens": 1962441,
-      "cache_creation_tokens": 18169685,
-      "cache_read_tokens": 612205119,
+      "input_tokens": 26178,
+      "output_tokens": 2028903,
+      "cache_creation_tokens": 18576014,
+      "cache_read_tokens": 621301259,
       "cost_usd": 0,
       "sessions": 8
+    },
+    "claude-opus-4-8": {
+      "input_tokens": 93058,
+      "output_tokens": 821996,
+      "cache_creation_tokens": 2591823,
+      "cache_read_tokens": 150711646,
+      "cost_usd": 120.7,
+      "sessions": 2
     },
     "claude-fable-5": {
       "input_tokens": 154050,
@@ -305,29 +313,21 @@
       "cache_read_tokens": 103617549,
       "cost_usd": 0,
       "sessions": 3
-    },
-    "claude-opus-4-8": {
-      "input_tokens": 66907,
-      "output_tokens": 815331,
-      "cache_creation_tokens": 2293137,
-      "cache_read_tokens": 149380587,
-      "cost_usd": 118,
-      "sessions": 1
     }
   },
   "sessions_count": 107,
   "toolUseCounts": {
-    "Bash": 6877,
-    "Read": 4336,
-    "Edit": 1766,
-    "Write": 667,
-    "AskUserQuestion": 87,
+    "Bash": 6919,
+    "Read": 4358,
+    "Edit": 1772,
+    "Write": 669,
+    "AskUserQuestion": 88,
     "Skill": 107,
-    "ToolSearch": 133,
+    "ToolSearch": 134,
     "TaskCreate": 152,
     "TaskUpdate": 226,
-    "Agent": 304,
-    "TodoWrite": 238,
+    "Agent": 309,
+    "TodoWrite": 240,
     "Glob": 181,
     "Grep": 142,
     "EnterWorktree": 3,
@@ -350,9 +350,9 @@
     "mcp__hubtel-sprint-planner__update_past_experience_preference": 1
   },
   "assistantContentTypes": {
-    "thinking": 4353,
-    "text": 7293,
-    "tool_use": 15362
+    "thinking": 4407,
+    "text": 7335,
+    "tool_use": 15443
   },
   "promptSourceCounts": {
     "sdk": 637,
@@ -539,17 +539,17 @@
   },
   "usage": {
     "cc_tools": {
-      "Bash": 6877,
-      "Read": 4336,
-      "Edit": 1766,
-      "Write": 667,
-      "AskUserQuestion": 87,
+      "Bash": 6919,
+      "Read": 4358,
+      "Edit": 1772,
+      "Write": 669,
+      "AskUserQuestion": 88,
       "Skill": 107,
-      "ToolSearch": 133,
+      "ToolSearch": 134,
       "TaskCreate": 152,
       "TaskUpdate": 226,
-      "Agent": 304,
-      "TodoWrite": 238,
+      "Agent": 309,
+      "TodoWrite": 240,
       "Glob": 181,
       "Grep": 142,
       "EnterWorktree": 3,
@@ -572,9 +572,9 @@
       "mcp__hubtel-sprint-planner__update_past_experience_preference": 1
     },
     "cc_content_types": {
-      "thinking": 4353,
-      "text": 7293,
-      "tool_use": 15362
+      "thinking": 4407,
+      "text": 7335,
+      "tool_use": 15443
     },
     "cc_prompt_sources": {
       "sdk": 637,
@@ -583,7 +583,7 @@
       "system": 17
     }
   },
-  "summary": "The data shows <strong>Debugging & Fixes</strong> dominating at 64% of all AI-assisted work, followed by <strong>Other</strong> (12%). The ratio of 525:50 read-to-write calls confirms most effort goes into navigating and comprehending code. Infrastructure tasks (12 calls) show ongoing work with Docker, databases, and deployment configuration.",
+  "summary": "Based on recent activity, the majority of AI-assisted work (64%) falls under <strong>Debugging & Fixes</strong>, followed by <strong>Other</strong> (12%). The ratio of 525:50 read-to-write calls confirms most effort goes into navigating and comprehending code. Infrastructure tasks (12 calls) show ongoing work with Docker, databases, and deployment configuration.",
   "code_stats": {
     "by_language": {
       "SQL": {
@@ -595,11 +595,11 @@
         "human_lines": 2277
       },
       "TypeScript": {
-        "ai_lines": 16331,
-        "human_lines": 46827
+        "ai_lines": 16635,
+        "human_lines": 46894
       },
       "JavaScript": {
-        "ai_lines": 302,
+        "ai_lines": 31,
         "human_lines": 407
       },
       "HTML": {
@@ -615,11 +615,11 @@
         "human_lines": 34545
       },
       "Python": {
-        "ai_lines": 6597,
+        "ai_lines": 5622,
         "human_lines": 11628
       },
       "Shell": {
-        "ai_lines": 295,
+        "ai_lines": 256,
         "human_lines": 208
       }
     },
