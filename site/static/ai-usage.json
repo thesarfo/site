@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-07T08:40:30.167Z",
+  "generated_at": "2026-07-07T08:48:49.764Z",
   "all_time": {
-    "input_tokens": 631654,
-    "output_tokens": 17912965,
-    "cache_creation_tokens": 106570974,
-    "cache_read_tokens": 2608016940,
-    "cost_usd": 2086.83,
-    "from_logs_usd": 1246.83,
+    "input_tokens": 631908,
+    "output_tokens": 17942862,
+    "cache_creation_tokens": 106822113,
+    "cache_read_tokens": 2611805827,
+    "cost_usd": 2086.93,
+    "from_logs_usd": 1246.93,
     "sessions": 124
   },
   "last_30_days": {
-    "input_tokens": 553366,
-    "output_tokens": 16960952,
-    "cache_creation_tokens": 101215451,
-    "cache_read_tokens": 2489328993,
-    "cost_usd": 1249.57,
+    "input_tokens": 553620,
+    "output_tokens": 16990849,
+    "cache_creation_tokens": 101466590,
+    "cache_read_tokens": 2493117880,
+    "cost_usd": 1249.67,
     "sessions": 145
   },
   "by_model": {
@@ -27,18 +27,18 @@
       "sessions": 114
     },
     "claude-haiku-4-5": {
-      "input_tokens": 59283,
-      "output_tokens": 512757,
-      "cache_creation_tokens": 11484482,
-      "cache_read_tokens": 124851313,
-      "cost_usd": 29.4,
+      "input_tokens": 59443,
+      "output_tokens": 515596,
+      "cache_creation_tokens": 11495796,
+      "cache_read_tokens": 125547602,
+      "cost_usd": 29.5,
       "sessions": 32
     },
     "claude-sonnet-5": {
-      "input_tokens": 25898,
-      "output_tokens": 1935383,
-      "cache_creation_tokens": 17929860,
-      "cache_read_tokens": 609112521,
+      "input_tokens": 25992,
+      "output_tokens": 1962441,
+      "cache_creation_tokens": 18169685,
+      "cache_read_tokens": 612205119,
       "cost_usd": 0,
       "sessions": 8
     },
@@ -485,11 +485,11 @@
     },
     {
       "date": "2026-07-07",
-      "input_tokens": 890,
-      "output_tokens": 164919,
-      "cache_creation_tokens": 3124571,
-      "cache_read_tokens": 24893128,
-      "cost_usd": 0.4511,
+      "input_tokens": 1144,
+      "output_tokens": 194816,
+      "cache_creation_tokens": 3375710,
+      "cache_read_tokens": 28682015,
+      "cost_usd": 0.5491,
       "sessions": 3
     }
   ],
@@ -680,16 +680,16 @@
   },
   "usage": {
     "cc_tools": {
-      "Bash": 7330,
-      "Read": 4768,
-      "Edit": 1869,
-      "Write": 697,
-      "AskUserQuestion": 87,
+      "Bash": 7344,
+      "Read": 4779,
+      "Edit": 1870,
+      "Write": 699,
+      "AskUserQuestion": 88,
       "Skill": 108,
       "ToolSearch": 142,
       "TaskCreate": 152,
       "TaskUpdate": 226,
-      "Agent": 316,
+      "Agent": 318,
       "TodoWrite": 255,
       "Glob": 190,
       "Grep": 145,
@@ -713,9 +713,9 @@
       "mcp__hubtel-sprint-planner__update_past_experience_preference": 1
     },
     "cc_content_types": {
-      "thinking": 4562,
-      "text": 7739,
-      "tool_use": 16438
+      "thinking": 4581,
+      "text": 7756,
+      "tool_use": 16469
     },
     "cc_prompt_sources": {
       "sdk": 637,
@@ -735,8 +735,8 @@
         "human_lines": 2277
       },
       "TypeScript": {
-        "ai_lines": 16320,
-        "human_lines": 46812
+        "ai_lines": 16331,
+        "human_lines": 46827
       },
       "JavaScript": {
         "ai_lines": 302,
@@ -765,5 +765,5 @@
     },
     "since": "2025-08-01"
   },
-  "summary": "The data shows <strong>Debugging & Fixes</strong> dominating at 64% of all AI-assisted work, followed by <strong>Other</strong> (12%). Tool calls skew heavily toward reading (538) over writing (50), pointing to a codebase-exploration-heavy workflow. 12 infrastructure-related calls indicate DevOps concerns like containers, databases, and environment setup."
+  "summary": "The data shows <strong>Debugging & Fixes</strong> dominating at 64% of all AI-assisted work, followed by <strong>Other</strong> (12%). The ratio of 538:50 read-to-write calls confirms most effort goes into navigating and comprehending code. Infrastructure tasks (12 calls) show ongoing work with Docker, databases, and deployment configuration."
 }
