@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T08:08:42.780Z",
+  "generated_at": "2026-07-08T13:18:12.047Z",
   "hostname": "shadys-elitebook",
   "by_day": [
     {
@@ -273,12 +273,12 @@
       "date": "2026-07-07"
     },
     {
-      "input_tokens": 1246,
-      "output_tokens": 253814,
-      "cache_creation_tokens": 2114075,
-      "cache_read_tokens": 78927879,
-      "cost_usd": 0,
-      "sessions": 4,
+      "input_tokens": 77934,
+      "output_tokens": 1022073,
+      "cache_creation_tokens": 7681769,
+      "cache_read_tokens": 670373782,
+      "cost_usd": 0.91,
+      "sessions": 9,
       "date": "2026-07-08"
     }
   ],
@@ -292,20 +292,20 @@
       "sessions": 93
     },
     "claude-haiku-4-5": {
-      "input_tokens": 53961,
-      "output_tokens": 439295,
-      "cache_creation_tokens": 9904209,
-      "cache_read_tokens": 97859685,
-      "cost_usd": 24.36,
+      "input_tokens": 55154,
+      "output_tokens": 465163,
+      "cache_creation_tokens": 10297680,
+      "cache_read_tokens": 100748233,
+      "cost_usd": 25.27,
       "sessions": 26
     },
     "claude-sonnet-5": {
-      "input_tokens": 36102,
-      "output_tokens": 3034312,
-      "cache_creation_tokens": 27836785,
-      "cache_read_tokens": 1099371130,
+      "input_tokens": 111597,
+      "output_tokens": 3776703,
+      "cache_creation_tokens": 33011008,
+      "cache_read_tokens": 1687928485,
       "cost_usd": 0,
-      "sessions": 11
+      "sessions": 15
     },
     "claude-opus-4-8": {
       "input_tokens": 109515,
@@ -324,25 +324,25 @@
       "sessions": 3
     }
   },
-  "sessions_count": 106,
+  "sessions_count": 108,
   "toolUseCounts": {
-    "Bash": 7171,
-    "Read": 4320,
-    "Edit": 1819,
-    "Write": 675,
-    "AskUserQuestion": 98,
+    "Bash": 7440,
+    "Read": 4490,
+    "Edit": 1938,
+    "Write": 681,
+    "AskUserQuestion": 100,
     "Skill": 103,
-    "ToolSearch": 133,
+    "ToolSearch": 138,
     "TaskCreate": 145,
     "TaskUpdate": 212,
-    "Agent": 298,
-    "TodoWrite": 254,
+    "Agent": 315,
+    "TodoWrite": 257,
     "Glob": 158,
     "Grep": 124,
     "EnterWorktree": 3,
-    "WebSearch": 17,
+    "WebSearch": 19,
     "WebFetch": 20,
-    "ExitPlanMode": 42,
+    "ExitPlanMode": 45,
     "TaskStop": 4,
     "ReportFindings": 9,
     "Artifact": 1,
@@ -356,15 +356,16 @@
     "Monitor": 2,
     "bash": 2,
     "mcp__hubtel-sprint-planner__get_active_sprint_boards": 1,
-    "mcp__hubtel-sprint-planner__update_past_experience_preference": 1
+    "mcp__hubtel-sprint-planner__update_past_experience_preference": 1,
+    "ScheduleWakeup": 3
   },
   "assistantContentTypes": {
-    "thinking": 4790,
-    "text": 7420,
-    "tool_use": 15657
+    "thinking": 5159,
+    "text": 7638,
+    "tool_use": 16256
   },
   "promptSourceCounts": {
-    "sdk": 661,
+    "sdk": 673,
     "typed": 699,
     "queued": 8,
     "system": 10
@@ -378,11 +379,11 @@
       "sessions": 65
     },
     "last_30_days": {
-      "input_tokens": 14219515,
-      "output_tokens": 496157,
+      "input_tokens": 12677047,
+      "output_tokens": 323393,
       "cache_write_tokens": 0,
-      "cache_read_tokens": 175054902,
-      "sessions": 33
+      "cache_read_tokens": 123421622,
+      "sessions": 22
     },
     "by_model": {
       "opencode/big-pickle": {
@@ -465,10 +466,10 @@
       }
     },
     "part_types": {
-      "text": 1270,
-      "step-start": 2718,
-      "reasoning": 2453,
-      "tool": 3677,
+      "text": 1271,
+      "step-start": 2719,
+      "reasoning": 2454,
+      "tool": 3678,
       "step-finish": 2714,
       "patch": 472,
       "file": 9,
@@ -548,23 +549,23 @@
   },
   "usage": {
     "cc_tools": {
-      "Bash": 7171,
-      "Read": 4320,
-      "Edit": 1819,
-      "Write": 675,
-      "AskUserQuestion": 98,
+      "Bash": 7440,
+      "Read": 4490,
+      "Edit": 1938,
+      "Write": 681,
+      "AskUserQuestion": 100,
       "Skill": 103,
-      "ToolSearch": 133,
+      "ToolSearch": 138,
       "TaskCreate": 145,
       "TaskUpdate": 212,
-      "Agent": 298,
-      "TodoWrite": 254,
+      "Agent": 315,
+      "TodoWrite": 257,
       "Glob": 158,
       "Grep": 124,
       "EnterWorktree": 3,
-      "WebSearch": 17,
+      "WebSearch": 19,
       "WebFetch": 20,
-      "ExitPlanMode": 42,
+      "ExitPlanMode": 45,
       "TaskStop": 4,
       "ReportFindings": 9,
       "Artifact": 1,
@@ -578,34 +579,35 @@
       "Monitor": 2,
       "bash": 2,
       "mcp__hubtel-sprint-planner__get_active_sprint_boards": 1,
-      "mcp__hubtel-sprint-planner__update_past_experience_preference": 1
+      "mcp__hubtel-sprint-planner__update_past_experience_preference": 1,
+      "ScheduleWakeup": 3
     },
     "cc_content_types": {
-      "thinking": 4790,
-      "text": 7420,
-      "tool_use": 15657
+      "thinking": 5159,
+      "text": 7638,
+      "tool_use": 16256
     },
     "cc_prompt_sources": {
-      "sdk": 661,
+      "sdk": 673,
       "typed": 699,
       "queued": 8,
       "system": 10
     }
   },
-  "summary": "Based on recent activity, the majority of AI-assisted work (64%) falls under <strong>Debugging & Fixes</strong>, followed by <strong>Other</strong> (12%). Tool calls skew heavily toward reading (525) over writing (50), pointing to a codebase-exploration-heavy workflow. Environment and infrastructure work accounts for 12 tool calls, pointing to active DevOps and configuration management.",
+  "summary": "Based on recent activity, the majority of AI-assisted work (64%) falls under <strong>Debugging & Fixes</strong>, followed by <strong>Other</strong> (12%). Tool calls skew heavily toward reading (525) over writing (50), pointing to a codebase-exploration-heavy workflow. Infrastructure tasks (12 calls) show ongoing work with Docker, databases, and deployment configuration.",
   "code_stats": {
     "by_language": {
       "SQL": {
         "ai_lines": 5,
         "human_lines": 5
       },
+      "TypeScript": {
+        "ai_lines": 17572,
+        "human_lines": 47200
+      },
       "CSS": {
         "ai_lines": 1384,
         "human_lines": 2277
-      },
-      "TypeScript": {
-        "ai_lines": 17053,
-        "human_lines": 47052
       },
       "JavaScript": {
         "ai_lines": 31,
@@ -616,15 +618,15 @@
         "human_lines": 2709
       },
       "C#": {
-        "ai_lines": 21807,
+        "ai_lines": 20728,
         "human_lines": 103168
       },
       "Go": {
-        "ai_lines": 16376,
+        "ai_lines": 17864,
         "human_lines": 35608
       },
       "Python": {
-        "ai_lines": 5921,
+        "ai_lines": 5953,
         "human_lines": 11831
       },
       "Shell": {

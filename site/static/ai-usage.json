@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-07-08T08:08:49.798Z",
+  "generated_at": "2026-07-08T13:18:20.260Z",
   "all_time": {
-    "input_tokens": 640479,
-    "output_tokens": 18571692,
-    "cache_creation_tokens": 112901283,
-    "cache_read_tokens": 3043805391,
-    "cost_usd": 2046.72,
-    "from_logs_usd": 1206.72,
-    "sessions": 123
+    "input_tokens": 717167,
+    "output_tokens": 19339951,
+    "cache_creation_tokens": 118468977,
+    "cache_read_tokens": 3635251294,
+    "cost_usd": 2047.63,
+    "from_logs_usd": 1207.63,
+    "sessions": 125
   },
   "last_30_days": {
-    "input_tokens": 525427,
-    "output_tokens": 17327167,
-    "cache_creation_tokens": 106343247,
-    "cache_read_tokens": 2901855043,
-    "cost_usd": 1191.36,
-    "sessions": 142
+    "input_tokens": 602115,
+    "output_tokens": 18095426,
+    "cache_creation_tokens": 111910941,
+    "cache_read_tokens": 3493300946,
+    "cost_usd": 1192.27,
+    "sessions": 147
   },
   "by_model": {
     "claude-sonnet-4-6": {
@@ -27,20 +27,20 @@
       "sessions": 110
     },
     "claude-haiku-4-5": {
-      "input_tokens": 59087,
-      "output_tokens": 520716,
-      "cache_creation_tokens": 11540553,
-      "cache_read_tokens": 126532285,
-      "cost_usd": 29.68,
+      "input_tokens": 60280,
+      "output_tokens": 546584,
+      "cache_creation_tokens": 11934024,
+      "cache_read_tokens": 129420833,
+      "cost_usd": 30.59,
       "sessions": 31
     },
     "claude-sonnet-5": {
-      "input_tokens": 36102,
-      "output_tokens": 3034312,
-      "cache_creation_tokens": 27836785,
-      "cache_read_tokens": 1099371130,
+      "input_tokens": 111597,
+      "output_tokens": 3776703,
+      "cache_creation_tokens": 33011008,
+      "cache_read_tokens": 1687928485,
       "cost_usd": 0,
-      "sessions": 11
+      "sessions": 15
     },
     "claude-opus-4-8": {
       "input_tokens": 109515,
@@ -493,12 +493,12 @@
       "date": "2026-07-07"
     },
     {
-      "input_tokens": 1246,
-      "output_tokens": 253814,
-      "cache_creation_tokens": 2114075,
-      "cache_read_tokens": 78927879,
-      "cost_usd": 0,
-      "sessions": 4,
+      "input_tokens": 77934,
+      "output_tokens": 1022073,
+      "cache_creation_tokens": 7681769,
+      "cache_read_tokens": 670373782,
+      "cost_usd": 0.91,
+      "sessions": 9,
       "date": "2026-07-08"
     }
   ],
@@ -511,11 +511,11 @@
       "sessions": 67
     },
     "last_30_days": {
-      "input_tokens": 14270432,
-      "output_tokens": 503533,
+      "input_tokens": 12727964,
+      "output_tokens": 330769,
       "cache_write_tokens": 0,
-      "cache_read_tokens": 175848758,
-      "sessions": 35
+      "cache_read_tokens": 124215478,
+      "sessions": 24
     },
     "by_model": {
       "opencode/big-pickle": {
@@ -598,10 +598,10 @@
       }
     },
     "part_types": {
-      "text": 1283,
-      "step-start": 2754,
-      "reasoning": 2487,
-      "tool": 3719,
+      "text": 1284,
+      "step-start": 2755,
+      "reasoning": 2488,
+      "tool": 3720,
       "step-finish": 2750,
       "patch": 480,
       "file": 9,
@@ -689,23 +689,23 @@
   },
   "usage": {
     "cc_tools": {
-      "Bash": 7638,
-      "Read": 4763,
-      "Edit": 1923,
-      "Write": 707,
-      "AskUserQuestion": 99,
+      "Bash": 7907,
+      "Read": 4933,
+      "Edit": 2042,
+      "Write": 713,
+      "AskUserQuestion": 101,
       "Skill": 104,
-      "ToolSearch": 142,
+      "ToolSearch": 147,
       "TaskCreate": 145,
       "TaskUpdate": 212,
-      "Agent": 312,
-      "TodoWrite": 271,
+      "Agent": 329,
+      "TodoWrite": 274,
       "Glob": 167,
       "Grep": 127,
       "EnterWorktree": 3,
-      "WebSearch": 17,
+      "WebSearch": 19,
       "WebFetch": 20,
-      "ExitPlanMode": 49,
+      "ExitPlanMode": 52,
       "TaskStop": 4,
       "ReportFindings": 9,
       "Artifact": 1,
@@ -719,15 +719,16 @@
       "Monitor": 2,
       "bash": 2,
       "mcp__hubtel-sprint-planner__get_active_sprint_boards": 1,
-      "mcp__hubtel-sprint-planner__update_past_experience_preference": 1
+      "mcp__hubtel-sprint-planner__update_past_experience_preference": 1,
+      "ScheduleWakeup": 3
     },
     "cc_content_types": {
-      "thinking": 5018,
-      "text": 7883,
-      "tool_use": 16764
+      "thinking": 5387,
+      "text": 8101,
+      "tool_use": 17363
     },
     "cc_prompt_sources": {
-      "sdk": 661,
+      "sdk": 673,
       "typed": 722,
       "queued": 8,
       "system": 10
@@ -739,13 +740,13 @@
         "ai_lines": 5,
         "human_lines": 5
       },
+      "TypeScript": {
+        "ai_lines": 17572,
+        "human_lines": 47200
+      },
       "CSS": {
         "ai_lines": 1384,
         "human_lines": 2277
-      },
-      "TypeScript": {
-        "ai_lines": 17053,
-        "human_lines": 47052
       },
       "JavaScript": {
         "ai_lines": 31,
@@ -756,15 +757,15 @@
         "human_lines": 2709
       },
       "C#": {
-        "ai_lines": 21807,
+        "ai_lines": 20728,
         "human_lines": 103168
       },
       "Go": {
-        "ai_lines": 16376,
+        "ai_lines": 17864,
         "human_lines": 35608
       },
       "Python": {
-        "ai_lines": 5921,
+        "ai_lines": 5953,
         "human_lines": 11831
       },
       "Shell": {
@@ -774,5 +775,5 @@
     },
     "since": "2025-08-01"
   },
-  "summary": "Based on recent activity, the majority of AI-assisted work (64%) falls under <strong>Debugging & Fixes</strong>, followed by <strong>Other</strong> (12%). With 538 read calls against just 50 writes, the emphasis is on understanding existing code rather than generating new. Infrastructure tasks (12 calls) show ongoing work with Docker, databases, and deployment configuration."
+  "summary": "Based on recent activity, the majority of AI-assisted work (64%) falls under <strong>Debugging & Fixes</strong>, followed by <strong>Other</strong> (12%). With 538 read calls against just 50 writes, the emphasis is on understanding existing code rather than generating new. 12 infrastructure-related calls indicate DevOps concerns like containers, databases, and environment setup."
 }
