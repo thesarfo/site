@@ -6,7 +6,7 @@ tags: ["engineering"]
 image: "/rbst.png"
 ---
 
-How can a syntax tree be immutable and still tell you where every node sits in the source and who its parent is? I set out to explore this by example, writing a small config-language compiler built on the same red/green design [Roslyn](https://github.com/dotnet/roslyn) uses under the hood.
+How can a syntax tree be immutable and still tell you where every node sits in the source and who its parent is? I set out to explore this by example, writing a small [config-language compiler](https://github.com/thesarfo/two-trees) built on the same red/green design [Roslyn](https://github.com/dotnet/roslyn) uses under the hood.
 
 The compiler processes a small configuration language. Each statement assigns a value to a key, values can be expressions, and a key can reference another key:
 
