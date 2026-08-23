@@ -15,6 +15,7 @@ import Site.Pages.Papers (paperPage, papersPage)
 import Site.Pages.Skills (skillsPage)
 import Site.Pages.Now (nowPage)
 import Site.Pages.Lens (lensPage)
+import Site.Pages.Renders (rendersPage)
 import Site.Pages.Other (otherPage)
 import Site.Pages.Books (bookPage, booksIndex, chapterPage)
 import Site.Pages.NotFound (notFoundPage)
@@ -123,6 +124,10 @@ rules showDrafts = do
   create ["now/index.html"] $ staticPage nowPage
 
   create ["lens/index.html"] $ staticPage lensPage
+
+  create ["renders/index.html"] $ do
+    route idRoute
+    compile $ loadData "data/renders.json" >>= html . rendersPage
 
   othersRules
 

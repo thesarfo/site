@@ -19,6 +19,7 @@ executable site
                       Site.Pages.Skills
                       Site.Pages.Now
                       Site.Pages.Lens
+                      Site.Pages.Renders
                       Site.Pages.Other
                       Site.Pages.Books
                       Site.Pages.NotFound
