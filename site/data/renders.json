@@ -16,5 +16,23 @@
     "title": "Cup",
     "width": 1920,
     "height": 1080
+  },
+  {
+    "file": "donut.png",
+    "title": "Donut",
+    "width": 960,
+    "height": 540
+  },
+  {
+    "file": "doom-mask.png",
+    "title": "Doom Mask",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "file": "mf-face.png",
+    "title": "MF Face",
+    "width": 1920,
+    "height": 1080
   }
 ]
