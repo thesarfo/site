@@ -1,5 +1,11 @@
 [
   {
+    "name": "ledgr",
+    "description": "Financial infrastructure for all kinds of money-moving.",
+    "language": "Go",
+    "href": "https://github.com/thesarfo/payments-engine"
+  },
+  {
     "name": "hum",
     "description": "Audio fingerprinting service based on the Wang 2003 paper.",
     "language": "C#",
@@ -10,18 +16,6 @@
     "description": "MapReduce implementation based on Google's 2004 paper.",
     "language": "C#",
     "href": "https://github.com/thesarfo/mapreduce"
-  },
-  {
-    "name": "distcache",
-    "description": "Distributed read-through cache engine.",
-    "language": "C#",
-    "href": "https://github.com/thesarfo/distcache"
-  },
-  {
-    "name": "ledgr",
-    "description": "Financial infrastructure for all kinds of money-moving.",
-    "language": "Go",
-    "href": "https://github.com/thesarfo/payments-engine"
   },
   {
     "name": "backtester",
