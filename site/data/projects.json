@@ -1,50 +1,133 @@
 [
   {
     "name": "ledgr",
-    "description": "Financial infrastructure for all kinds of money-moving.",
+    "year": "2026",
+    "description": "A ledger that doesn't trust you, or itself, until the math proves out.",
+    "writeup": [
+      "Money infrastructure built on the oldest trick in accounting: double-entry bookkeeping. Every transfer is two postings that have to balance, or it doesn't happen. No optimistic writes, no \"we'll reconcile it later.\"",
+      "Settlement netting closes out a day's transfers and nets them per account pair. Then a clearing-account health check re-derives the balance from scratch. If it isn't zero, something's wrong before the money moves again."
+    ],
+    "tags": [
+      "GO",
+      "POSTGRESQL",
+      "DOUBLE-ENTRY"
+    ],
     "language": "Go",
-    "href": "https://github.com/thesarfo/payments-engine"
+    "href": "https://github.com/thesarfo/payments-engine",
+    "stars": 18
   },
   {
     "name": "hum",
+    "year": "2026",
     "description": "Audio fingerprinting service based on the Wang 2003 paper.",
+    "writeup": [
+      "Audio fingerprinting, the same idea behind Shazam, based on Wang's 2003 paper. Record a few seconds on a phone mic and it matches against a stored database.",
+      "The paper's approach hashes pairs of spectrogram peaks instead of raw frequency data. That's what survives a noisy room and a bad mic."
+    ],
+    "tags": [
+      "C#",
+      "AUDIO",
+      "FINGERPRINTING"
+    ],
     "language": "C#",
-    "href": "https://github.com/thesarfo/hum"
-  },
-  {
-    "name": "mapreduce",
-    "description": "MapReduce implementation based on Google's 2004 paper.",
-    "language": "C#",
-    "href": "https://github.com/thesarfo/mapreduce"
+    "href": "https://github.com/thesarfo/hum",
+    "stars": 7
   },
   {
     "name": "backtester",
+    "year": "2026",
     "description": "Multi-market trading strategy backtester for crypto & stocks.",
+    "writeup": [
+      "Pulls historical prices from Binance and Yahoo Finance, then runs four strategies against them: EMA crossover, RSI, Bollinger Bands, buy and hold.",
+      "Every strategy reports the same five metrics, so a crypto EMA run and a stock RSI run land on the same scoreboard. There's a browser dashboard for equity curves, drawdowns, and the trade log, if staring at a results table gets old."
+    ],
+    "tags": [
+      "GO",
+      "TRADING",
+      "BACKTESTING"
+    ],
     "language": "Go",
-    "href": "https://github.com/thesarfo/backtester"
+    "href": "https://github.com/thesarfo/backtester",
+    "stars": 1
   },
   {
-    "name": "bgen",
-    "description": "Static blog site generator that converts Markdown files to HTML.",
-    "language": "Haskell",
-    "href": "https://github.com/thesarfo/bgen"
+    "name": "mapreduce",
+    "year": "2025",
+    "description": "MapReduce implementation based on Google's 2004 paper.",
+    "writeup": [
+      "MapReduce from Google's 2004 paper, run three ways against the same word-count job: sequential, parallel across cores, and distributed across a master and its workers.",
+      "Same map and reduce functions in all three. Only the scheduling changes, one thread, then several, then a cluster of them."
+    ],
+    "tags": [
+      "C#",
+      "DISTRIBUTED SYSTEMS",
+      "PAPER IMPLEMENTATION"
+    ],
+    "language": "C#",
+    "href": "https://github.com/thesarfo/mapreduce",
+    "stars": 1
   },
   {
     "name": "dozer",
+    "year": "2025",
     "description": "A minimal Object Relational Mapper for .NET.",
+    "writeup": [
+      "A reflection-based ORM for .NET. CRUD, a fluent query API, schema generated straight from your entity classes instead of a separate mapping file.",
+      "Change tracking means an update only touches the fields you actually changed. An identity map means fetching the same row twice gets you the same object, not two copies that drift apart."
+    ],
+    "tags": [
+      "C#",
+      ".NET",
+      "ORM"
+    ],
     "language": "C#",
-    "href": "https://github.com/thesarfo/dozer"
-  },
-  {
-    "name": "crossdial",
-    "description": "A lightweight library for validating and formatting international phone numbers.",
-    "language": "Java",
-    "href": "https://github.com/thesarfo/crossdial"
+    "href": "https://github.com/thesarfo/dozer",
+    "links": [
+      {
+        "label": "NuGet",
+        "href": "https://www.nuget.org/packages/Dozer.Core"
+      }
+    ],
+    "stars": 1
   },
   {
     "name": "linear-kv",
+    "year": "2025",
     "description": "Linearizable key-value store based on the Linearizability paper.",
+    "writeup": [
+      "An in-memory key-value store, linearizable on a single node. One mutex serializes every operation. Writes carry a request ID, so a retried PUT doesn't apply twice.",
+      "It also ships a linearizability checker: a timeline view plus a history validator that checks a recorded run against the consistency claim instead of trusting it blind."
+    ],
+    "tags": [
+      "GO",
+      "DISTRIBUTED SYSTEMS",
+      "CONSISTENCY"
+    ],
     "language": "Go",
-    "href": "https://github.com/thesarfo/linear-kv"
+    "href": "https://github.com/thesarfo/linear-kv",
+    "stars": 0
+  },
+  {
+    "name": "crossdial",
+    "year": "2024",
+    "description": "A lightweight library for validating and formatting international phone numbers.",
+    "writeup": [
+      "Validates and formats international phone numbers, published to Maven Central. Single numbers or batches, with structured error types instead of a thrown exception on the first bad one.",
+      "Built as a dependency, with the boring parts done: documented thread safety, structured errors, and a way to list which countries it actually supports before you assume a number is malformed."
+    ],
+    "tags": [
+      "JAVA",
+      "LIBRARY",
+      "I18N"
+    ],
+    "language": "Java",
+    "href": "https://github.com/thesarfo/crossdial",
+    "links": [
+      {
+        "label": "Maven Central",
+        "href": "https://search.maven.org/artifact/io.github.thesarfo/crossdial"
+      }
+    ],
+    "stars": 3
   }
 ]
