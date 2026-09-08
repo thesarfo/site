@@ -2,10 +2,10 @@
   {
     "name": "ledgr",
     "year": "2026",
-    "description": "A ledger that doesn't trust you, or itself, until the math proves out.",
+    "description": "Ledger and transfer infrastructure for reliable internal money movement.",
     "writeup": [
-      "Money infrastructure built on the oldest trick in accounting: double-entry bookkeeping. Every transfer is two postings that have to balance, or it doesn't happen. No optimistic writes, no \"we'll reconcile it later.\"",
-      "Settlement netting closes out a day's transfers and nets them per account pair. Then a clearing-account health check re-derives the balance from scratch. If it isn't zero, something's wrong before the money moves again."
+      "Provides account management, double-entry posting, and idempotent transfer orchestration. Every journal post is validated as balanced before persistence.",
+      "Handles account lifecycle, settlement netting, and clearing account health checks. Idempotent transfer submission with optional Redis-backed deduplication."
     ],
     "tags": [
       "GO",
@@ -13,16 +13,16 @@
       "DOUBLE-ENTRY"
     ],
     "language": "Go",
-    "href": "https://github.com/thesarfo/payments-engine",
+    "href": "https://github.com/thesarfo/ledgr",
     "stars": 18
   },
   {
     "name": "hum",
     "year": "2026",
-    "description": "Audio fingerprinting service based on the Wang 2003 paper.",
+    "description": "Identifies songs by listening to a few seconds of audio.",
     "writeup": [
-      "Audio fingerprinting, the same idea behind Shazam, based on Wang's 2003 paper. Record a few seconds on a phone mic and it matches against a stored database.",
-      "The paper's approach hashes pairs of spectrogram peaks instead of raw frequency data. That's what survives a noisy room and a bad mic."
+      "Like Shazam: record a few seconds of a song and it tells you what it is. Based on a 2003 research paper that figured out how to match audio even in noisy rooms with bad microphones.",
+      "Instead of comparing raw sound, it fingerprints pairs of frequency peaks. That's what makes it resilient to background noise and low-quality recordings."
     ],
     "tags": [
       "C#",
@@ -36,10 +36,10 @@
   {
     "name": "backtester",
     "year": "2026",
-    "description": "Multi-market trading strategy backtester for crypto & stocks.",
+    "description": "Test trading strategies against historical crypto and stock data.",
     "writeup": [
-      "Pulls historical prices from Binance and Yahoo Finance, then runs four strategies against them: EMA crossover, RSI, Bollinger Bands, buy and hold.",
-      "Every strategy reports the same five metrics, so a crypto EMA run and a stock RSI run land on the same scoreboard. There's a browser dashboard for equity curves, drawdowns, and the trade log, if staring at a results table gets old."
+      "Grabs past prices from Binance and Yahoo Finance, then runs four strategies against them: EMA crossover, RSI, Bollinger Bands, and buy-and-hold. Every strategy reports the same five metrics, so you can compare apples to apples.",
+      "There's a browser dashboard for equity curves, drawdowns, and the full trade log, so you can see exactly where a strategy made or lost money."
     ],
     "tags": [
       "GO",
@@ -53,10 +53,10 @@
   {
     "name": "mapreduce",
     "year": "2025",
-    "description": "MapReduce implementation based on Google's 2004 paper.",
+    "description": "A textbook MapReduce. Run the same job one thread, many cores, or across a cluster.",
     "writeup": [
-      "MapReduce from Google's 2004 paper, run three ways against the same word-count job: sequential, parallel across cores, and distributed across a master and its workers.",
-      "Same map and reduce functions in all three. Only the scheduling changes, one thread, then several, then a cluster of them."
+      "Implements Google's MapReduce paper from 2004. Same word-count job runs three ways: sequentially on one thread, parallel across CPU cores, and distributed across a master node and its workers.",
+      "The map and reduce logic stays identical in all three. Only the scheduling changes: one thread, then many, then a whole cluster."
     ],
     "tags": [
       "C#",
@@ -70,10 +70,10 @@
   {
     "name": "dozer",
     "year": "2025",
-    "description": "A minimal Object Relational Mapper for .NET.",
+    "description": "A lightweight ORM for .NET that maps your classes to database tables.",
     "writeup": [
-      "A reflection-based ORM for .NET. CRUD, a fluent query API, schema generated straight from your entity classes instead of a separate mapping file.",
-      "Change tracking means an update only touches the fields you actually changed. An identity map means fetching the same row twice gets you the same object, not two copies that drift apart."
+      "Lets you work with database rows as regular C# objects. CRUD operations, a fluent query builder, and schema auto-generated from your classes, no separate mapping files.",
+      "Tracks which fields you changed, so an update only touches what actually changed. Fetching the same row twice gives you the same object, not two copies that drift apart."
     ],
     "tags": [
       "C#",
@@ -93,10 +93,10 @@
   {
     "name": "linear-kv",
     "year": "2025",
-    "description": "Linearizable key-value store based on the Linearizability paper.",
+    "description": "A key-value store where every operation happens in strict order.",
     "writeup": [
-      "An in-memory key-value store, linearizable on a single node. One mutex serializes every operation. Writes carry a request ID, so a retried PUT doesn't apply twice.",
-      "It also ships a linearizability checker: a timeline view plus a history validator that checks a recorded run against the consistency claim instead of trusting it blind."
+      "An in-memory key-value store on a single node, where one lock ensures operations never overlap. Writes include a request ID, so a retried PUT doesn't apply twice.",
+      "Ships with a linearizability checker. It records every operation's timeline and validates it against the consistency claim, instead of just assuming it works."
     ],
     "tags": [
       "GO",
@@ -110,10 +110,10 @@
   {
     "name": "crossdial",
     "year": "2024",
-    "description": "A lightweight library for validating and formatting international phone numbers.",
+    "description": "Checks and cleans up international phone numbers.",
     "writeup": [
-      "Validates and formats international phone numbers, published to Maven Central. Single numbers or batches, with structured error types instead of a thrown exception on the first bad one.",
-      "Built as a dependency, with the boring parts done: documented thread safety, structured errors, and a way to list which countries it actually supports before you assume a number is malformed."
+      "Validates and formats international phone numbers. Works with single numbers or batches, and returns structured errors instead of crashing on the first bad one.",
+      "Published to Maven Central. Handles the tedious parts: thread safety, clear error messages, and a list of supported countries so you know what it can actually handle."
     ],
     "tags": [
       "JAVA",
