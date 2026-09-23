@@ -1,5 +1,20 @@
 [
   {
+    "name": "rebar",
+    "year": "2026",
+    "description": "A personal workout logging app inspired by Hevy.",
+    "writeup": [
+      "Log gym sessions: exercises, sets, weight, and reps. Follow other people and see their finished sessions alongside your own.",
+      "Moving over from Hevy? It imports your full history from a CSV export instead of starting from scratch. Backend's ASP.NET Core, Postgres, and Redis; the app itself is Expo React Native."
+    ],
+    "tags": [
+      "C#",
+      ".NET"
+    ],
+    "language": "C#",
+    "href": "https://rebar.thesarfo.com"
+  },
+  {
     "name": "ledgr",
     "year": "2026",
     "description": "Ledger and transfer infrastructure for reliable internal money movement.",
@@ -9,8 +24,7 @@
     ],
     "tags": [
       "GO",
-      "POSTGRESQL",
-      "DOUBLE-ENTRY"
+      "POSTGRESQL"
     ],
     "language": "Go",
     "href": "https://github.com/thesarfo/ledgr",
@@ -101,7 +115,7 @@
     "tags": [
       "GO",
       "DISTRIBUTED SYSTEMS",
-      "CONSISTENCY"
+      "PAPER IMPLEMENTATION"
     ],
     "language": "Go",
     "href": "https://github.com/thesarfo/linear-kv",
