@@ -79,4 +79,4 @@ print(code)       # ['PUSH 2', 'PUSH 3', 'MULTIPLY', 'PUSH 4', 'ADD']
 print(run(code))  # 10
 ```
 
-In contrast to how I started off this piece, compilers are actually difficult to understand but it helps to keep in mind that "It's just parsing".
+In contrast to how I started off this piece, compilers are actually difficult to grasp, and I am watering it down to capture just a simple aspect of the many things it does, however it helps to keep in mind that "It's just parsing".
