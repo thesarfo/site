@@ -19,7 +19,7 @@ The obvious issue here is that machines do not read math and is dumb on purpose.
 
 Notice the operator comes after its numbers. The machine needs both plates on the stack before it can combine them. Reordering things this way is half the compiler's job.
 
-The above steps is a postfix notation, also called Reverse Polish Notation. It's the same thing behind the infix-to-postfix problems on LeetCode: Evaluate Reverse Polish Notation, the Basic Calculator series and so on. Turning `2 * 3 + 4` into `2 3 * 4 +` and evaluating it with a stack is what this compiler does.
+The above steps is a postfix notation, also called Reverse Polish Notation. It's the same thing behind the infix-to-postfix problems on LeetCode: Evaluate Reverse Polish Notation, the Basic Calculator series etc(side eye). Turning `2 * 3 + 4` into `2 3 * 4 +` and evaluating it with a stack is what this compiler does.
 
 The only hard part is order of operations. Multiply before add, and so on. The chapter solves this with Pratt parsing, which most CS curricula apparently skip entirely. The idea is that every operator gets a stickiness score. `*` and `/` score 2. `+` and `-` score 1. When the parser finishes a number, it peeks at the next operator and asks one question: does this stick tightly enough for what I'm currently building?
 
