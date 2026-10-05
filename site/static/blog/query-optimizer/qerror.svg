@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 390" width="760" height="390" font-family="Inter, system-ui, sans-serif">
+<line x1="70" y1="300.0" x2="740" y2="300.0" stroke="#8a8a8a" stroke-width="0.5"/>
+<text x="62" y="304.0" fill="#8a8a8a" font-size="11" text-anchor="end" font-weight="400">1×</text>
+<line x1="70" y1="180.95238095238096" x2="740" y2="180.95238095238096" stroke="#8a8a8a" stroke-width="0.5"/>
+<text x="62" y="184.95238095238096" fill="#8a8a8a" font-size="11" text-anchor="end" font-weight="400">10×</text>
+<line x1="70" y1="61.904761904761926" x2="740" y2="61.904761904761926" stroke="#8a8a8a" stroke-width="0.5"/>
+<text x="62" y="65.90476190476193" fill="#8a8a8a" font-size="11" text-anchor="end" font-weight="400">100×</text>
+<text x="20" y="28" fill="#8a8a8a" font-size="13" text-anchor="start" font-weight="600">How far off the row-count guess was (log scale, 1× = perfect)</text>
+<rect x="90.0" y="300.0" width="50" height="2" rx="3" fill="#2f4f6f"/>
+<text x="115.0" y="294.0" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="600">1.00×</text>
+<rect x="148.0" y="298.9761700283431" width="50" height="2" rx="3" fill="#c2561e"/>
+<text x="173.0" y="292.9761700283431" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="600">1.02×</text>
+<text x="144.0" y="322" fill="#8a8a8a" font-size="12" text-anchor="middle" font-weight="400">city = 'Accra'</text>
+<rect x="255.0" y="300.0" width="50" height="2" rx="3" fill="#2f4f6f"/>
+<text x="280.0" y="294.0" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="600">1.00×</text>
+<rect x="313.0" y="300.0" width="50" height="2" rx="3" fill="#c2561e"/>
+<text x="338.0" y="294.0" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="600">1.00×</text>
+<text x="309.0" y="322" fill="#8a8a8a" font-size="12" text-anchor="middle" font-weight="400">country = 'Ghana'</text>
+<rect x="420.0" y="297.47746439643595" width="50" height="2.5225356035640516" rx="3" fill="#2f4f6f"/>
+<text x="445.0" y="291.47746439643595" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="600">1.05×</text>
+<rect x="478.0" y="178.9743395765265" width="50" height="121.02566042347351" rx="3" fill="#c2561e"/>
+<text x="503.0" y="172.9743395765265" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="600">10.39×</text>
+<text x="474.0" y="322" fill="#8a8a8a" font-size="12" text-anchor="middle" font-weight="400">Accra AND Ghana</text>
+<rect x="585.0" y="295.0722993859256" width="50" height="4.927700614074411" rx="3" fill="#2f4f6f"/>
+<text x="610.0" y="289.0722993859256" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="600">1.10×</text>
+<rect x="643.0" y="64.83501797744438" width="50" height="235.16498202255562" rx="3" fill="#c2561e"/>
+<text x="668.0" y="58.83501797744438" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="600">94.49×</text>
+<text x="639.0" y="322" fill="#8a8a8a" font-size="12" text-anchor="middle" font-weight="400">Accra AND Nigeria</text>
+<rect x="510" y="366" width="12" height="12" rx="2" fill="#2f4f6f"/><text x="528" y="376" fill="#8a8a8a" font-size="11" text-anchor="start" font-weight="400">columns unrelated</text>
+<rect x="635" y="366" width="12" height="12" rx="2" fill="#c2561e"/><text x="653" y="376" fill="#8a8a8a" font-size="11" text-anchor="start" font-weight="400">city decides country</text>
+</svg>

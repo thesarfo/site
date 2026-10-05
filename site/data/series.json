@@ -1,0 +1,7 @@
+[
+  {
+    "id": "query-optimizer",
+    "title": "Building a query optimizer",
+    "description": "A small SQL database where the optimizer is the focus, built to find out what I actually understood from a year of reading about database internals."
+  }
+]

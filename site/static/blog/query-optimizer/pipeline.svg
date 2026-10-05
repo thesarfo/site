@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 150" width="800" height="150" font-family="Inter, system-ui, sans-serif">
+<text x="20" y="22" fill="#8a8a8a" font-size="13" text-anchor="start" font-weight="600">The trip a query makes</text>
+<rect x="20.0" y="45" width="90" height="44" rx="7" fill="#2f4f6f"/>
+<text x="65.0" y="71.55" fill="#fff" font-size="13" font-weight="600" text-anchor="middle">Parse</text>
+<text x="65.0" y="110" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="400">text to a tree</text>
+<line x1="113.0" y1="67" x2="122.66666666666666" y2="67" stroke="#8a8a8a" stroke-width="1.5"/>
+<polygon points="128.66666666666666,67 121.66666666666666,63 121.66666666666666,71" fill="#8a8a8a"/>
+<rect x="131.66666666666669" y="45" width="90" height="44" rx="7" fill="#2f4f6f"/>
+<text x="176.66666666666669" y="71.55" fill="#fff" font-size="13" font-weight="600" text-anchor="middle">Bind</text>
+<text x="176.66666666666669" y="110" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="400">names to columns</text>
+<line x1="224.66666666666669" y1="67" x2="234.33333333333334" y2="67" stroke="#8a8a8a" stroke-width="1.5"/>
+<polygon points="240.33333333333334,67 233.33333333333334,63 233.33333333333334,71" fill="#8a8a8a"/>
+<rect x="243.33333333333334" y="45" width="90" height="44" rx="7" fill="#2f4f6f"/>
+<text x="288.33333333333337" y="71.55" fill="#fff" font-size="13" font-weight="600" text-anchor="middle">Plan</text>
+<text x="288.33333333333337" y="110" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="400">a tree of steps</text>
+<line x1="336.33333333333337" y1="67" x2="346.00000000000006" y2="67" stroke="#8a8a8a" stroke-width="1.5"/>
+<polygon points="352.00000000000006,67 345.00000000000006,63 345.00000000000006,71" fill="#8a8a8a"/>
+<rect x="355.0" y="45" width="90" height="44" rx="7" fill="#c2561e"/>
+<text x="400.0" y="71.55" fill="#fff" font-size="13" font-weight="600" text-anchor="middle">Rewrite</text>
+<text x="400.0" y="110" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="400">safe changes</text>
+<line x1="448.0" y1="67" x2="457.6666666666667" y2="67" stroke="#8a8a8a" stroke-width="1.5"/>
+<polygon points="463.6666666666667,67 456.6666666666667,63 456.6666666666667,71" fill="#8a8a8a"/>
+<rect x="466.6666666666667" y="45" width="90" height="44" rx="7" fill="#c2561e"/>
+<text x="511.6666666666667" y="71.55" fill="#fff" font-size="13" font-weight="600" text-anchor="middle">Estimate</text>
+<text x="511.6666666666667" y="110" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="400">guess row counts</text>
+<line x1="559.6666666666667" y1="67" x2="569.3333333333334" y2="67" stroke="#8a8a8a" stroke-width="1.5"/>
+<polygon points="575.3333333333334,67 568.3333333333334,63 568.3333333333334,71" fill="#8a8a8a"/>
+<rect x="578.3333333333334" y="45" width="90" height="44" rx="7" fill="#c2561e"/>
+<text x="623.3333333333334" y="71.55" fill="#fff" font-size="13" font-weight="600" text-anchor="middle">Choose</text>
+<text x="623.3333333333334" y="110" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="400">pick join methods</text>
+<line x1="671.3333333333334" y1="67" x2="681.0" y2="67" stroke="#8a8a8a" stroke-width="1.5"/>
+<polygon points="687.0,67 680.0,63 680.0,71" fill="#8a8a8a"/>
+<rect x="690.0" y="45" width="90" height="44" rx="7" fill="#2f4f6f"/>
+<text x="735.0" y="71.55" fill="#fff" font-size="13" font-weight="600" text-anchor="middle">Run</text>
+<text x="735.0" y="110" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="400">get the rows</text>
+<text x="20" y="140" fill="#c2561e" font-size="11" text-anchor="start" font-weight="400">orange = the optimizer</text>
+</svg>
