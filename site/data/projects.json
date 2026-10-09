@@ -1,5 +1,58 @@
 [
   {
+    "name": "pgtrace",
+    "year": "2026",
+    "description": "Sees which processes talk to Postgres and how much they move.",
+    "writeup": [
+      "Two eBPF probes watch the kernel's TCP paths: one fires on every write, one after each read reaches userspace. Each probe matches the socket's remote port and counts bytes per process in a kernel hash map, which the Go side prints every two seconds.",
+      "No agent in the app, no extension in the database, no proxy in between. The port check uses CO-RE, so one binary runs on any BTF kernel without recompiling."
+    ],
+    "tags": [
+      "GO",
+      "EBPF",
+      "POSTGRESQL"
+    ],
+    "language": "Go",
+    "href": "https://github.com/thesarfo/pgtrace",
+    "stars": 0,
+    "status": "in-progress"
+  },
+  {
+    "name": "cardinal",
+    "year": "2026",
+    "description": "A small SQL engine built to learn how query optimizers think.",
+    "writeup": [
+      "Reads SQL, picks the cheapest plan it can find, and runs it. The optimizer is the whole point: rule rewrites like filter pushdown, constant folding, and column pruning, then a cost model that chooses between join strategies.",
+      "EXPLAIN shows the rewrites it applied and the plans it considered. EXPLAIN ANALYZE prints guessed row counts next to real ones, so you see exactly where its estimates went wrong. A fuzzer replays thousands of random queries against SQLite, so no rewrite ever changes an answer."
+    ],
+    "tags": [
+      "C++",
+      "DATABASES",
+      "QUERY OPTIMIZER"
+    ],
+    "language": "C++",
+    "href": "https://github.com/thesarfo/cardinal",
+    "stars": 1,
+    "status": "in-progress"
+  },
+  {
+    "name": "two-trees",
+    "year": "2026",
+    "description": "A tiny config compiler built like the .NET compiler.",
+    "writeup": [
+      "A minimal config language compiled end to end, architected as a scale model of Roslyn. Green nodes hold kind, width, and children with no position or parent, so they stay immutable and shared across edits. Red nodes wrap them and compute absolute position lazily on access.",
+      "Editing one token rebuilds only the green spine to the root while everything else is reused. The semantic layer resolves key references and catches undefined keys, reference cycles, and type errors before emitting JSON."
+    ],
+    "tags": [
+      "C#",
+      ".NET",
+      "COMPILERS"
+    ],
+    "language": "C#",
+    "href": "https://github.com/thesarfo/two-trees",
+    "stars": 0
+  },
+  {
     "name": "rebar",
     "year": "2026",
     "description": "Personal workout logging app with social leaderboards.",
