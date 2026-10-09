@@ -14,8 +14,7 @@
     ],
     "language": "Go",
     "href": "https://github.com/thesarfo/pgtrace",
-    "stars": 0,
-    "status": "in-progress"
+    "stars": 0
   },
   {
     "name": "cardinal",
@@ -32,8 +31,7 @@
     ],
     "language": "C++",
     "href": "https://github.com/thesarfo/cardinal",
-    "stars": 1,
-    "status": "in-progress"
+    "stars": 1
   },
   {
     "name": "two-trees",
