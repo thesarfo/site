@@ -18,6 +18,7 @@ import Site.Pages.Lens (lensPage)
 import Site.Pages.Renders (rendersPage)
 import Site.Pages.Other (otherPage)
 import Site.Pages.Books (bookPage, booksIndex, chapterPage)
+import Site.Pages.Shelf (shelfPage)
 import Site.Pages.NotFound (notFoundPage)
 import System.Environment (lookupEnv)
 import System.FilePath (takeBaseName, takeDirectory, takeFileName)
@@ -130,6 +131,10 @@ rules showDrafts = do
     compile $ loadData "data/renders.json" >>= html . rendersPage
 
   othersRules
+
+  create ["shelf/index.html"] $ do
+    route idRoute
+    compile $ loadData "data/shelf.json" >>= html . shelfPage
 
   create ["404.html"] $ staticPage notFoundPage
 

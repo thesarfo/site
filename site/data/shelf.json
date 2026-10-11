@@ -1,0 +1,633 @@
+{
+  "kinds": [
+    "all",
+    "paper",
+    "book",
+    "course",
+    "video",
+    "article",
+    "site"
+  ],
+  "shelves": [
+    {
+      "id": "distributed-systems",
+      "name": "distributed systems",
+      "items": [
+        {
+          "title": "designing data-intensive applications",
+          "url": "https://dataintensive.net/",
+          "kind": "book",
+          "year": "2017",
+          "by": "martin kleppmann",
+          "note": "start here before any of the papers below."
+        },
+        {
+          "title": "mit 6.5840: distributed systems",
+          "url": "https://pdos.csail.mit.edu/6.824/",
+          "kind": "course",
+          "by": "robert morris",
+          "note": "the classic papers, plus a raft lab."
+        },
+        {
+          "title": "time, clocks, and the ordering of events in a distributed system",
+          "url": "https://lamport.azurewebsites.net/pubs/time-clocks.pdf",
+          "kind": "paper",
+          "year": "1978",
+          "by": "leslie lamport",
+          "note": "logical clocks: ordering is all you get."
+        },
+        {
+          "title": "the byzantine generals problem",
+          "url": "https://lamport.azurewebsites.net/pubs/byz.pdf",
+          "kind": "paper",
+          "year": "1982",
+          "by": "lamport, shostak & pease",
+          "note": "what faulty means when nodes can lie."
+        },
+        {
+          "title": "impossibility of distributed consensus with one faulty process",
+          "url": "https://groups.csail.mit.edu/tds/papers/Lynch/jacm85.pdf",
+          "kind": "paper",
+          "year": "1985",
+          "by": "fischer, lynch & paterson",
+          "note": "the flp result: consensus needs luck or timeouts."
+        },
+        {
+          "title": "paxos made simple",
+          "url": "https://lamport.azurewebsites.net/pubs/paxos-simple.pdf",
+          "kind": "paper",
+          "year": "2001",
+          "by": "leslie lamport",
+          "note": "the algorithm in fourteen readable pages."
+        },
+        {
+          "title": "in search of an understandable consensus algorithm",
+          "url": "https://raft.github.io/raft.pdf",
+          "kind": "paper",
+          "year": "2014",
+          "by": "ongaro & ousterhout",
+          "note": "raft: paxos you can actually implement."
+        },
+        {
+          "title": "the google file system",
+          "url": "https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf",
+          "kind": "paper",
+          "year": "2003",
+          "by": "ghemawat, gobioff & leung",
+          "note": "one master, many chunkservers, appends all the way down."
+        },
+        {
+          "title": "mapreduce",
+          "url": "https://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf",
+          "kind": "paper",
+          "year": "2004",
+          "by": "dean & ghemawat",
+          "note": "pairs with my notes on the query pipeline."
+        },
+        {
+          "title": "bigtable",
+          "url": "https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf",
+          "kind": "paper",
+          "year": "2006",
+          "by": "chang et al.",
+          "note": "sparse tables over gfs; every wide-column store since."
+        },
+        {
+          "title": "dynamo",
+          "url": "https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf",
+          "kind": "paper",
+          "year": "2007",
+          "by": "decandia et al.",
+          "note": "eventual consistency at amazon scale."
+        },
+        {
+          "title": "spanner",
+          "url": "https://static.googleusercontent.com/media/research.google.com/en//archive/spanner-osdi2012.pdf",
+          "kind": "paper",
+          "year": "2012",
+          "by": "corbett et al.",
+          "note": "global transactions on atomic clocks."
+        },
+        {
+          "title": "cap twelve years later",
+          "url": "https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed/",
+          "kind": "article",
+          "year": "2012",
+          "by": "eric brewer",
+          "note": "what the theorem actually says, from its author."
+        },
+        {
+          "title": "jepsen analyses",
+          "url": "https://jepsen.io/analyses",
+          "kind": "site",
+          "by": "kyle kingsbury",
+          "note": "databases tested against their own consistency claims."
+        }
+      ]
+    },
+    {
+      "id": "databases",
+      "name": "databases & storage",
+      "items": [
+        {
+          "title": "database internals",
+          "kind": "book",
+          "year": "2019",
+          "by": "alex petrov",
+          "note": "storage engines and distribution, in depth."
+        },
+        {
+          "title": "architecture of a database system",
+          "url": "https://dsf.berkeley.edu/papers/fntdb07-architecture.pdf",
+          "kind": "paper",
+          "year": "2007",
+          "by": "hellerstein, stonebraker & hamilton",
+          "note": "how a real engine fits together."
+        },
+        {
+          "title": "readings in database systems",
+          "url": "http://www.redbook.io/",
+          "kind": "book",
+          "by": "bailis, hellerstein & stonebraker",
+          "note": "the canon, one link."
+        },
+        {
+          "title": "cmu 15-445: database systems",
+          "url": "https://15445.courses.cs.cmu.edu/",
+          "kind": "course",
+          "by": "andy pavlo",
+          "note": "watch alongside my optimizer notes."
+        },
+        {
+          "title": "the log-structured merge-tree",
+          "url": "https://www.cs.umb.edu/~poneil/lsmtree.pdf",
+          "kind": "paper",
+          "year": "1996",
+          "by": "o'neil et al.",
+          "note": "the idea behind every lsm store."
+        },
+        {
+          "title": "aries",
+          "url": "https://cs.stanford.edu/people/chrismre/cs345/rl/aries.pdf",
+          "kind": "paper",
+          "year": "1992",
+          "by": "mohan et al.",
+          "note": "write-ahead logging and recovery, still the reference."
+        },
+        {
+          "title": "bitcask",
+          "url": "https://riak.com/assets/bitcask-intro.pdf",
+          "kind": "paper",
+          "year": "2010",
+          "by": "sheehy & smith",
+          "note": "a log-structured hash table in six pages."
+        },
+        {
+          "title": "let's build a simple database",
+          "url": "https://cstack.github.io/db_tutorial/",
+          "kind": "article",
+          "by": "connor stack",
+          "note": "a sqlite clone in c, step by step."
+        },
+        {
+          "title": "the internals of postgresql",
+          "url": "https://www.interdb.jp/pg/",
+          "kind": "book",
+          "by": "hironobu suzuki",
+          "note": "pairs well with my pgtrace probes."
+        },
+        {
+          "title": "use the index, luke",
+          "url": "https://use-the-index-luke.com/",
+          "kind": "book",
+          "by": "markus winand",
+          "note": "indexing for people who write the queries."
+        }
+      ]
+    },
+    {
+      "id": "compilers",
+      "name": "compilers & interpreters",
+      "items": [
+        {
+          "title": "crafting interpreters",
+          "url": "https://craftinginterpreters.com/",
+          "kind": "book",
+          "year": "2021",
+          "by": "robert nystrom",
+          "note": "two interpreters; read before your next compiler project."
+        },
+        {
+          "title": "compilers: principles, techniques, and tools",
+          "kind": "book",
+          "by": "aho, lam, sethi & ullman",
+          "note": "the dragon book: reference, not tutorial."
+        },
+        {
+          "title": "an incremental approach to compiler construction",
+          "url": "http://scheme2006.cs.uchicago.edu/11-ghuloum.pdf",
+          "kind": "paper",
+          "year": "2006",
+          "by": "abdulaziz ghuloum",
+          "note": "a working compiler at every step, down to x86."
+        },
+        {
+          "title": "essentials of compilation",
+          "url": "https://github.com/IUCompilerCourse/Essentials-of-Compilation",
+          "kind": "book",
+          "by": "jeremy siek",
+          "note": "a course that compiles a real subset down to x86."
+        },
+        {
+          "title": "writing an interpreter in go",
+          "url": "https://interpreterbook.com/",
+          "kind": "book",
+          "year": "2016",
+          "by": "thorsten ball",
+          "note": "monkey language in a weekend."
+        },
+        {
+          "title": "simple but powerful pratt parsing",
+          "url": "https://matklad.github.io/2020/04/13/simple-but-powerful-pratt-parsing.html",
+          "kind": "article",
+          "year": "2020",
+          "by": "alex kladov",
+          "note": "the parsing article my compiler notes want."
+        },
+        {
+          "title": "my first language frontend with llvm",
+          "url": "https://llvm.org/docs/tutorial/",
+          "kind": "article",
+          "by": "llvm project",
+          "note": "your first frontend, with real codegen."
+        },
+        {
+          "title": "stanford cs143: compilers",
+          "url": "https://web.stanford.edu/class/cs143/",
+          "kind": "course",
+          "note": "the full pipeline, cool to lexing."
+        },
+        {
+          "title": "compiler explorer",
+          "url": "https://godbolt.org/",
+          "kind": "site",
+          "by": "matt godbolt",
+          "note": "see what your code compiles to."
+        }
+      ]
+    },
+    {
+      "id": "systems-programming",
+      "name": "systems programming",
+      "items": [
+        {
+          "title": "the c programming language",
+          "kind": "book",
+          "year": "1978",
+          "by": "kernighan & ritchie",
+          "note": "still the fastest way to learn c."
+        },
+        {
+          "title": "the linux programming interface",
+          "url": "https://man7.org/tlpi/",
+          "kind": "book",
+          "year": "2010",
+          "by": "michael kerrisk",
+          "note": "the syscall reference."
+        },
+        {
+          "title": "advanced programming in the unix environment",
+          "kind": "book",
+          "by": "stevens & rago",
+          "note": "unix programming, exhaustively."
+        },
+        {
+          "title": "linkers and loaders",
+          "url": "https://www.iecc.com/linker/",
+          "kind": "book",
+          "year": "1999",
+          "by": "john levine",
+          "note": "what happens between compile and run."
+        },
+        {
+          "title": "what every c programmer should know about undefined behavior",
+          "url": "https://blog.llvm.org/2011/05/what-every-c-programmer-should-know.html",
+          "kind": "article",
+          "year": "2011",
+          "by": "chris lattner",
+          "note": "the compiler is allowed to surprise you."
+        },
+        {
+          "title": "memory allocation",
+          "url": "https://samwho.dev/memory-allocation/",
+          "kind": "article",
+          "year": "2023",
+          "by": "sam rose",
+          "note": "malloc, drawn interactively."
+        },
+        {
+          "title": "the rust programming language",
+          "url": "https://doc.rust-lang.org/book/",
+          "kind": "book",
+          "by": "klabnik & nichols",
+          "note": "the book."
+        },
+        {
+          "title": "beej's guide to c programming",
+          "url": "https://beej.us/guide/bgc/",
+          "kind": "book",
+          "by": "brian hall",
+          "note": "sockets and c, plainly."
+        }
+      ]
+    },
+    {
+      "id": "operating-systems",
+      "name": "operating systems",
+      "items": [
+        {
+          "title": "operating systems: three easy pieces",
+          "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+          "kind": "book",
+          "by": "remzi & andrea arpaci-dusseau",
+          "note": "free, and the best intro to the big three ideas."
+        },
+        {
+          "title": "the unix time-sharing system",
+          "url": "https://dsf.berkeley.edu/cs262/unix.pdf",
+          "kind": "paper",
+          "year": "1974",
+          "by": "ritchie & thompson",
+          "note": "where it all began, in eleven pages."
+        },
+        {
+          "title": "mit 6.1810: operating system engineering",
+          "url": "https://pdos.csail.mit.edu/6.1810/",
+          "kind": "course",
+          "by": "mit pdos",
+          "note": "xv6 labs on risc-v."
+        },
+        {
+          "title": "plan 9 from bell labs",
+          "url": "https://9p.io/sys/doc/9.html",
+          "kind": "paper",
+          "year": "1995",
+          "by": "pike et al.",
+          "note": "what unix's authors built next."
+        },
+        {
+          "title": "the multikernel",
+          "url": "https://www.sigops.org/s/conferences/sosp/2009/papers/baumann-sosp09.pdf",
+          "kind": "paper",
+          "year": "2009",
+          "by": "baumann et al.",
+          "note": "your multicore machine is a distributed system."
+        },
+        {
+          "title": "an analysis of linux scalability to many cores",
+          "url": "https://pdos.csail.mit.edu/papers/linux:osdi10.pdf",
+          "kind": "paper",
+          "year": "2010",
+          "by": "boyd-wickizer et al.",
+          "note": "where linux choked, measured."
+        },
+        {
+          "title": "writing an os in rust",
+          "url": "https://os.phil-opp.com/",
+          "kind": "article",
+          "by": "philipp oppermann",
+          "note": "boot to kernel, one post per step."
+        },
+        {
+          "title": "os dev wiki",
+          "url": "https://wiki.osdev.org/",
+          "kind": "site",
+          "note": "the reference shelf for kernel builders."
+        }
+      ]
+    },
+    {
+      "id": "concurrency-performance",
+      "name": "concurrency & performance",
+      "items": [
+        {
+          "title": "communicating sequential processes",
+          "url": "https://www.cs.cmu.edu/~crary/819-f09/Hoare78.pdf",
+          "kind": "paper",
+          "year": "1978",
+          "by": "c. a. r. hoare",
+          "note": "the theory behind go's goroutines."
+        },
+        {
+          "title": "the art of multiprocessor programming",
+          "kind": "book",
+          "by": "herlihy & shavit",
+          "note": "locks, lock-freedom, and why."
+        },
+        {
+          "title": "rust atomics and locks",
+          "url": "https://marabos.nl/atomics/",
+          "kind": "book",
+          "year": "2023",
+          "by": "mara bos",
+          "note": "ordering models without the mystique."
+        },
+        {
+          "title": "the free lunch is over",
+          "url": "http://www.gotw.ca/publications/concurrency-ddj.htm",
+          "kind": "article",
+          "year": "2005",
+          "by": "herb sutter",
+          "note": "clocks stopped, cores multiplied."
+        },
+        {
+          "title": "scalability! but at what cost?",
+          "url": "https://www.usenix.org/system/files/conference/hotos15/hotos15-paper-mcsherry.pdf",
+          "kind": "paper",
+          "year": "2015",
+          "by": "mcsherry, isard & murray",
+          "note": "your laptop beats the cluster, measured."
+        },
+        {
+          "title": "systems performance",
+          "url": "https://www.brendangregg.com/",
+          "kind": "book",
+          "by": "brendan gregg",
+          "note": "perf, flame graphs, ebpf."
+        },
+        {
+          "title": "latency numbers every programmer should know",
+          "url": "https://colin-scott.github.io/personal_website/research/interactive_latency.html",
+          "kind": "site",
+          "by": "colin scott",
+          "note": "the table worth memorizing."
+        },
+        {
+          "title": "mechanical sympathy",
+          "url": "https://mechanical-sympathy.blogspot.com/",
+          "kind": "site",
+          "by": "martin thompson",
+          "note": "hardware-shaped thinking."
+        }
+      ]
+    },
+    {
+      "id": "networking",
+      "name": "networking",
+      "items": [
+        {
+          "title": "a protocol for packet network intercommunication",
+          "url": "https://www.cs.princeton.edu/courses/archive/fall06/cos561/papers/cerf74.pdf",
+          "kind": "paper",
+          "year": "1974",
+          "by": "cerf & kahn",
+          "note": "tcp/ip's birth certificate."
+        },
+        {
+          "title": "end-to-end arguments in system design",
+          "url": "https://web.mit.edu/Saltzer/www/publications/endtoend/endtoend.pdf",
+          "kind": "paper",
+          "year": "1984",
+          "by": "saltzer, reed & clark",
+          "note": "dumb network, smart edges."
+        },
+        {
+          "title": "congestion avoidance and control",
+          "url": "https://ee.lbl.gov/papers/congavoid.pdf",
+          "kind": "paper",
+          "year": "1988",
+          "by": "van jacobson",
+          "note": "how the internet learned to share."
+        },
+        {
+          "title": "computer networks: a systems approach",
+          "url": "https://book.systemsapproach.org/",
+          "kind": "book",
+          "by": "peterson & davie",
+          "note": "free and opinionated."
+        },
+        {
+          "title": "high performance browser networking",
+          "url": "https://hpbn.co/",
+          "kind": "book",
+          "year": "2013",
+          "by": "ilya grigorik",
+          "note": "the whole web stack, one book."
+        },
+        {
+          "title": "implement dns in a weekend",
+          "url": "https://implement-dns.wizardzines.com/",
+          "kind": "article",
+          "by": "julia evans",
+          "note": "packets by hand."
+        }
+      ]
+    },
+    {
+      "id": "software-design",
+      "name": "software design",
+      "items": [
+        {
+          "title": "on the criteria to be used in decomposing systems into modules",
+          "url": "https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf",
+          "kind": "paper",
+          "year": "1972",
+          "by": "david parnas",
+          "note": "information hiding, first draft."
+        },
+        {
+          "title": "hints for computer system design",
+          "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/acrobat-17.pdf",
+          "kind": "paper",
+          "year": "1983",
+          "by": "butler lampson",
+          "note": "thirty years of systems taste in one paper."
+        },
+        {
+          "title": "no silver bullet",
+          "url": "https://worrydream.com/refs/Brooks_1986_-_No_Silver_Bullet.pdf",
+          "kind": "paper",
+          "year": "1986",
+          "by": "fred brooks",
+          "note": "essential vs accidental complexity."
+        },
+        {
+          "title": "the mythical man-month",
+          "kind": "book",
+          "year": "1975",
+          "by": "fred brooks",
+          "note": "adding people to a late project, etc."
+        },
+        {
+          "title": "simple made easy",
+          "url": "https://www.infoq.com/presentations/Simple-Made-Easy/",
+          "kind": "video",
+          "year": "2011",
+          "by": "rich hickey",
+          "note": "simple is not easy."
+        },
+        {
+          "title": "a philosophy of software design",
+          "kind": "book",
+          "year": "2018",
+          "by": "john ousterhout",
+          "note": "deep modules."
+        }
+      ]
+    },
+    {
+      "id": "build-your-own",
+      "name": "build your own",
+      "items": [
+        {
+          "title": "build your own x",
+          "url": "https://github.com/codecrafters-io/build-your-own-x",
+          "kind": "site",
+          "note": "git, docker, redis, from scratch."
+        },
+        {
+          "title": "build your own lisp",
+          "url": "https://buildyourownlisp.com/",
+          "kind": "book",
+          "by": "daniel holden",
+          "note": "learn c by writing a lisp."
+        },
+        {
+          "title": "make a lisp",
+          "url": "https://github.com/kanaka/mal",
+          "kind": "course",
+          "by": "joel martin",
+          "note": "one lisp, eleven steps, any language."
+        },
+        {
+          "title": "web browser engineering",
+          "url": "https://browser.engineering/",
+          "kind": "book",
+          "by": "panchekha & harrelson",
+          "note": "a browser in ten chapters."
+        },
+        {
+          "title": "build your own text editor",
+          "url": "https://viewsourcecode.org/snaptoken/kilo/",
+          "kind": "article",
+          "by": "jeremy ruten",
+          "note": "kilo, about a thousand lines of c."
+        },
+        {
+          "title": "the missing semester of your cs education",
+          "url": "https://missing.csail.mit.edu/",
+          "kind": "course",
+          "by": "mit",
+          "note": "shell, git, debugging: the rest of cs."
+        },
+        {
+          "title": "teach yourself computer science",
+          "url": "https://teachyourselfcs.com/",
+          "kind": "site",
+          "by": "myers & shah",
+          "note": "one book per subject, self-paced."
+        }
+      ]
+    }
+  ]
+}

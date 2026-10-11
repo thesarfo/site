@@ -1,5 +1,22 @@
 [
   {
+    "name": "neuropil",
+    "year": "2026",
+    "description": "A fruit fly brain where every neuron is an actor and every spike is a message.",
+    "writeup": [
+      "Simulates a fruit fly brain with the actor model: every neuron is an actor, every spike a message. The wiring comes from the FlyWire connectome and the neuron model from Shiu et al. (Nature, 2024).",
+      "Stimulating the sugar-sensing neurons sends the signal from taste neurons to the motor neurons that make the fly feed. The actor version spikes identically to a plain array simulator on the same brain, so the concurrency costs nothing in correctness."
+    ],
+    "tags": [
+      "C#",
+      "ACTORS",
+      "NEUROSCIENCE"
+    ],
+    "language": "C#",
+    "href": "https://github.com/thesarfo/neuropil",
+    "stars": 0
+  },
+  {
     "name": "pgtrace",
     "year": "2026",
     "description": "Sees which processes talk to Postgres and how much they move.",
