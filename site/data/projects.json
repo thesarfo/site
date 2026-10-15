@@ -1,5 +1,21 @@
 [
   {
+    "name": "lclip",
+    "year": "2026",
+    "description": "A clipboard manager for Linux.",
+    "writeup": [
+      "Press a shortcut, click something you copied earlier, and it's pasted where your cursor is. History survives after the app you copied from closes, and it works on both Wayland and X11 with a tray icon.",
+      "Handles text, links, images, files, and rich text. Copies from password managers are hidden and cleared after 30 seconds, and secrets are never saved to disk."
+    ],
+    "tags": [
+      "RUST",
+      "LINUX"
+    ],
+    "language": "Rust",
+    "href": "https://github.com/thesarfo/lclip",
+    "stars": 0
+  },
+  {
     "name": "neuropil",
     "year": "2026",
     "description": "A fruit fly brain where every neuron is an actor and every spike is a message.",
