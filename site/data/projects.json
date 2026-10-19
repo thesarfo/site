@@ -127,7 +127,23 @@
     ],
     "language": "C#",
     "href": "https://github.com/thesarfo/hum",
-    "stars": 7
+    "stars": 7,
+    "shots": [
+      {
+        "src": "/hum-recording.png",
+        "thumb": "/shots/hum-recording-thumb.webp",
+        "width": 1897,
+        "height": 864,
+        "caption": "Listening. Hum records a few seconds from the mic and fingerprints it."
+      },
+      {
+        "src": "/hum-result.png",
+        "thumb": "/shots/hum-result-thumb.webp",
+        "width": 1909,
+        "height": 859,
+        "caption": "A match: Still Dreaming by Nas and Kanye West, with the lookup score."
+      }
+    ]
   },
   {
     "name": "backtester",
@@ -144,7 +160,16 @@
     ],
     "language": "Go",
     "href": "https://github.com/thesarfo/backtester",
-    "stars": 1
+    "stars": 1,
+    "shots": [
+      {
+        "src": "/backtester.png",
+        "thumb": "/shots/backtester-thumb.webp",
+        "width": 2610,
+        "height": 1590,
+        "caption": "The dashboard: equity curves against buy-and-hold, the strategy table, and drawdowns."
+      }
+    ]
   },
   {
     "name": "mapreduce",
