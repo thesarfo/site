@@ -79,7 +79,16 @@
     ],
     "language": "Go",
     "href": "https://github.com/thesarfo/pgtrace",
-    "stars": 0
+    "stars": 0,
+    "shots": [
+      {
+        "src": "/pgtrace-run.png",
+        "thumb": "/shots/pgtrace-run-thumb.webp",
+        "width": 1593,
+        "height": 448,
+        "caption": "Bytes and request latency per process. Each psql client row has a matching postgres backend row."
+      }
+    ]
   },
   {
     "name": "cardinal",
@@ -134,7 +143,37 @@
     ],
     "tags": [],
     "language": "C#",
-    "href": "https://testflight.apple.com/join/aC8nDqjd"
+    "href": "https://testflight.apple.com/join/aC8nDqjd",
+    "shots": [
+      {
+        "src": "/rebar-workout.webp",
+        "thumb": "/shots/rebar-workout-thumb.webp",
+        "width": 760,
+        "height": 1490,
+        "caption": "Logging a workout: sets, previous numbers and the rest timer."
+      },
+      {
+        "src": "/rebar-leaderboard.webp",
+        "thumb": "/shots/rebar-leaderboard-thumb.webp",
+        "width": 760,
+        "height": 1490,
+        "caption": "Friends: weekly volume and best e1RM across your circle."
+      },
+      {
+        "src": "/rebar-comparison.webp",
+        "thumb": "/shots/rebar-comparison-thumb.webp",
+        "width": 760,
+        "height": 1490,
+        "caption": "Comparison: stats and muscle split against a friend over 30 days, 90 days or a year."
+      },
+      {
+        "src": "/rebar-profile.webp",
+        "thumb": "/shots/rebar-profile-thumb.webp",
+        "width": 760,
+        "height": 1490,
+        "caption": "Profile: weekly training time, the dashboard and recent workouts."
+      }
+    ]
   },
   {
     "name": "ledgr",
