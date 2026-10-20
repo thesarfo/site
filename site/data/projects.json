@@ -4,8 +4,7 @@
     "year": "2026",
     "description": "A clipboard manager for Linux.",
     "writeup": [
-      "Press a shortcut, click something you copied earlier, and it's pasted where your cursor is. History survives after the app you copied from closes, and it works on both Wayland and X11 with a tray icon.",
-      "Handles text, links, images, files, and rich text. Copies from password managers are hidden and cleared after 30 seconds, and secrets are never saved to disk."
+      "A clipboard manager for Linux. Press a shortcut, pick something you copied earlier, and it pastes where your cursor is. Works on Wayland and X11, and hides copies from password managers."
     ],
     "tags": [
       "RUST",
