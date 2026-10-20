@@ -13,7 +13,16 @@
     ],
     "language": "Rust",
     "href": "https://github.com/thesarfo/lclip",
-    "stars": 0
+    "stars": 0,
+    "shots": [
+      {
+        "src": "/lclip-popup.png",
+        "thumb": "/shots/lclip-popup-thumb.webp",
+        "width": 580,
+        "height": 800,
+        "caption": "The history popup: search, Clipboard and Primary tabs, and a copied password shown as dots."
+      }
+    ]
   },
   {
     "name": "neuropil",
@@ -30,7 +39,30 @@
     ],
     "language": "C#",
     "href": "https://github.com/thesarfo/neuropil",
-    "stars": 0
+    "stars": 0,
+    "shots": [
+      {
+        "src": "/neuropil-sugar.png",
+        "thumb": "/shots/neuropil-sugar-thumb.webp",
+        "width": 1600,
+        "height": 1000,
+        "caption": "Sugar on: the taste neurons drive MN9, the motor neuron that extends the proboscis."
+      },
+      {
+        "src": "/neuropil-antenna.png",
+        "thumb": "/shots/neuropil-antenna-thumb.webp",
+        "width": 1600,
+        "height": 1000,
+        "caption": "Antenna touch: spikes travel from the sensors through three hops to the grooming neurons."
+      },
+      {
+        "src": "/neuropil-embodied.png",
+        "thumb": "/shots/neuropil-embodied-thumb.webp",
+        "width": 1600,
+        "height": 1000,
+        "caption": "The whole brain, 138,639 neurons, steering a fly that reaches for sugar."
+      }
+    ]
   },
   {
     "name": "pgtrace",
@@ -64,7 +96,16 @@
     ],
     "language": "C++",
     "href": "https://github.com/thesarfo/cardinal",
-    "stars": 1
+    "stars": 1,
+    "shots": [
+      {
+        "src": "/cardinal-explain.png",
+        "thumb": "/shots/cardinal-explain-thumb.webp",
+        "width": 1864,
+        "height": 1696,
+        "caption": "EXPLAIN ANALYZE: the rules that fired, the final plan, and guessed rows next to real ones."
+      }
+    ]
   },
   {
     "name": "two-trees",
