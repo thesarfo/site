@@ -42,6 +42,13 @@
     "stars": 0,
     "shots": [
       {
+        "src": "/neuropil-embodied.png",
+        "thumb": "/shots/neuropil-embodied-thumb.webp",
+        "width": 1600,
+        "height": 1000,
+        "caption": "The whole brain, 138,639 neurons, steering a fly that reaches for sugar."
+      },
+      {
         "src": "/neuropil-sugar.png",
         "thumb": "/shots/neuropil-sugar-thumb.webp",
         "width": 1600,
@@ -54,13 +61,6 @@
         "width": 1600,
         "height": 1000,
         "caption": "Antenna touch: spikes travel from the sensors through three hops to the grooming neurons."
-      },
-      {
-        "src": "/neuropil-embodied.png",
-        "thumb": "/shots/neuropil-embodied-thumb.webp",
-        "width": 1600,
-        "height": 1000,
-        "caption": "The whole brain, 138,639 neurons, steering a fly that reaches for sugar."
       }
     ]
   },
