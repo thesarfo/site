@@ -138,7 +138,7 @@
     "year": "2026",
     "description": "A mobile app I built to track my workouts without paywalls, and to compete with friends.",
     "writeup": [
-      "Rebar is a mobile app for people who train together. Log sets fast mid-workout, follow friends, and see their finished sessions land in your feed.",
+      "A mobile app I built to track my workouts without paywalls, and to compete with friends. Log sets fast mid-workout, follow friends, and see their finished sessions land in your feed.",
       "Your circle ranks by weekly volume and per-exercise e1RM as you train. Every PR is tracked with progress charts, and Hevy history imports from CSV so you keep what you already logged."
     ],
     "tags": [],
