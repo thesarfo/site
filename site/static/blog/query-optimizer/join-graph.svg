@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" width="760" height="300" font-family="Inter, system-ui, sans-serif">
+<text x="20" y="28" fill="#8a8a8a" font-size="13" font-weight="600">One query as a join graph: tables are points, equalities are lines</text>
+<g stroke="#8a8a8a" stroke-width="1.5">
+<line x1="190" y1="150" x2="380" y2="150"/><line x1="380" y1="150" x2="570" y2="150"/><line x1="380" y1="150" x2="380" y2="240"/>
+</g>
+<g fill="#2f4f6f"><circle cx="190" cy="150" r="9"/><circle cx="380" cy="150" r="9"/><circle cx="570" cy="150" r="9"/><circle cx="380" cy="240" r="9"/></g>
+<g fill="#8a8a8a" font-size="13" text-anchor="middle" font-weight="600">
+<text x="190" y="128">users</text><text x="380" y="128">orders</text><text x="570" y="128">products</text><text x="380" y="268">regions</text></g>
+<g fill="#8a8a8a" font-size="11" text-anchor="middle">
+<text x="285" y="170">users.id = orders.user_id</text><text x="475" y="170">orders.product_id = products.id</text><text x="470" y="210" text-anchor="start">orders.region_id = regions.id</text></g>
+<text x="20" y="288" fill="#8a8a8a" font-size="11">An example query. Any order that keeps the graph connected is a valid way to run it.</text>
+</svg>

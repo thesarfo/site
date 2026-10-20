@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 400" width="760" height="400" font-family="Inter, system-ui, sans-serif">
+<text x="20" y="28" fill="#8a8a8a" font-size="13" font-weight="600">Merge join time as a multiple of hash join time (below the line is faster)</text>
+<line x1="80.0" y1="330.0" x2="720.0" y2="330.0" stroke="#8a8a8a" stroke-width="0.5"/>
+<text x="72.0" y="334.0" fill="#8a8a8a" font-size="11" text-anchor="end" font-weight="400">0x</text>
+<line x1="80.0" y1="262.5" x2="720.0" y2="262.5" stroke="#8a8a8a" stroke-width="0.5"/>
+<text x="72.0" y="266.5" fill="#8a8a8a" font-size="11" text-anchor="end" font-weight="400">0.5x</text>
+<line x1="80.0" y1="195.0" x2="720.0" y2="195.0" stroke="#2f4f6f" stroke-width="1.2"/>
+<text x="72.0" y="199.0" fill="#8a8a8a" font-size="11" text-anchor="end" font-weight="400">1x</text>
+<line x1="80.0" y1="127.5" x2="720.0" y2="127.5" stroke="#8a8a8a" stroke-width="0.5"/>
+<text x="72.0" y="131.5" fill="#8a8a8a" font-size="11" text-anchor="end" font-weight="400">1.5x</text>
+<line x1="80.0" y1="60.0" x2="720.0" y2="60.0" stroke="#8a8a8a" stroke-width="0.5"/>
+<text x="72.0" y="64.0" fill="#8a8a8a" font-size="11" text-anchor="end" font-weight="400">2x</text>
+<rect x="96.0" y="210.2" width="60" height="119.8" fill="#3d7a5a"/>
+<text x="126.0" y="205.2" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="400">0.89x</text>
+<rect x="164.0" y="136.3" width="60" height="193.7" fill="#c2561e"/>
+<text x="194.0" y="131.3" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="400">1.44x</text>
+<text x="160.0" y="352.0" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="400">100 users</text>
+<rect x="256.0" y="225.2" width="60" height="104.8" fill="#3d7a5a"/>
+<text x="286.0" y="220.2" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="400">0.78x</text>
+<rect x="324.0" y="154.5" width="60" height="175.5" fill="#c2561e"/>
+<text x="354.0" y="149.5" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="400">1.30x</text>
+<text x="320.0" y="352.0" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="400">1,000 users</text>
+<rect x="416.0" y="217.5" width="60" height="112.5" fill="#3d7a5a"/>
+<text x="446.0" y="212.5" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="400">0.83x</text>
+<rect x="484.0" y="88.4" width="60" height="241.6" fill="#c2561e"/>
+<text x="514.0" y="83.4" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="400">1.79x</text>
+<text x="480.0" y="352.0" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="400">10,000 users</text>
+<rect x="576.0" y="207.2" width="60" height="122.8" fill="#3d7a5a"/>
+<text x="606.0" y="202.2" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="400">0.91x</text>
+<rect x="644.0" y="78.4" width="60" height="251.6" fill="#c2561e"/>
+<text x="674.0" y="73.4" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="400">1.86x</text>
+<text x="640.0" y="352.0" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="400">50,000 users</text>
+<text x="190.0" y="80.0" fill="#3d7a5a" font-size="12" text-anchor="start" font-weight="600">merge, inputs already in order</text>
+<text x="190.0" y="96.0" fill="#c2561e" font-size="12" text-anchor="start" font-weight="600">merge, sorting both inputs</text>
+</svg>
