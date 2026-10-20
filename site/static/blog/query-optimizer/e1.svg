@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" font-family="Inter, system-ui, sans-serif">
+<text x="20" y="28" fill="#8a8a8a" font-size="13" font-weight="600">Same query, filter pushdown on and off, 1000 users (log scale)</text>
+<line x1="80.0" y1="290.0" x2="720.0" y2="290.0" stroke="#8a8a8a" stroke-width="0.5"/>
+<text x="72.0" y="294.0" fill="#8a8a8a" font-size="11" text-anchor="end" font-weight="400">1 ms</text>
+<line x1="80.0" y1="213.3" x2="720.0" y2="213.3" stroke="#8a8a8a" stroke-width="0.5"/>
+<text x="72.0" y="217.3" fill="#8a8a8a" font-size="11" text-anchor="end" font-weight="400">10 ms</text>
+<line x1="80.0" y1="136.7" x2="720.0" y2="136.7" stroke="#8a8a8a" stroke-width="0.5"/>
+<text x="72.0" y="140.7" fill="#8a8a8a" font-size="11" text-anchor="end" font-weight="400">100 ms</text>
+<line x1="80.0" y1="60.0" x2="720.0" y2="60.0" stroke="#8a8a8a" stroke-width="0.5"/>
+<text x="72.0" y="64.0" fill="#8a8a8a" font-size="11" text-anchor="end" font-weight="400">1000 ms</text>
+<rect x="115.0" y="264.3" width="90" height="25.7" fill="#2f4f6f"/>
+<text x="160.0" y="258.3" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="400">2.2 ms</text>
+<text x="160.0" y="312.0" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="400">nested loop, on</text>
+<rect x="275.0" y="77.4" width="90" height="212.6" fill="#2f4f6f"/>
+<text x="320.0" y="71.4" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="400">593.0 ms</text>
+<text x="320.0" y="312.0" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="400">nested loop, off</text>
+<rect x="435.0" y="277.6" width="90" height="12.4" fill="#3d7a5a"/>
+<text x="480.0" y="271.6" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="400">1.5 ms</text>
+<text x="480.0" y="312.0" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="400">cost-based, on</text>
+<rect x="595.0" y="278.2" width="90" height="11.8" fill="#3d7a5a"/>
+<text x="640.0" y="272.2" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="400">1.4 ms</text>
+<text x="640.0" y="312.0" fill="#8a8a8a" font-size="11" text-anchor="middle" font-weight="400">cost-based, off</text>
+</svg>
