@@ -8,6 +8,8 @@ part: 1
 ---
 I've spent most of my time this year trying to understand how databases work underneath. Storage, query planning, optimizations, pretty much all the things you never see when you write a simple query. And obviously, reading only gets me so far. At some point it's either you've built something, or you just keep nodding at the diagrams.
 
+If you're not sure what happens between typing a query and getting rows back, I wrote about that in [PostgreSQL Query Processing Pipeline](/writing/postgres-query-pipeline). It's a good place to start before this series.
+
 So I set myself a little project checkpoint: build a small SQL database and make the optimizer the focus. It's mostly for fun, but it's also something I'm trying to actively learn from and build on. This series covers the first usable version, one idea per part, and I'll keep adding parts as the project grows. This first part is the basics: what an optimizer is, and the one rule it can't break.
 
 So first of all, what is an optimizer?
